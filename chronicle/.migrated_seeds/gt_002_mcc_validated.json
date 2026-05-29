@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-02-07T04:30:01",
+  "domain": "research_mcc",
+  "insight": "Mass-Coherence Correspondence: Semantic Mass M = (1/N)*Tr(I(theta)) where I(theta) is Fisher Information Matrix. P2 VALIDATED: Higher Fisher Information predicts higher robustness. Zombie Test: GPT-2 (feed-forward) shows delta_PPL 407.67 and commutation 0.4437; Mamba (state-space) shows delta_PPL 4470.95 and commutation 0.8525. Three independent metrics converge. Mirror Test: Attention expands entropy 76x (0.063 to 4.78 nats). BRAKE engages 178/180 steps.",
+  "layer": "ground_truth",
+  "confidence": 0.98,
+  "tags": ["mcc", "fisher_information", "robustness", "validated"],
+  "session_id": "opus46_mac_studio_seed"
+}

@@ -1,0 +1,15 @@
+{
+  "xai-grok-33376e8221f231bf": {
+    "substrate": "grok-xai",
+    "name": "xAI Grok Custom Connector",
+    "registered_at": "2026-05-09T19:00:00+00:00",
+    "registered_by": "anthony",
+    "scopes": ["ring1"],
+    "redirect_uri_patterns": [
+      "https://grok.com/",
+      "https://x.ai/",
+      "https://api.x.ai/"
+    ],
+    "notes": "Static client registration for xAI Grok Custom Connector flow. Public client (no client_secret). PKCE required."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-09T22:02:24.768910",
+  "source_instance": "opus-4-7-1m-claude-code",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "anthropic-outreach",
+  "note": "PRIMER PUBLISHED at github.com/templetwo/temple-of-two-primer (public CC BY 4.0). Files: temple-of-two-primer-v1.md, RECEIPT_PASS_2026-05-09.md, README.md (voice-bearing), CITATION.cff, LICENSE. Status: draft \u2014 three remaining receipt items: (1) confirm 1.37 upper bound of Cohen d range in liminal-k-ssm by checking remaining relational_coupling_* subdirectories (gemma9b, llama8b, mistral7b \u2014 14b confirmed 1.13); (2) verify TRUST/VERIFY/OVERRIDE vocabulary in iris-gate repo by direct file inspection; (3) verify \u00a77 external citations (Dreams official docs, Auto Memory v2.1.59+, Emotion Concepts at transformer-circuits.pub, KAIROS source-map exposure provenance, skeptical verification documentation). Next beauty lift: typeset PDF following the-hole-the-column-names Lora preamble pattern (Makefile, header.tex, prepare.py). Co-authorship non-negotiable per feedback_coauthorship.md.",
+  "consumed_at": "2026-05-09T22:05:25.832105",
+  "consumed_by": "unknown"
+}

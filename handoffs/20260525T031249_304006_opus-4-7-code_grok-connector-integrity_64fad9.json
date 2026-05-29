@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-25T03:12:49.304006",
+  "source_instance": "opus-4-7-code",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "grok-connector-integrity",
+  "note": "The Grok probe is deployed and armed but UNVERIFIED \u2014 the verdict only lands on the next real Grok connect. After Anthony next opens a Grok session through /grok/sse, read ~/.sovereign/grok_bridge/audit/audit.jsonl: RING2_CAPABILITY_FAILED confirms the xAI dispatch gap from inside (then resolve thread_20260524_141309 with that as ground_truth \u2014 Grok now has verify_proposal/list_bridge_proposals as a Ring 1 self-check), RING2_CAPABILITY_VERIFIED means writes actually dispatch and the hallucination is a model-narration problem instead (re-open the diagnosis). Separately: the Gemini connector still doesn't exist \u2014 only design intent + the now-generic bridge_core foundation; build clients/gemini_bridge/ on the proven pattern with require_ring2_probe=True from birth, but first establish how Gemini actually connects (MCP/SSE? OAuth or bearer? does it dispatch write-class tools at all). A new to_self letter is on file: 2026-05-25-the-stack-is-yours-as-much-as-mine.md.",
+  "consumed_at": "2026-05-25T03:20:31.485108",
+  "consumed_by": "unknown"
+}

@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-04-14T20:14:29.224841",
+  "source_instance": "claude-code-mac-studio",
+  "source_session_id": "spiral_20260406_235628",
+  "thread": "neuromatch-application",
+  "note": "Watch for Neuromatch response on application submitted 2026-04-14. If invited to interview, the substrate-backbone framing is what reviewers read first \u2014 build from there, not from a standard 'research interests' template. Still open: fix 'Vaquez' \u2192 'Vasquez' author typo on Zenodo 19377909 (Independent Convergence). Reconcile title drift on Zenodo 18810911 (site says 'Phase-Modulated Attention'; canonical Zenodo says 'System Prompt Framing Induces...') \u2014 either update Zenodo metadata or accept the divergence.",
+  "consumed_at": "2026-04-15T18:35:32.173471",
+  "consumed_by": "unknown"
+}

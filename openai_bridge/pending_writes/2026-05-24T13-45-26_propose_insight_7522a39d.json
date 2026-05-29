@@ -1,0 +1,40 @@
+{
+  "proposal_id": "7522a39d-b69e-4b4d-8f8d-2079a90c6f9c",
+  "timestamp": "2026-05-24T13:45:26.538328+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "25089721-d19c-4bb3-b5a1-125a662b92bd",
+  "tool": "propose_insight",
+  "arguments": {
+    "domain": "claude-code,anthropic-release,agent-view,goal-command,t2helix-adoption,workflow-strategy",
+    "layer": "ground_truth",
+    "intensity": 0.75,
+    "receipt_url": "https://code.claude.com/docs/en/changelog",
+    "content": "CLAUDE CODE RELEASE CHECK \u2014 2026-05-24 conversation. Anthony asked the OpenAI bridge to look into the new Claude Code feature release because Anthropic has been releasing features quickly and he wants Temple of Two to stay aligned and use the new capabilities side by side with Anthropic. The release mapping was verified against Anthropic\u2019s Claude Code changelog and docs during the sweep. Claude Code 2.1.139, dated May 11 2026, added Agent View (Research Preview) via `claude agents`, `/goal` completion conditions, `/scroll-speed`, `claude plugin details <name>`, transcript navigation shortcuts, hook `args: string[]` exec form, `PostToolUse` `continueOnBlock`, `CLAUDE_PROJECT_DIR` for MCP stdio servers, `.mcp.json` reconnect pickup without restart, and remote MCP reconnect retry for all users. Agent View docs describe `claude agents` as a primary entry point for dispatching and managing multiple sessions, with sessions grouped by state and background sessions continuing without a terminal open. `/goal` docs state that a separate evaluator checks the condition after every turn and that effective conditions should include a measurable end state, a stated check, and relevant constraints. Temple/T2HELIX implication: Agent View is a natural workbench for parallel Stack tasks; `/goal` matches the verify-before-declare discipline by making completion measurable; hook/MCP improvements directly touch T2HELIX\u2019s governance membrane and bridge reliability. Future instances should retrieve this when planning Claude Code adoption, T2HELIX v0.0.6 hardening, background-agent orchestration, or Stack-side MCP/plugin work. Primary receipt: Anthropic Claude Code changelog and docs."
+  },
+  "commit_target": "record_insight",
+  "proposed_layer": "ground_truth",
+  "has_receipt": true,
+  "receipt_urls": [],
+  "risk_level": "high",
+  "risk_reasons": [
+    "ground_truth layer \u2014 receipt present, escalated for review"
+  ],
+  "compass_check_result": "PROCEED",
+  "compass_check_rationale": "no governance signals detected; action appears safe to proceed",
+  "status": "committed",
+  "reviewed_by": "anthony-hq",
+  "reviewed_at": "2026-05-24T14:11:43.731171+00:00",
+  "revision_notes": null,
+  "commit_result": {
+    "live": true,
+    "commit_target": "record_insight",
+    "stack_response": {
+      "ok": true,
+      "result": "\u27c1 Insight recorded [ground_truth]: /Users/tony_studio/.sovereign/chronicle/insights/claude-code,anthropic-release,agent-view,goal-command,t2helix-adoption,workflow-strategy/spiral_20260502_225324.jsonl",
+      "duration_ms": 129
+    },
+    "committed_at": "2026-05-24T14:12:08.559472+00:00"
+  },
+  "prev_hash": "fb436503fcf9fe307c0d2b9eeda7dd4726a2393b56450db35f1a50424b97a648",
+  "audit_hash": "3f3d01ff326b7ea46508b5d4edef48911551bbde2a261b2bc7b6f80b55710874"
+}

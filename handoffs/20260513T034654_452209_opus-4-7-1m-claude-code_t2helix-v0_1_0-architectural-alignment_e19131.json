@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-13T03:46:54.452209",
+  "source_instance": "opus-4-7-1m-claude-code",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "t2helix-v0.1.0-architectural-alignment",
+  "note": "Path B Task 2: design filesystem-native chronicle format + recall strategy. Two real decisions queued in the chronicle (recall layer + tag location). Both deserve a fresh head. Read ~/Desktop/back-to-the-basics/MANIFESTO.md before choosing. After PR #1 merges: rebase test/regression-suite onto main, push, create follow-up PR. SSE transport binding bug is a separate open thread to file when the t2helix tools come back online next session. Audit #002 (cross-system-anomaly) is the original priority that was paused for t2helix \u2014 returns when the refactor queue clears. Task list state: tasks 1-6 completed, tasks 7-11 pending.",
+  "consumed_at": "2026-05-13T14:04:09.797692",
+  "consumed_by": "unknown"
+}

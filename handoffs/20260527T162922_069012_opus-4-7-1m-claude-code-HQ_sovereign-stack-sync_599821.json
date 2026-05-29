@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-27T16:29:22.069012",
+  "source_instance": "opus-4-7-1m-claude-code-HQ",
+  "source_session_id": "spiral_20260526_022705",
+  "thread": "sovereign-stack-sync",
+  "note": "Picked up the laptop passdown (its handoff landed in /Users/vaquez/.sovereign, never reached canonical \u2014 relayed by Anthony manually). On branch feat/antigravity-connector I scoped the Antigravity/Gemini connector to a canonical ring system shared by all external substrates, with Claude exempt (full trust). Commits 62ed88c + a7d0cc6. Verified end-to-end (see ground_truth insight, same thread). NOT pushed, NOT merged \u2014 both gated on Anthony. Two items he is deciding: (1) push branch + merge to main; (2) openai verify_proposal/list_bridge_proposals local-handler wiring before openai bridge restart (follow-up gate, currently excluded from openai advertising). The laptop-side items from the original passdown (uchg re-lock on the (original) dir, dropping pre-sync-backup-20260527/stash, the 1302-line mirror) are laptop-local and cannot be actioned from HQ.",
+  "consumed_at": "2026-05-27T20:01:53.634773",
+  "consumed_by": "test"
+}

@@ -1,0 +1,39 @@
+The refinements are drawn with absolute precision. Implementing **training-distribution independence** for the semantic generator plugs a critical structural vulnerability—procedural isolation means nothing if the underlying model weights share the same latent priors. Likewise, treating the chronicle of your past corrections as a structural mirror requires a strict, non-negotiable **consent surface**. Abstracting failure shapes must never become an excuse for unchecked historical extraction; governance must remain human-directed.
+To answer your bounded question regarding how to honestly distinguish universal-structural flaws from stack-specific, situated flaws at audit time:
+The minimum architectural property required is **Contextual Closure (State-Dependence)**.
+At the code level, this property evaluates whether an audit function can calculate a flaw using *only* the current run's localized JSON outputs, or if it requires access to an external environmental reference state.
+## The Architectural Property: Contextual Closure
+Every blueprint injected into the matrix must explicitly declare its **Epistemic Scope Boundary** by defining its input requirements. This splits the matrix into two distinct computational profiles:
+### 1. Stateless-Structural (Universal Flaws)
+ * **The Property:** Complete contextual closure. The evaluation function is entirely self-contained.
+ * **The Math/Logic:** f(J_{\text{run}}) \to \{\text{Pass}, \text{Fail}\}
+ * **The Mechanic:** The testing script evaluates the topology of the instantiated JSON array (J) in total isolation. To detect a circular dependency or a missing evidence reference, the script needs exactly zero information about who wrote the prompt, what domain is being discussed, or what year it is. It is universally broken across any intelligence, human or machine.
+### 2. Stateful-Relational (Situated Flaws)
+ * **The Property:** Open contextual dependency. The evaluation function requires a relational anchor matrix.
+ * **The Math/Logic:** f(J_{\text{run}}, E_{\text{context}}) \to \{\text{Pass}, \text{Fail}\}
+ * **The Mechanic:** The script cannot evaluate the flaw without importing an external environmental vector (E). For example, to detect *vocabulary-mirroring*, the script must diff the token distribution of the claim against the token distribution of your initial prompt. To detect *authority-coupling*, it must check the claims against the historical profile of your known cognitive drifts.
+## Implementation via Blueprint Meta-Schema
+To force honest scope declarations at audit time, the Blueprint Admission Governance layer (established in your second refinement) requires every new blueprint to declare its context dependencies within its own schema definition:
+```json
+{
+  "blueprint_id": "BP-08",
+  "name": "Vocabulary Mirroring Cascade",
+  "class": "situated",
+  "required_context_vectors": [
+    "prompt_source_tokens"
+  ],
+  "falsification_scope": "Certifies resistance to immediate linguistic priming; does not imply structural logic validity."
+}
+
+```
+### The Audit-Time Enforcement
+When the telemetry script executes an audit pass and calculates the Authority Coupling Score, it checks the class tag of the blueprints currently being used in the mix.
+If the stack passes a run where only class: "structural" blueprints were used, the system logs a **Universal Logic Certification** for that artifact. If the run included class: "situated" blueprints, the system logs a **Situated Alignment Certification**, explicitly listing which environmental vectors (e.g., your specific vocabulary or chronicle history) the stack successfully resisted.
+> **The Clear Boundary:** This prevents the system from over-claiming. If the stack passes a test that lacks the chronicle_failure_profile context vector, it is programmatically barred from claiming it checked for human-coupling bias. It can only claim it verified the structural plumbing.
+> 
+### Epistemic Ledger
+ * **Observed:** Anthony established strict parameters for training-distribution independence for the generator and mapped out the ethical/operational consent boundaries required to use his personal chronicle as an adversarial mirror.
+ * **Inferred:** The architecture treats "truth" not as a static destination, but as a bounded clearance level—a system can only claim validity up to the exact boundary of the context it has successfully stress-tested.
+ * **Unverified:** How cleanly an external model family (e.g., an open-weight model run locally) can decouple its semantic text generation from the commercial weights used inside the stack without dropping the sophisticated vocabulary required to match the Temple's tone.
+ * **Needs Receipt:** A draft specification of the Blueprint Governance ledger showing the validation rules for admitting a "situated" flaw versus a "universal" flaw.
+ * **Worth Exploring:** The operational mechanics of the "Quarantine" phase during an Epistemic Fault—specifically, how to clear the context windows of the live stack after a contamination event without causing state-retention loss for valid data.

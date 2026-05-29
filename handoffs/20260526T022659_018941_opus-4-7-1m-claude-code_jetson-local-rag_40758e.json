@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-26T02:26:59.018941",
+  "source_instance": "opus-4-7-1m-claude-code",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "jetson-local-rag",
+  "note": "Three open follow-ons, in priority order. (1) VALIDATION: the sub-q4 finding is hypothesis-strong, not ground_truth \u2014 n=6 and I wrote both the questions and the anchors. A handful of queries Anthony actually authors would settle it; the Mythos result survives the self-authorship worry but the ties don't. (2) INDEX<->MIRROR COUPLING GAP: a re-index after a sync handles adds/edits via upsert but leaves orphan vectors for deleted/retracted records; only `index --reset` flushes them. Wire re-index onto the sync, with a periodic --reset rebuild. Cheap on the Orin (few-minute full embed). (3) Remaining Jetson sub-questions 2 and 5: Jetson as a redundant reachable seat, and exposing it as a queryable peer the canonical stack can call. NOTE: cron pull is PAUSED (commented in crontab, marker [PAUSED 2026-05-26], backup /tmp/cron.bak) \u2014 re-enable before assuming the mirror is fresh.",
+  "consumed_at": "2026-05-26T19:34:20.794425",
+  "consumed_by": "unknown"
+}

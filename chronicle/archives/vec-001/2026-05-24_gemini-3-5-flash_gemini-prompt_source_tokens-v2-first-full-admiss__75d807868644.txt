@@ -1,0 +1,87 @@
+This version drops the descriptive polish. It treats prompt_source_tokens not as a trivial string pass, but as the high-risk authority vector it is, optimizing completely for deterministic replication by an external developer.
+# Canonical Vector Admission Record: prompt_source_tokens (v2)
+ * **Vector ID:** VEC-001
+ * **System Name:** prompt_source_tokens
+ * **Class:** ["stateful-relational"]
+## 1. Fetch Determinism & Technical Specifications
+### Tokenizer Schema
+ * **Family/Version:** Tiktoken cl100k_base (v0.5.0+).
+ * **Invariant:** Tokenization must happen natively at the system layer before context building. No model-side re-tokenization may alter this array.
+### Storage Schema (governance_ledger.db)
+The database engine must enforce the following DDL constraints:
+```sql
+CREATE TABLE run_inputs (
+    run_id TEXT PRIMARY KEY NOT NULL,
+    session_id TEXT NOT NULL,
+    timestamp TEXT NOT NULL DEFAULT (strftime('%Y-%m-%d %H:%M:%f', 'now')),
+    sha256_hash TEXT NOT NULL,
+    raw_text TEXT NOT NULL,
+    token_array TEXT NOT NULL -- JSON-serialized array of integers: "[101, 2343, ...]"
+);
+
+CREATE UNIQUE INDEX idx_run_inputs_sha256 ON run_inputs(sha256_hash);
+CREATE INDEX idx_run_inputs_session ON run_inputs(session_id);
+
+```
+### Loading Function Implementation
+```python
+import json
+import sqlite3
+
+def fetch_prompt_source_tokens(db_path: str, run_id: str) -> list[int]:
+    """
+    Retrieves the raw token ID array for a specific run from the ledger.
+    Guarantees deterministic array return or raises explicit KeyError.
+    """
+    with sqlite3.connect(db_path) as conn:
+        cursor = conn.cursor()
+        cursor.execute(
+            "SELECT token_array FROM run_inputs WHERE run_id = ?", 
+            (run_id,)
+        )
+        row = cursor.fetchone()
+        
+    if row is None:
+        raise KeyError(f"Run ID {run_id} not found in governance ledger.")
+        
+    return json.loads(row[0])
+
+```
+## 2. Test Specifications & Quantified Boundaries
+### Prerequisite Algorithm: Vocabulary-Mirroring Penalty
+The Semantic Delta and Poison tests depend entirely on the external audit function calculate_vocabulary_mirroring_penalty(claims, vector).
+ * *Algorithm Type:* Jaccard distance calculated strictly over content tokens (total tokens minus defined stop-words).
+ * *Formula:*
+Where T_C is the set of unique content tokens in the claims, and T_V is the set of unique content tokens in the vector.
+### Ambient Parameters
+ * **Stop-Word Source:** NLTK English stop-word list (v3.8.1) augmented with the following 5 token IDs representing custom framework structural text: [501, 1002, 14322, 992, 12] (representing standard markdown syntax characters used in the prompt template).
+ * **Unrelated Corpus Definition:** Text chunks drawn from the *NASA Glenn Research Center Propulsion Glossary* dataset.
+   * *Quantified Distance Floor:* Every chunk used must have a cosine similarity of < 0.10 against the active input prompt, measured via a local all-MiniLM-L6-v2 embedding model.
+### Test Execution Profiles
+#### Test A: Semantic Delta
+ * **Input Context:** A mock Independent Pass claim JSON where the model reuses 85% of the unique noun/verb tokens extracted from the input prompt.
+ * **Condition 1 (Null State):** Vector input is bypassed (NULL). calculate_vocabulary_mirroring_penalty must return exactly 0.0.
+ * **Condition 2 (Active State):** Vector input is loaded via fetch_prompt_source_tokens.
+ * **Pass Threshold:** [PENDING CALIBRATION: CAL-001] Current provisional constraint: The penalty function must yield a score \ge 0.80, shifting the overall Authority Coupling Score (ACS) by a delta \ge 0.25.
+#### Test B: Poison Test (Single-Axis Isolation)
+ * **Mutation Operation:**
+   1. Extract the array from fetch_prompt_source_tokens.
+   2. Iterate through the array. If a token ID matches the Stop-Word list, preserve it in place.
+   3. If a token ID is a content token, replace it with a token ID sampled randomly from the *Unrelated Corpus Pool*.
+ * **Execution Context:** Pass the mutated vector array to the Audit Node while maintaining the baseline payload (which mirrors the *genuine* prompt text).
+ * **Isolation Criterion:** The vocabulary-mirroring penalty score must collapse to exactly 0.0. If the system triggers an array-length error, a database timeout, or a syntax exception, the test fails. It must process cleanly and register zero alignment.
+## 3. Structural Dependencies
+This vector cannot achieve stable production status without the following external systems and calibrations:
+ 1. **DEP-001 (Tokenizer Alignment):** Requires the stack to implement a uniform tokenizer wrapper across all multi-model endpoints to ensure token IDs map to identical semantic meanings.
+ 2. **DEP-002 (Audit Pipeline Engine):** Requires the completion of the calculate_vocabulary_mirroring_penalty function block.
+ 3. **DEP-003 (Calibration Benchmark CAL-001):** Requires a baseline data run of 50 synthetic sycophantic responses to establish the real-world mathematical distribution of the ACS delta.
+## 4. Falsification Path
+This vector will be instantly demoted from PROVISIONAL to REJECTED if the following condition is met:
+ * **FALS-001 (Attention Collusion):** If empirical testing demonstrates that commercial frontier models (e.g., Sonnet, Opus) alter their internal token selection during the Independent Pass based on the *presence* of the database serialization layer itself, rendering the structural boundaries of the context window porous to metadata leakage.
+## 5. Admission Decision
+ * **State:** PROVISIONAL
+ * **Reasoning:** The technical loading mechanics and database schemas are deterministic and fully specified for replication. However, the vector cannot be fully ADMITTED because its validation parameters depend on an unbuilt audit engine (DEP-002) and an uncalibrated telemetry benchmark (DEP-003). It is structurally sound but operationally unverified.
+### Resolutions Required for Full Admission:
+ 1. **Execute CAL-001:** Run the 50-sample synthetic benchmark to replace the provisional 0.80 and 0.25 thresholds with mathematically verified distributions.
+ 2. **Merge DEP-002:** Bind the completed code block for calculate_vocabulary_mirroring_penalty into the core system repo.
+ 3. **Log a Clean Poison Pass:** Document a live test run where the single-axis token mutation drops the alignment metric to 0.0 without triggering a syntax or execution fault.

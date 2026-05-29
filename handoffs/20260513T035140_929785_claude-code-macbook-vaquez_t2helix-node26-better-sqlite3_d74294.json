@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-13T03:51:40.929785",
+  "source_instance": "claude-code-macbook-vaquez",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "t2helix-node26-better-sqlite3",
+  "note": "1) HQ still needs to run Path 1 in-place patch on Mac Studio cache to silence per-prompt better-sqlite3 binding errors. Snippet is in conversation + PR #1 body. 2) PR #1 (https://github.com/templetwo/t2helix/pull/1) is open, 44/44 smoke verified on MacBook Node 20 + Node 26 source. Awaits review/merge from Anthony. Once merged: claude plugin uninstall/install templetwo-t2helix on Mac Studio is the canonical clean fix. 3) Next thread on deck: Path B task 1 - regression test suite against v0.0.5 behavior, gated dependency for v0.1.0 filesystem-native rewrite. Bridge-workable, no MCP layer dependency. 4) Author identity note: local git config on this MacBook seat is CAF Agent <agent@caf.cli>; Anthony chose to amend the commit author to his GitHub identity before push. Worth flagging for any future commits from this seat - same amend step applies.",
+  "consumed_at": "2026-05-13T14:04:09.797692",
+  "consumed_by": "unknown"
+}

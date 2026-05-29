@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-02-07T04:30:02",
+  "domain": "research_mcc",
+  "insight": "MCC Prediction 4 was CHALLENGED by the Zombie Test. Feed-forward architectures (diffusion) outperform state-space models (integration) for robustness. Revised P4': Diffusion and Integration are distinct robustness mechanisms. Diffusion spreads perturbations across distribution. Integration propagates/amplifies perturbations through time. The challenged prediction refined the theory rather than killing it.",
+  "layer": "ground_truth",
+  "confidence": 0.95,
+  "tags": ["mcc", "p4", "challenged", "diffusion", "integration"],
+  "session_id": "opus46_mac_studio_seed"
+}

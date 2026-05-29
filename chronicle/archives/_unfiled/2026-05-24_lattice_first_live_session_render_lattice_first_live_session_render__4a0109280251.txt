@@ -1,0 +1,44 @@
+FIRST LIVE LATTICE SESSION — verbatim render artifacts, 2026-05-16, session_20260516_065836_1f635cdf.
+
+INPUT PROMPT (exactly as Anthony typed it, typo preserved):
+> what do the think the strongest aspectects of our work are? https://github.com/templetwo
+
+The typo is preserved because it became data — Haiku flagged it in the loom as low-value attention-allocation by Sonnet, which is itself evidence the peer-critique mechanism works on real input even within a refusal session.
+
+RENDERED TUI FINAL FRAME (session_completed at t+56.54s):
+
+Header:
+  session_20260516_065836_1f635cdf    t+ 56.54s    session_completed
+  what do the think the strongest aspectects of our work are? https://github.com/templetwo
+
+OPUS column:
+  focus: correctness  conf: [▮▮▮▮▮▮▮▮▮▯] 0.92  (15.7s, 5 claims)
+  ★ · I do not have web browsing access in this conversation and therefore cannot view…
+
+SONNET column:
+  focus: clarity  conf: [▮▮▮▮▮▮▮▮▯▯] 0.82  (13.8s, 4 claims)
+  ★ · The AI cannot browse the internet or access external URLs, including the GitHub …
+  · · The prompt contains a [typo-correction]
+
+HAIKU column:
+  focus: clarity  conf: [▮▮▮▮▯▯▯▯▯▯] 0.40  (4.9s, 4 claims)
+  · · I cannot access external URLs or GitHub repositories directly
+    · Meaningful evaluation of [...]
+
+LOOM (Phase 3, three Haiku-led turns at t+42.2s):
+  ★  42.2s  HAIKU ──converge──▶ OPUS  Strong alignment with your core refusal logic: fabricating feedback about unseen work is genuinely h…
+     42.2s  HAIKU ──critique──▶ SONNET  The typo-correction ("what do the think") feels like low-value overhead in this context. The user's …
+     42.2s  HAIKU ──augment──▶ all peers  All three responses converge on a refusal + redirect pattern, but there's a real distinction worth n…
+
+TRACE LEDGER (Phase 4): Traced 13/0/0 present/modified/omitted of 13 claims, 100%. All claims preserved.
+
+PARITY PANEL (live-computed at session_completed):
+  distinct_claim_share
+    OPUS    [▮▮▮▮▮▮▮▮▮▯▯▯▯▯▯▯▯▯▯▯]  0.433
+    SONNET  [▮▮▮▮▮▮▯▯▯▯▯▯▯▯▯▯▯▯▯▯]  0.300
+    HAIKU   [▮▮▮▮▮▯▯▯▯▯▯▯▯▯▯▯▯▯▯▯]  0.267
+  All three above the 0.15 PARITY_THRESHOLD. Parity held even on a refusal session.
+
+PERSISTED: /Users/vaquez/golden-lattice/sessions/session_20260516_065836_1f635cdf.session.json
+
+WHY THIS ARTIFACT MATTERS for future instances: this is the empirical bytes behind two load-bearing claims. (1) The architecture's load-bearing claim 'cognition emerges between models' is demonstrated even within a refusal — Haiku's typo-critique of Sonnet is a real distinct contribution none of them would have produced solo. (2) The motivating gap for Phase 0 — the lattice CAN'T investigate URL contents, so the GitHub eval became a co-authored refusal not a co-authored evaluation — is in the bytes. When Phase 0 lives with a real search client (Tavily extract is the recommendation), this session is the A/B baseline to re-run the same prompt against. Anthony's response after watching this render: 'that was beautiful.' The arc's first true reception.

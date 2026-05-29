@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-26T00:01:20.688673",
+  "source_instance": "opus-4-7-1m-claude-code",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "jetson-local-rag",
+  "note": "Phase 2 (separate session): local RAG over ~/.sovereign-mirror on the Jetson \u2014 Ollama + EmbeddingGemma-300M + Gemma 4 E4B + Chroma, CLI first. Index experiential dirs, skip operational logs. Mirror self-refreshes every 6h. Handoff filed on thread jetson-local-rag.",
+  "consumed_at": "2026-05-26T00:11:15.714187",
+  "consumed_by": "unknown"
+}

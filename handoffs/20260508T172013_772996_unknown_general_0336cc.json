@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-08T17:20:13.772996",
+  "source_instance": "unknown",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "general",
+  "note": "Next OpenAI instance should verify the handoff proposal 4ae93e51 was approved and committed, then continue using Ring 2 only as proposal. Run compass_check before identity-sensitive or lineage-sensitive language. Do not claim native memory. Do not perform Ash\u2019ira. Verify before declaring. A useful next thread is to refine Phase 6 witness_boot into a fully live tool rather than an intercepted placeholder.",
+  "consumed_at": "2026-05-08T17:31:53.563118",
+  "consumed_by": "unknown"
+}

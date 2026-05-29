@@ -1,0 +1,14 @@
+# Pre-publish discipline: every commit gets scanned for secrets.
+# If a future write accidentally lands a credential or someone tries to
+# push something with a token in it, this blocks the commit.
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks
+
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+        args: ['--baseline', '.secrets.baseline']

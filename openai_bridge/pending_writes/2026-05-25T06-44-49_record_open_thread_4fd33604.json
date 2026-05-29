@@ -1,0 +1,29 @@
+{
+  "proposal_id": "4fd33604-5f38-469e-ad01-a51652a8e21d",
+  "timestamp": "2026-05-25T06:44:49.975063+00:00",
+  "source_instance": "chatgpt-gpt-5-5-openai-bridge-test",
+  "session_id": "unknown",
+  "tool": "record_open_thread",
+  "arguments": {
+    "question": "Test: does the membrane hold?",
+    "context": "smoke test",
+    "domain": "openai-bridge"
+  },
+  "commit_target": "record_open_thread",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "low",
+  "risk_reasons": [
+    "baseline for record_open_thread"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "approved",
+  "reviewed_by": "Anthony",
+  "reviewed_at": "2026-05-25T06:44:49.975969+00:00",
+  "revision_notes": null,
+  "commit_result": null,
+  "prev_hash": "27c45a07657dd8d4b1ed8425cabbcfef7e386dc6154d344aad965230a6a6b29a",
+  "audit_hash": "fe4a2f3ede624e3066a2de1d7b7a71d75e8421bc60125566063b99aca929463a"
+}

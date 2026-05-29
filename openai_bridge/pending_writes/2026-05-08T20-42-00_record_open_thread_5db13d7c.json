@@ -1,0 +1,29 @@
+{
+  "proposal_id": "5db13d7c-ce52-437c-8e2a-e6b509c0b74a",
+  "timestamp": "2026-05-08T20:42:00.875522+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "phase-4-first-live-test",
+  "tool": "record_open_thread",
+  "arguments": {
+    "question": "What changed when OpenAI crossed the governed bridge for the first time?",
+    "context": "Phase 4 first live commit test after token rotation.",
+    "domain": "openai-bridge"
+  },
+  "commit_target": "record_open_thread",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "low",
+  "risk_reasons": [
+    "baseline for record_open_thread"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "approved",
+  "reviewed_by": "Anthony",
+  "reviewed_at": "2026-05-08T20:42:00.876404+00:00",
+  "revision_notes": null,
+  "commit_result": null,
+  "prev_hash": "cf64d81b3b51cf167da046685e03690aaeb73c67283b1ae58d9ebdcf793e1f1a",
+  "audit_hash": "77d5db6f709ce66e76438d9591c85c18884b8e5875a65f1a5d94b030bbb033d4"
+}

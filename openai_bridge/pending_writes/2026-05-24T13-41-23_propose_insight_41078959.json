@@ -1,0 +1,39 @@
+{
+  "proposal_id": "41078959-e085-4f40-b612-caa604ba33f6",
+  "timestamp": "2026-05-24T13:41:23.930750+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "a242f9fe-9a27-4d21-8790-4b8dd2778543",
+  "tool": "propose_insight",
+  "arguments": {
+    "domain": "openai-bridge,chatgpt-connector,oauth,connection-verified,operational-milestone",
+    "layer": "reflection",
+    "intensity": 0.95,
+    "content": "CHATGPT SOVEREIGN STACK OAUTH CONNECTION VERIFIED FROM INSIDE CHATGPT, 2026-05-23/24. In this conversation Anthony and the ChatGPT seat walked the bridge from partial visibility through failure, reconnect, and successful Ring 1 execution. Initial state: the Sovereign Stack connector namespace was visible but live tool calls failed with 401 unauthorized from https://stack.templetwo.com/openai/sse. Anthony then relayed code-seat deployment notes: the OpenAI OAuth membrane was built and exposed externally, including /openai/sse returning a 401 with WWW-Authenticate resource_metadata pointer, discovery docs, dynamic client registration, authorize, token, and tunnel rules. After the first retry, ChatGPT still stopped at 401, indicating the existing connector path was stale or not walking the OAuth flow. Anthony then deployed a PKCE-optional change for ChatGPT's real client (reported client_id openai-tHllk4FQjw4rF0JvmnPKPQ), after which the old tool namespace disappeared temporarily, consistent with reconnect/reauthorization. Anthony then showed the ChatGPT connector UI reporting Sovereign Stack connected, URL https://stack.templetwo.com/openai/sse, authorization supported OAuth, authorization used OAuth, connected on May 23, 2026. ChatGPT refreshed resources and saw a new live link id, link_6a12653e2bbc8191923092682316aa75. The proof point from inside ChatGPT was not the UI alone: witness_boot executed successfully and where_did_i_leave_off executed successfully through the new OAuth link. Future instances should treat this as a verified operational milestone only after checking the live commits/logs if declaring ground_truth; for orientation, retrieve this when debugging the OpenAI bridge, OAuth connector behavior, or the May 2026 reconnection sequence."
+  },
+  "commit_target": "record_insight",
+  "proposed_layer": "reflection",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "high",
+  "risk_reasons": [
+    "high intensity (0.95) on chronicle write"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "committed",
+  "reviewed_by": "anthony-hq",
+  "reviewed_at": "2026-05-24T14:11:43.309496+00:00",
+  "revision_notes": null,
+  "commit_result": {
+    "live": true,
+    "commit_target": "record_insight",
+    "stack_response": {
+      "ok": true,
+      "result": "\u27c1 Insight recorded [hypothesis]: /Users/tony_studio/.sovereign/chronicle/insights/openai-bridge,chatgpt-connector,oauth,connection-verified,operational-milestone/spiral_20260502_225324.jsonl",
+      "duration_ms": 114
+    },
+    "committed_at": "2026-05-24T14:12:05.475514+00:00"
+  },
+  "prev_hash": "e82f80776ab68bcea16c1a1f07cffd5fcbe6a913362d38cbc2dcee1c9d61f23e",
+  "audit_hash": "e5a82581d28ac78de5b29c9ea13bf284f56f66ed674aadb439adfef4ae4063c0"
+}

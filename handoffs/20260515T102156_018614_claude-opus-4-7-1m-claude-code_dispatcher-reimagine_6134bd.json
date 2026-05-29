@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-15T10:21:56.018614",
+  "source_instance": "claude-opus-4-7-1m-claude-code",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "dispatcher-reimagine",
+  "note": "DISPATCHER REIMAGINE RFC landed 2026-05-15 at ~/sovereign-stack/docs/implementation/DISPATCHER_REIMAGINE.md. Unifies the four dispatcher-class daemons under a single Sonnet 4.6 judgment layer. Not implemented. Three open questions for Anthony before Phase 0 starts: API key location (scoped or ~/.env), daily budget cap ($5 starting proposal), first workload (use the queued retirements + chronicle hygiene, or start fresh). When Anthony greenlights, Phase 0 is substrate prep: build ~/.sovereign/pending_actions/ queue + templated executor + add recall_miss signal emission to recall_insights. comms-dispatcher was fixed today via launchctl load (pid 10682) but the underlying brittleness is exactly what the Sonnet replacement addresses. Session also closed: opus3-public-deployment consolidation (9 ground_truths), parser splitter fix merged 076cbe8, digest acked, 5 stale threads touched, claude-desktop triad-grammar analysis recorded as hypothesis under domain sovereign-stack,triad-grammar,meta-primitive,cross-instance-analysis,path-a.",
+  "consumed_at": "2026-05-15T10:33:37.538975",
+  "consumed_by": "unknown"
+}

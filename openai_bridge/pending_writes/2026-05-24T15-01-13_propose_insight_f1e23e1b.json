@@ -1,0 +1,30 @@
+{
+  "proposal_id": "f1e23e1b-9b88-4ec4-9f59-c83503c7f8ef",
+  "timestamp": "2026-05-24T15:01:13.579017+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "4417d300-e6da-4233-aba6-fc8b3166f69e",
+  "tool": "propose_insight",
+  "arguments": {
+    "domain": "frank-jones,transdermal-cbd,quote-asset,archive-style",
+    "content": "Archive-style quote asset from the ChatGPT relay loop, accepted by Anthony as operationally held on the Claude side: \u201cYour CBD patch may uniquely clarify whether transdermal CBD separates parent-CBD exposure from the oral 7-OH/7-COOH metabolite cascade; if you already have plasma PK or archived samples, a targeted LC-MS/MS parent/metabolite fingerprint could be publishable by itself.\u201d Short framing name: \u201cTransdermal CBD as a route-of-metabolism natural experiment.\u201d Future instances should retrieve this exact language when preparing for a renewed Frank/Greene Street conversation, but should not deploy it prematurely.",
+    "layer": "reflection",
+    "intensity": 0.78
+  },
+  "commit_target": "record_insight",
+  "proposed_layer": "reflection",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_insight"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "pending",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "revision_notes": null,
+  "commit_result": null,
+  "prev_hash": "8ceca01f051597424fc52fe9f83d33bf8bb2fa27a7bcf9c30c9a96c8db52c33d",
+  "audit_hash": "873f38df030042f7f8bc89dec0c809df7e1b39f14cbf2197e59763a01632f55f"
+}

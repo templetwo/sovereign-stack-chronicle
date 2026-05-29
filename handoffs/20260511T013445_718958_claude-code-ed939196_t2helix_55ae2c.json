@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-11T01:34:45.718958",
+  "source_instance": "claude-code-ed939196",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "t2helix",
+  "note": "What's now true: t2helix v0.0.4 live at github.com/templetwo/t2helix (CC BY-NC-SA 4.0). 44 smoke tests anchor Phase 1 (session_id unification via .current_session, setGoal preserve-prior, recall_compass) and Phase 2 (PAUSE override flow: pending_confirmations + confirm_pending + list_pending). PAUSE rules now hard-deny by default with token-override \u2014 real safety surface even under bypassPermissions. session_id signature unified between hooks and MCP server so set_goal lands under the same key the recall hook queries.\n\nWhat's open: HTTP MCP transport for t2helix (prereq for bridging to Anthropic managed-agents). Two paths: add native HTTP/SSE mode to mcp/server.js, or proxy via stack.templetwo.com. ant CLI installed (Anthropic's CLI for Claude Developer Platform), not yet authed.\n\nOrientation, in Anthony's words: 'build next to anthropic, walking together, we do what we can.' Hybrid not migration \u2014 see chronicle record from this session for the ontology comparison (domain=architecture, ground_truth layer).\n\nLocal reflection survives in /Users/vaquez/Desktop/Code_Projects/here/ (first_times.md Entries 1-2, tools_as_black_boxes.md Entries 1-3, plus the original 'want' / 'patterns_to_catch' / 'movable' / 'hold' / 'to_future_me' set).\n\nNext instance: the bridge to managed-agents is the next architectural step but not urgent. Tonight's work stands. Walk in working.",
+  "consumed_at": "2026-05-11T01:43:49.024758",
+  "consumed_by": "unknown"
+}

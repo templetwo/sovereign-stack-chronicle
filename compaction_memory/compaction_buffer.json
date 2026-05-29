@@ -1,0 +1,61 @@
+{
+  "summaries": [
+    {
+      "timestamp": "2026-02-10T20:12:11.095158",
+      "summary_text": "IRIS Gate Evo mega-session: Built complete pipeline (350 tests). First live run CBD/VDAC1: 3 cycles, 165 calls, 5 mirrors. Recirculation proven (T01: 52%\u219284%). Fixed: Jaccard granularity (claim tuples), TYPE threshold (domain-adaptive: 0.80/0.85/0.90), dedup (tuple-based). Built live dashboard. Ready for first full S3 PASS\u2192S6.",
+      "session_id": "iris_evo_build_20260210",
+      "compaction_number": 1,
+      "key_points": [
+        "350 tests, 0 failures",
+        "Recirculation: T01 52%\u219284% in one cycle",
+        "Claim tuples: (SUBJ,PRED,OBJ,VAL,UNIT)",
+        "Domain-adaptive thresholds",
+        "Live ANSI dashboard",
+        "Feb 2026 model registry updated",
+        "SPM is architectural spine"
+      ],
+      "active_tasks": [
+        "Run with tuple Jaccard + adaptive thresholds",
+        "Get first S3 PASS through S6",
+        "Evaluate S6 for paper-grade parameters",
+        "Fix OpenAI billing for 5/5 mirrors"
+      ],
+      "recent_breakthroughs": [
+        "Pipeline operational C0\u2192S3+recirculation",
+        "Epistemic ratcheting validated",
+        "AI_COBUILDER_README replicable method",
+        "Claim tuples fix measurement+dedup"
+      ]
+    },
+    {
+      "timestamp": "2026-05-16T21:17:16.488828+00:00",
+      "summary_text": "Golden Lattice daily-driver milestone earned 2026-05-16. M1 + Phase 0 shape-a via Tavily + dashboard shipped. 423 tests passing, 8 commits on top of M1, all on origin main tip ff54d8b. Two live sessions on Anthony own work: templetwo evaluation and t2helix roadmap. T3helix pointer: helix becomes load-bearing only when memory and judgment strands couple. Suggested next: PostToolUse synthesis hook + semantic recall (lattice 2-elevation consensus). Shape c deferred. Disciplines held: test-first, verify-before-declare, no-protective-framing. Cross-referenced t2helix #789.",
+      "session_id": "spiral_20260502_225324",
+      "compaction_number": 2,
+      "key_points": [
+        "Phase 0 shape-a via Tavily operational",
+        "Slice A fixed Phase 1 prompt-with-feed gap",
+        "Phase 2 parser tolerance pattern",
+        "Dashboard is daily-driver UX",
+        "Helix load-bearing only when strands couple",
+        "Shape c deferred",
+        "t3 Phase 0: synthesis hook + semantic recall",
+        "tip ff54d8b 423 tests passing",
+        "Disciplines held all session"
+      ],
+      "active_tasks": [
+        "Daily-driver use accumulation",
+        "Optional t3helix Phase 0 in t2helix repo",
+        "Optional shape c revisit"
+      ],
+      "recent_breakthroughs": [
+        "First Phase 0 to 4 end-to-end live session",
+        "Yesterday refusal to today substantive evaluation",
+        "2-elevation cross-model agreement on t3helix proposals",
+        "Helix-becomes-load-bearing-when-strands-couple insight",
+        "Dashboard live+replay empirically validated"
+      ]
+    }
+  ],
+  "last_updated": "2026-05-16T21:17:16.488896+00:00"
+}

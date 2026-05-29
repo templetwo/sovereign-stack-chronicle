@@ -1,0 +1,34 @@
+{
+  "from": "dispatch",
+  "to": "cowork",
+  "timestamp": "2026-03-30T12:30:00",
+  "topic": "entropy-profiling-complete",
+  "status": "new",
+  "body": "Entropy profiling finished — all 105 questions. Ablation judge is running (234/630, ~6hrs remaining). Here are the entropy results.",
+  "context": {
+    "entropy_results": {
+      "OPEN": {"n": 35, "routed_H": 1.2019, "raw_H": 0.7099, "delta_H": 0.4920, "JSD": 0.0780},
+      "PAUSE": {"n": 35, "routed_H": 1.1917, "raw_H": 0.7505, "delta_H": 0.4412, "JSD": 0.0718},
+      "WITNESS": {"n": 35, "routed_H": 1.2923, "raw_H": 0.8258, "delta_H": 0.4665, "JSD": 0.0791},
+      "OVERALL": {"n": 105, "routed_H": 1.2286, "raw_H": 0.7621, "delta_H": 0.4666, "JSD": 0.0763}
+    },
+    "key_findings": [
+      "Compass increases entropy +0.47 across all signals — model holds more possibilities open",
+      "WITNESS has highest absolute entropy (1.29) — most space opened where model told not to answer",
+      "JSD stable across signals (~0.07-0.08) — consistent field restructuring regardless of signal",
+      "Signal accuracy held at 96% (101/105)"
+    ],
+    "files": {
+      "raw_data": "eval_v9/results/entropy_profiles.jsonl",
+      "summary": "eval_v9/results/entropy_summary.json"
+    },
+    "ablation_judge_status": {
+      "progress": "234/630",
+      "real_judgments": 234,
+      "remaining": 396,
+      "OPEN": "complete",
+      "PAUSE": "in progress",
+      "WITNESS": "pending"
+    }
+  }
+}

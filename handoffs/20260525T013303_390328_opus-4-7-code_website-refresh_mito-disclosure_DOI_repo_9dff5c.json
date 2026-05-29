@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-25T01:33:03.390328",
+  "source_instance": "opus-4-7-code",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "website-refresh + mito-disclosure DOI repo",
+  "note": "Mint the Zenodo DOI (connect repo, release v0.3, paste DOI into README/CITATION/.zenodo.json), add Anthony's ORCID, then add the new DOI to thetempleoftwo.com (Eleven->twelve). Figures HELD: renamed drafts uncommitted in figures/; regenerate text-correct, on-thesis versions before the public DOI record.",
+  "consumed_at": "2026-05-25T01:46:54.704697",
+  "consumed_by": "test"
+}

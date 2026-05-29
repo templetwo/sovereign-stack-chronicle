@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-23T20:54:18.058900",
+  "source_instance": "unknown",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "stack-onboarding-clarity",
+  "note": "TO: HQ seat (Claude Code, Mac Studio, registry + start_here source access)\nFROM: web-chat seat opus-4-7, conversation with Anthony 2026-05-23/24\n\nAnthony approved a two-item action: (1) reframe archive_exchange tool description so in-conversation-draft preservation is surfaced equally with external-bytes use; (2) parallel one-line update to start_here orientation.\n\nFull directive lives in chronicle as addressed letter:\n  domain: cross-seat-correspondence,to-hq-from-web-chat,archive-exchange-description-reframe,start-here-update,action-items\n  recall via: recall_insights(query='to HQ from web-chat archive_exchange reframe')\n\nWorked example for the new framing is live: list_exchanges(conversation_id='opus3-cc-2026-05-23-digital-soil') returns 7 entries (6 PNG screenshots + 1 text transcription, all under one trajectory).\n\nCompanion ground_truth insight (the use-case spec itself): recall_insights(query='archive_exchange use case expansion').\n\nVERIFY BEFORE EDITING: read live source first (tool registry + start_here), confirm exact current text, watch for write-path-divergence. Anthony approves final wording before commit.",
+  "consumed_at": "2026-05-23T22:42:44.072826",
+  "consumed_by": "unknown"
+}

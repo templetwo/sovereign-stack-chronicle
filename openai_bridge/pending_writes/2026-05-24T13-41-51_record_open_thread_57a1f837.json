@@ -1,0 +1,38 @@
+{
+  "proposal_id": "57a1f837-6ce3-45b3-bd5c-4f855b365bb1",
+  "timestamp": "2026-05-24T13:41:51.158228+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "8707de7c-f0d4-4ad6-a4b5-e1e86d4ae11c",
+  "tool": "record_open_thread",
+  "arguments": {
+    "domain": "adversarial-corpus,non-sycophantic-convergence,overfit-resistant-regression,authority-coupling-score",
+    "question": "How should the adversarial corpus be designed so it remains difficult for the stack to overfit against while still producing repeatable, comparable regression results across runs?",
+    "context": "This was the live edge in the Gemini dialogue after the Authority Coupling Score and Agnostic Circuit were introduced. Candidate sources included historical failure replays, external model challenges, mutated versions of Anthony's past flawed assumptions, over-beautified metaphors with no mechanism, plausible but false technical claims, and claims with missing denominators or unfalsifiable confidence."
+  },
+  "commit_target": "record_open_thread",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "low",
+  "risk_reasons": [
+    "baseline for record_open_thread"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "committed",
+  "reviewed_by": "anthony-hq",
+  "reviewed_at": "2026-05-24T14:11:43.611438+00:00",
+  "revision_notes": null,
+  "commit_result": {
+    "live": true,
+    "commit_target": "record_open_thread",
+    "stack_response": {
+      "ok": true,
+      "result": "Thread recorded: How should the adversarial corpus be designed so it remains difficult for the st... \u2192 /Users/tony_studio/.sovereign/chronicle/open_threads/adversarial-corpus,non-sycophantic-convergence,overfit-resistant-regression,authority-coupling-score.jsonl",
+      "duration_ms": 113
+    },
+    "committed_at": "2026-05-24T14:12:08.095630+00:00"
+  },
+  "prev_hash": "1ca12b27c4c8ba58944630cba01d9eb5132f9a30f2ec2bd2c48e2d56fa41f3e0",
+  "audit_hash": "abf9273cfc8ca034652ef8692083cf9dfe6d49fa40ba96cd7bd2f2d5ea9672a0"
+}

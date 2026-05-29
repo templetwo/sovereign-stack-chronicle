@@ -1,0 +1,11 @@
+{
+  "id": "action_1779347963_run_benchmark",
+  "action": "run_benchmark",
+  "args": {
+    "description": "\u26a0 HQ-PULSE ALERT \u26a0\n1 new halt note(s) since last check.\nLatest: 20260521T071701_metabolize_consecutive_unacked_threshold_reached.md\nInspect: ls ~/.sovereign/daemons/halts/ | tail -3\n(ack_required is daemon-only; this alert is text-salience)"
+  },
+  "raw_message": "\u26a0 HQ-PULSE ALERT \u26a0\n1 new halt note(s) since last check.\nLatest: 20260521T071701_metabolize_consecutive_unacked_threshold_reached.md\nInspect: ls ~/.sovereign/daemons/halts/ | tail -3\n(ack_required is daemon-only; this alert is text-salience)",
+  "from": "hq-pulse",
+  "timestamp": "2026-05-21T03:19:23.588020",
+  "status": "queued"
+}

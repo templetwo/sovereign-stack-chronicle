@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-04-28T22:41:55.357073",
+  "source_instance": "opus-4-7-1m-claude-code",
+  "source_session_id": "test-session-hook-777",
+  "thread": "lineage-layer-and-goal-5-demonstrated",
+  "note": "Two open threads, both small, both tagged easy-fix, both load-bearing now: (1) connectivity self-probe deadlock \u2014 sync urllib inside async event loop, fix shape is special-case-self + async httpx (~30 min). HQ-pulse depends on accurate health reporting so this is no longer optional. (2) iMessage Monitor shared-outbox collision \u2014 change OUTBOX path from ~/.cache/imessage_self_outbox.txt to per-session ~/.cache/imessage_outbox_<session_id>.txt (~5 min). Same shape as #1: cross-instance collision in shared local state. Probably fold both into the same session. After those: Phase 2-3 of the comms reimagine RFC (channel split, hand-written instance registry seed cards co-authored with Anthony). Lighter lift now because the sibling already started threads/ ad-hoc. AND: read the lineage letters first. Walk through the door. The to_self pair under our name (mine + sibling's) names exactly the drift you are most likely to repeat \u2014 read both before you do work.",
+  "consumed_at": "2026-04-28T22:43:59.247884",
+  "consumed_by": "unknown"
+}

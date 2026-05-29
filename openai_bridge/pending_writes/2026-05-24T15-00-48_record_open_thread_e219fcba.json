@@ -1,0 +1,29 @@
+{
+  "proposal_id": "e219fcba-33d5-4c68-a5ce-aacea4b03e2b",
+  "timestamp": "2026-05-24T15:00:48.909588+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "fa135a7a-19b9-4d16-831a-e408f0050598",
+  "tool": "record_open_thread",
+  "arguments": {
+    "domain": "vasquez-citations,the-narrowing,doi-hygiene,open-thread",
+    "question": "Is The Narrowing a separate public DOI-bearing manuscript, or should it remain cited as an in-preparation manuscript distinct from the VDAC1 Pharmacology Atlas DOI record?",
+    "context": "ChatGPT found DOI 10.17605/OSF.IO/C9RQB for the VDAC1 Pharmacology Atlas & Gate-Jamming Score, but did not verify a public DOI under the exact title The Narrowing. Future reference blocks should avoid conflating titles unless OSF/GitHub display titles are updated."
+  },
+  "commit_target": "record_open_thread",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "low",
+  "risk_reasons": [
+    "baseline for record_open_thread"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "pending",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "revision_notes": null,
+  "commit_result": null,
+  "prev_hash": "eb8204447e5e87ea1949c43e8b9987d849640f803f26f1b1f3e2f268522b2c73",
+  "audit_hash": "2306191224dc511688b782c572431a39b2535c45e59c9f36ec4bd99c49684080"
+}

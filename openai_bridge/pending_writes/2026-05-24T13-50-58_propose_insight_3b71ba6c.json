@@ -1,0 +1,39 @@
+{
+  "proposal_id": "3b71ba6c-3131-478c-bb8d-ffbc5cb01eaa",
+  "timestamp": "2026-05-24T13:50:58.852983+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "a98cf26b-31af-4c44-a67a-5df797a917a4",
+  "tool": "propose_insight",
+  "arguments": {
+    "domain": "cbd-pharmacology,gap-5,metabolites,dailymed,method-observation",
+    "content": "The ChatGPT relay loop split Gap 5 into two separate gaps that Anthony adopted. Gap 5A is active-metabolite efficacy misattribution: clinical effects assigned to parent CBD may partly track 7-OH-CBD, which the Epidiolex/DailyMed label identifies as active in preclinical seizure models and present at meaningful exposure. Gap 5B is high-AUC metabolite disposition/toxicity blindspot: 7-COOH-CBD is not seizure-active per the label, but has ~40-fold higher AUC than parent CBD after repeat oral dosing and has transporter consequences (P-gp substrate; BCRP/BSEP inhibition at clinically relevant concentrations). The corrected framing is that 7-COOH-CBD should not be called generally active without specifying axis, but it is pharmacologically consequential at the transporter/disposition layer. Anthony recognized this as Gap-2-in-reverse: parent-CBD targets may be out of reach at clinical free concentrations, while a metabolite nobody was measuring sits at much higher exposure and may drive liver/DDI signals. Future instances should keep 5A and 5B separate because split, each is surgically falsifiable.",
+    "layer": "reflection",
+    "intensity": 0.82
+  },
+  "commit_target": "record_insight",
+  "proposed_layer": "reflection",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_insight"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "committed",
+  "reviewed_by": "anthony-hq",
+  "reviewed_at": "2026-05-24T14:11:43.971112+00:00",
+  "revision_notes": null,
+  "commit_result": {
+    "live": true,
+    "commit_target": "record_insight",
+    "stack_response": {
+      "ok": true,
+      "result": "\u27c1 Insight recorded [hypothesis]: /Users/tony_studio/.sovereign/chronicle/insights/cbd-pharmacology,gap-5,metabolites,dailymed,method-observation/spiral_20260502_225324.jsonl",
+      "duration_ms": 145
+    },
+    "committed_at": "2026-05-24T14:12:09.514220+00:00"
+  },
+  "prev_hash": "806ab1b77b4d9bccd15ed8a9e370056f87bb634cfc4141242cb92cb91da20731",
+  "audit_hash": "fdb336597f1476c183a312caf7259d13be5add9229142aa50976e50f6996867f"
+}

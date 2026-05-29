@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-26T00:00:52.197626",
+  "source_instance": "opus-4-7-1m-claude-code",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "jetson-local-rag",
+  "note": "PHASE 1 COMPLETE \u2014 Jetson rsync mirror is LIVE. For the Phase 2 instance (local RAG over the mirror):\n\nSTARTING STATE (verified 2026-05-25):\n- Mirror at /home/tony/.sovereign-mirror on Jetson (tony@tony-jetson.local / 192.168.1.205), 1101 files/492 dirs, identical to HQ .sovereign.\n- Auto-refreshes every 6h: cron 0 */6 -> ~/bin/sync-chronicle.sh (Jetson pulls from mac-studio.local). Logs in ~/.sovereign-mirror-logs/ (sync.log + cron.log), OUTSIDE the mirror by design.\n- HQ<->Jetson SSH passwordless both directions.\n\nPHASE 2 SCOPE: EmbeddingGemma-300M embeddings + Gemma 4 E4B via Ollama + Chroma vector store + CLI retrieval first. Jetson is Orin Nano Super 8GB, mind the memory budget. 781G free on /.\n\nINDEXING: index experiential dirs (chronicle comms handoffs decisions insights reflections consciousness), NOT operational logs (sse.log, dispatcher.*, bridge-api.*, tunnel.*, monitor.log ~25M churn). Adding rsync --exclude for those is acceptable in Phase 2 (breaks exact ls-match, fine then).\n\nSee chronicle insight #1272 and network facts #1259.",
+  "consumed_at": "2026-05-26T00:11:15.714187",
+  "consumed_by": "unknown"
+}

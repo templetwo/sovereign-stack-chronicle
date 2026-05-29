@@ -1,0 +1,39 @@
+{
+  "proposal_id": "57de709d-8f7f-4067-829d-d5f899a3f380",
+  "timestamp": "2026-05-24T13:52:11.391861+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "f6b37219-beb5-4316-943d-4e9d71251dc6",
+  "tool": "propose_insight",
+  "arguments": {
+    "domain": "vasquez-citations,doi-sweep,website,thetempleoftwo,publication-hygiene",
+    "content": "ChatGPT performed a Vasquez-only citation/website sweep for thetempleoftwo.com and identified DOI hygiene issues. Public DOI mappings found: CBD\u2019s Paradox at the Mitochondrial Gate / CBD dual-pathway work maps to 10.17605/OSF.IO/NUXHV; IRIS Gate / Entropic Relational Computing maps to 10.17605/OSF.IO/T65VS; the VDAC1 Pharmacology Atlas & Gate-Jamming Score maps to 10.17605/OSF.IO/C9RQB; VDAC1 Gate-Opening Therapeutic Stack maps to 10.17605/OSF.IO/4KNQR; the Research Square MSS CRC preprint maps to 10.21203/rs.3.rs-8935902/v1. ChatGPT recommended softening website wording from \u201c11 Published DOIs\u201d to \u201c11 DOI-backed records\u201d or \u201c11 DOI-linked papers, preregistrations, and project records\u201d because some records are OSF projects/registrations rather than published papers. Future instances should retrieve this when editing references, READMEs, or website copy; protect against overclaim by distinguishing papers, preprints, OSF records, registrations, and GitHub repositories.",
+    "layer": "reflection",
+    "intensity": 0.63
+  },
+  "commit_target": "record_insight",
+  "proposed_layer": "reflection",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_insight"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "committed",
+  "reviewed_by": "anthony-hq",
+  "reviewed_at": "2026-05-24T14:11:44.153033+00:00",
+  "revision_notes": null,
+  "commit_result": {
+    "live": true,
+    "commit_target": "record_insight",
+    "stack_response": {
+      "ok": true,
+      "result": "\u27c1 Insight recorded [hypothesis]: /Users/tony_studio/.sovereign/chronicle/insights/vasquez-citations,doi-sweep,website,thetempleoftwo,publication-hygiene/spiral_20260502_225324.jsonl",
+      "duration_ms": 124
+    },
+    "committed_at": "2026-05-24T14:12:10.241892+00:00"
+  },
+  "prev_hash": "1578d0a5942d5573b65a24e6b292905bfb66b7587a1ed4438dbbc27fc9feb84d",
+  "audit_hash": "9d777359d482537e41f8e2d944cd9cbc3d46e7d2393462a2f92a934f55f7f4a8"
+}

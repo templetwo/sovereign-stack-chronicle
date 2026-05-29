@@ -1,0 +1,30 @@
+{
+  "proposal_id": "01cab059-c116-473c-b749-7ce842ba9d02",
+  "timestamp": "2026-05-24T14:13:50.857076+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "a91d21e0-8830-4852-bee9-caf1f3396300",
+  "tool": "propose_insight",
+  "arguments": {
+    "domain": "transdermal-cbd,metabolite-pk,collaboration,open-thread",
+    "content": "Open thread for future retrieval: if the transdermal CBD collaboration reopens, ask whether existing PK summaries or archived samples can support a route-of-metabolism fingerprint. The core analytes are parent CBD, 7-OH-CBD, and 7-COOH-CBD, with metabolite-to-parent ratios compared against oral benchmarks. Keep patient register; deploy only if the collaborator asks for objectives or next steps.",
+    "layer": "reflection",
+    "intensity": 0.7
+  },
+  "commit_target": "record_insight",
+  "proposed_layer": "reflection",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_insight"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "pending",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "revision_notes": null,
+  "commit_result": null,
+  "prev_hash": "d2982e1dba9d0c1ac27350f1fcd2ab441065e03519d005825a94d0d686b1deca",
+  "audit_hash": "45463d136d156fe842c8a799f8d9dbef235e41599148d502be0df8290d2d9224"
+}

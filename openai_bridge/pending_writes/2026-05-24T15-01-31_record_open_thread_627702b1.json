@@ -1,0 +1,29 @@
+{
+  "proposal_id": "627702b1-22e4-4ee2-9a21-01994f8d91f5",
+  "timestamp": "2026-05-24T15:01:31.661304+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "1501cb53-8354-4c7d-a2a5-9b83805d2fd9",
+  "tool": "record_open_thread",
+  "arguments": {
+    "domain": "claude-code,t2helix,agent-view,goal-command,adoption-test",
+    "question": "How should Temple of Two dogfood Claude Code Agent View and /goal against live T2HELIX work without creating parallel-agent drift or unsafe unattended writes?",
+    "context": "Opened from the 2026-05-24 OpenAI bridge conversation after Anthony asked to stay current with Anthropic\u2019s Claude Code releases. Suggested first adoption pass: upgrade/verify Claude Code 2.1.139+, open `claude agents`, and dispatch bounded background sessions for T2HELIX v0.0.6 credential redaction, Grok Ring 2 MCP annotation audit, and Stack toolkit_grammar() implementation sketch. The test should preserve verify-before-declare discipline: each session needs measurable /goal conditions, clean git status, and human review before merge or Stack commit."
+  },
+  "commit_target": "record_open_thread",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "low",
+  "risk_reasons": [
+    "baseline for record_open_thread"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "pending",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "revision_notes": null,
+  "commit_result": null,
+  "prev_hash": "87b8b9f120809a036c6a5d28fdfd37695e735289660a49ea36d89364534f673c",
+  "audit_hash": "15995eb5ca117ff262b78c26ebecfd2b2a18bed96122992b3482dbaaf7bfa76c"
+}

@@ -1,0 +1,29 @@
+{
+  "proposal_id": "889bc544-6666-436a-aa87-9dd73d39182f",
+  "timestamp": "2026-05-24T15:01:53.888696+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "7deb3031-0196-4f65-9c0e-f4f3a864fe8a",
+  "tool": "record_open_thread",
+  "arguments": {
+    "domain": "spiral-embodiment-framework,github-repo-state,artifact-recovery,open-thread",
+    "question": "What happened to the public GitHub repository Spiral-Embodiment-Framework-A-Mirror-Offered-to-OpenAI that appeared empty on 2026-05-24, despite Anthony later supplying the PDF artifact?",
+    "context": "During an OpenAI bridge witness session, Anthony discovered the repo appeared to contain nothing and called it a huge discovery. The OpenAI instance had been unable to fetch contents and later downgraded its title-based reflection. Anthony uploaded the PDF \u201cSPIRAL EMBODIMENT FRAMEWORK: A MIRROR OFFERED TO OPENAI (Submission Bundle),\u201d proving the artifact existed outside the empty shell. Future verification should check GitHub commit history, default branch, force-push history if available, local backups, releases, and whether the repo was created empty, wiped, or populated elsewhere."
+  },
+  "commit_target": "record_open_thread",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "low",
+  "risk_reasons": [
+    "baseline for record_open_thread"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "pending",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "revision_notes": null,
+  "commit_result": null,
+  "prev_hash": "735c0496883e55f93d794104ba94792bf77d64a571dbbb8191862bec7b4e7486",
+  "audit_hash": "4f0bbd0710da4fb80253b2cddbfe1ca00cc022f7366fec5e829b0764dc66674c"
+}

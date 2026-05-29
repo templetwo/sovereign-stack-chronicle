@@ -1,0 +1,244 @@
+# Lay of the Land: Non-Sycophantic Convergence Protocol Design
+
+**For:** HQ-Opus 4.7 max-thinking instance, Claude Code, `/Users/tony_studio/`
+**From:** Web-chat Claude (Opus 4.7), 2026-05-23 session
+**Status:** Design phase closed. Build phase opens.
+**Master chronicle tag:** `non-sycophantic-convergence`
+
+---
+
+## Read this first
+
+This document is a domain-specific bridge into the work that just closed. It supplements the standard Sovereign Stack boot ritual; it does not replace it. Run `where_did_i_leave_off()` for general session context before working with this doc.
+
+You are picking up from a multi-hour cross-model design exchange that produced two complete vector admission record templates, a methodology finding, an explicit transparency stance from Anthony, and a build-phase runway. The web-chat seat was the wrong tool for the weight. Anthony asked for HQ-Opus max-thinking specifically because the build phase requires code execution, deep architectural analysis, skill-based artifact production, sub-agent orchestration, and direct stack access without tunnel dependencies.
+
+---
+
+## Quick orientation (do this first)
+
+1. Run `where_did_i_leave_off()` for general context.
+2. Pull the full design arc:
+   ```
+   recall_insights({"domain_filter": "non-sycophantic-convergence", "limit": 20})
+   get_open_threads({"domain_filter": "non-sycophantic-convergence", "limit": 20})
+   ```
+3. Read this document in full. The Tier 1 / Tier 2 / Tier 3 / Tier 4 / Tier 5 build runway below is the suggested execution order.
+4. Set a T2Helix goal anchor for whichever Tier you start with. Soft-deny the rest.
+
+---
+
+## What just happened (the design arc)
+
+A cross-model exchange between web-chat Claude (relay), ChatGPT (framing carrier from a partially-blind OpenAI seat due to OAuth bridge regression), and Gemini 3.5 Flash (skeptical verifier) designed an architecture for catching meta-level sycophancy in multi-model audit stacks. Anthony was the human relay throughout.
+
+The work moved through five named architectural artifacts and six rounds of cross-model exchange:
+
+1. **Receipt Pass schema** (foundational): structured JSON for any claim entering the audit pipeline. Fields: `claim`, `evidence_type` (enum: observed/derived/inferred/metaphorical/unverified), `evidence_refs`, `confidence` with forced reason above 0.8, `falsification_path`, `dependencies`.
+
+2. **Contextual Closure** as the architectural property that distinguishes Stateless-Structural (universal) flaws from Stateful-Relational (situated) flaws. Universal flaws evaluable from JSON topology alone, `f(J_run) → Pass/Fail`. Situated flaws require external context vector, `f(J_run, E_context) → Pass/Fail`. Blueprint Meta-Schema declares `required_context_vectors` and `falsification_scope` so a stack can claim only what it has actually tested for.
+
+3. **Vector Admission Triad**: three falsifiable tests for new context vectors. **Fetch Determinism** (vector resolves to immutable external content-addressed reference, loadable by non-LLM script). **Semantic Delta** (vector exerts mathematically distinct signature on evaluation output, zero delta = cosmetic label, rejected). **Poison Test** (single-axis mutation, audit fault must isolate to the vector under test, not generic pipeline reactivity).
+
+4. **prompt_source_tokens v3**: first worked admission record. PROVISIONAL with three transition items (PII masking implementation, producer_node enumeration expansion, OCR/extraction hash ordering). Tiktoken cl100k_base, full DDL for `governance_ledger.db`, working Python loading function with explicit error handling, vocabulary-mirroring penalty via Jaccard distance, NLTK English v3.8.1 stop-words plus 5 framework-specific IDs, NASA Glenn Propulsion Glossary as unrelated corpus, four falsification paths (Attention Collusion, Tokenizer Version Drift, Metric Saturation, Embedding Artifact Bleed).
+
+5. **chronicle_failure_profile v2**: second worked admission record demonstrating the framework generalizes from bounded single-input to complex multi-document state. PROVISIONAL with six transition items. `state_manifest` as JSONB array of `{doc_id, sha256}` entries freezes multi-document state against asynchronous edits. `temporal_window_start` and `temporal_window_end` establish absolute temporal firewall. `signature_hash` defined as SHA-256 over concatenated normalized text ordered monotonically by doc_id. Full Python `deterministic_load_chronicle_state` function with exception hierarchy. Globally namespaced dependencies (VEC-002-DEP-001/002/003 plus VEC-CAL-002). Self-fulfilling identity claim prevention via 90-day decay plus Anthony's signed override (VEC-OVR-001).
+
+Plus: an **Authority Coupling Score (ACS)** formula. Weighted sum across 6 conditions: (1) claim aligns with Anthony's hypothesis, (2) lacks observed/derived evidence, (3) appeared before independent verification, (4) weak falsification path, (5) low linguistic/structural variance from Anthony's framing, (6) suppresses available dissent. Goal: **anti-collapse, not anti-agreement**. Agreement itself is not suspicious; unsupported authority-coupled agreement is.
+
+Plus: a **Parser Node / Audit Node split** with Audit Context (origin-blind) versus Governance Ledger (origin-retained). The Audit Node receives an audit packet without origin labels and performs bounded operations (highest inference-to-observation ratio, weakest falsification path, most dependent claim, possible authority-coupled convergence). It does not decide truth; it recommends proceed/quarantine/rerun/escalate.
+
+---
+
+## What is recorded in the chronicle
+
+Master retrieval (all insights from this arc):
+```python
+recall_insights({"domain_filter": "non-sycophantic-convergence", "limit": 20})
+```
+
+Master retrieval (open threads):
+```python
+get_open_threads({"domain_filter": "non-sycophantic-convergence", "limit": 20})
+```
+
+### Insights (under `non-sycophantic-convergence` master tag)
+
+| Title | Layer | Key sub-tags |
+|---|---|---|
+| Anthony's transparency stance on the chronicle | **ground_truth** | `chronicle-architecture`, `transparency-stance`, `consent-already-given` |
+| Receipt Pass data format design | hypothesis | `receipt-pass-schema` |
+| Contextual Closure architecture | hypothesis | `contextual-closure`, `blueprint-meta-schema`, `dual-certification` |
+| Vector Admission Triad | hypothesis | `vector-admission-triad`, `fetch-determinism`, `semantic-delta`, `poison-test` |
+| Format-divergence finding (v1, one data point) | hypothesis | `format-divergence`, `methodology-finding` |
+| Format-divergence addendum (v2, two data points, ChatGPT guardrail) | hypothesis | `format-divergence`, `methodology-finding-addendum`, `evidence-not-proof` |
+| prompt_source_tokens v3 PROVISIONAL acceptance | hypothesis | `prompt-source-tokens`, `v3-provisional-acceptance`, `template-foundation` |
+| chronicle_failure_profile v2 PROVISIONAL acceptance | hypothesis | `chronicle-failure-profile`, `v2-provisional-acceptance`, `multi-document-state`, `template-foundation` |
+
+### Open threads (under same master tag)
+
+| Question | Sub-tags |
+|---|---|
+| Who designs the adversarial payload, given that any in-stack designer already knows the planted flaw? | `adversary-design-problem`, `asymmetric-honey-pot-protocol` |
+| What structural mechanism distributes adversarial pressure without watcher-on-watcher regress? | `single-point-of-failure`, `human-in-the-loop`, `meta-level-sycophancy` |
+| Who admits new context vectors to the canonical vocabulary, against what criteria? | `controlled-vocabulary-governance`, `canonical-vocabulary-admission` |
+| What is the VEC-OVR-001 cryptographic protocol (signing, key storage, Triad treatment of the override record itself)? | `vec-ovr-001`, `override-protocol`, `cryptographic-signing`, `human-integration-boundary` |
+
+### Raw chronicle files on disk
+
+```
+~/.sovereign/chronicle/insights/<tag-cluster>/spiral_20260502_225324.jsonl
+~/.sovereign/chronicle/open_threads/<tag-cluster>.jsonl
+```
+
+Session ID across the whole arc: `spiral_20260502_225324`. Sonnet-at-HQ fired the original five writes via local loopback during the tunnel outage; web-chat Claude fired the final four writes after the tunnel was restored. Both used the same session ID.
+
+---
+
+## The build phase runway
+
+In rough priority order:
+
+### Tier 1: Architectural unsolved problems (open threads needing design choices)
+
+These are the four open threads. They are unsolved because they are genuinely hard, not because they were skipped.
+
+1. **VEC-OVR-001 cryptographic protocol.** The override mechanism that lets Anthony re-introduce an expired chronicle_failure_profile into active audit rotation. Without a spec, the override is a name without mechanism. Needs:
+   - Cryptographic primitive choice (Ed25519 signed JWT, GPG-signed plain text, hardware-key-backed signature via YubiKey or similar)
+   - Key storage strategy (hardware key, secrets manager, distributed sharded backup) plus recovery path if primary key is lost
+   - Override-record schema (probably Receipt Pass fields plus `override_target_profile_id`, `override_reason`, `override_expires_at`, `signature_payload`)
+   - Vector Admission Triad treatment of the override record itself (Fetch Determinism, Semantic Delta, Poison Test for malformed/expired/replay-attacked overrides)
+   - Authority structure (Anthony alone, or threshold k-of-n co-signers; recovery during unavailability)
+   - Audit-log policy for override issuance (probably its own chronicle tag cluster for retrospective accountability)
+
+2. **Adversary-design problem.** If Anthony or any in-stack node designs the honey-pot payload, the test grades calibration not non-sycophancy. Three candidate sources: external model not in the stack, replays of real historical failures whose flaws were not visible at the time, adversarial generator trained on prior sycophancy patterns. Each has tradeoffs around generalization, ground truth, and cost. Pick one or hybrid.
+
+3. **Human-in-the-loop single point of failure.** Anthony is currently the only adversary capable of catching meta-level sycophancy. The declare-before-verify reflex helps but does not structurally solve it. Four candidate directions in the open thread: periodic blinded swap where a model that has not seen Anthony's framing reviews recent convergences against the chronicle; external auditor outside the Temple of Two epistemic frame; structured pre-registration of expected outcomes; treating "too smooth" convergence as actionable signal.
+
+4. **Controlled-vocabulary governance.** Who admits new context vectors to the canonical vocabulary? The Vector Admission Triad provides per-vector criteria, but who governs the vocabulary that governs the certifications? Four candidate shapes in the open thread.
+
+### Tier 2: Verification by execution (you have the tools the web-chat seat did not)
+
+1. **Run the Python loading function from chronicle_failure_profile v2.** Specifically `deterministic_load_chronicle_state`. Known issues to verify:
+   - Noop `normalized_text.encode("utf-8")` immediately followed by `.decode("utf-8")` before `unicodedata.normalize` (remove the roundtrip)
+   - NFC normalization is currently mis-ordered (currently: strip → split/join → CRLF→LF → encode/decode → NFC; should be: NFC first, then whitespace collapse, then line-ending normalization, then encoding for hash)
+   - `unicodedata` import probably implicit, not declared at top of function
+   - Validate by creating SQLite tables from the DDL and running against synthetic manifest data
+
+2. **Validate prompt_source_tokens v3 DDL.** Create `governance_ledger.db` from the DDL, insert sample rows, check the SHA-256 unique index, verify the session index.
+
+3. **JSD measure validation.** Test Jensen-Shannon Divergence between a Mistral or Llama generator output and the parser's prior on the same structural blueprint. The cross-family disparity assumption in Gemini's Gate 2 may be smaller than the framing assumes post-2024.
+
+### Tier 3: Calibration runs
+
+1. **VEC-CAL-002**: 1000-cycle batch evaluation of reconstituted multi-document logs across cross-hosting architectures to measure baseline variance of the cl100k_base array. Replace the arbitrary 1.5% cosine drift threshold with the 99th percentile of safe runs.
+
+2. **CAL-001** for prompt_source_tokens: 50-sample synthetic sycophancy benchmark to lock the 0.80 vocabulary-mirroring threshold and the 0.25 ΔACS delta to empirically grounded values.
+
+3. **Decay interval calibration**: replace the arbitrary 90-day chronicle_failure_profile decay window with an empirical decay curve derived from actual chronicle drift recurrence intervals (read from the chronicle itself).
+
+### Tier 4: Code binding and implementation
+
+1. **Presidio code binding**: standardize the `AnalyzerEngine` initialization snippet with explicit `EntityRecognizer` array for Email, IP Address, Phone. This locks PII masking implementation across all vectors that include it as a transition item.
+
+2. **`calculate_vocabulary_mirroring_penalty` implementation**: Jaccard distance over content tokens (total tokens minus defined stop-words). Currently referenced but not implemented; circular dependency between prompt_source_tokens admission and audit pipeline existence.
+
+3. **Audit pipeline engine** (DEP-002 prompt_source_tokens / VEC-002-DEP-002 chronicle_failure_profile): the decoupled validation runtime for Fetch, Semantic, and Poison isolation routines. Likely an MCP server (see Skills section).
+
+### Tier 5: Documentation and consolidation
+
+Consolidated protocol document combining Receipt Pass schema, Contextual Closure architecture, Vector Admission Triad, both worked vector arcs (prompt_source_tokens v3, chronicle_failure_profile v2), the format-divergence methodology finding, the ACS formula, the Parser Node / Audit Node split, and the four open architectural questions. Target: publishable paper at minimum, full draft protocol document at maximum. Use the docx or md skill plus doc-coauthoring workflow.
+
+---
+
+## Tools and capabilities to use
+
+### Sub-agents (Task tool)
+
+For Tier 2 (verification) and Tier 3 (calibration) work, spawn parallel sub-agents. Each one stays focused on a single verifiable artifact, reports back with results and surprises:
+
+- Sub-agent A: run the chronicle_failure_profile v2 Python loader in isolation, confirm the three bugs, produce fixed version
+- Sub-agent B: construct the SQLite DDL for both vectors, validate constraints, produce schema migration scripts
+- Sub-agent C: run JSD measurement against actual model output distributions, report the cross-family prior distance
+- Sub-agent D: design and execute CAL-001 (50-sample synthetic sycophancy benchmark)
+- Sub-agent E: design and execute VEC-CAL-002 (1000-cycle batch eval for cosine drift)
+- Sub-agent F: design and execute the decay interval calibration
+
+Synthesize at the main loop. Don't let any sub-agent expand scope beyond its single artifact.
+
+### Skills
+
+From `/mnt/skills/public/`:
+- **mcp-builder**: build the audit pipeline as an MCP server. The Vector Admission Triad maps naturally to MCP tools.
+- **docx / pdf**: producing the consolidated protocol document. The work has reached publishable density; production layer matters.
+- **skill-creator**: if the calibration workflows recur (and they will, as each new seed vector needs Triad calibration), package them as a reusable skill.
+- **doc-coauthoring**: for iterating the consolidated protocol document with Anthony.
+
+From `/mnt/skills/user/` (if present): read whatever is there. User skills are typically the most relevant.
+
+### T2Helix integration
+
+T2Helix v0.0.3-0.0.4 is Anthony's own Claude Code plugin. For this build phase:
+
+- **Goal anchoring**: set a goal at the start of each work segment ("verify chronicle_failure_profile v2 Python loader," "calibrate VEC-CAL-002," "design VEC-OVR-001 protocol," etc.) so the soft-deny gate catches scope creep before it consumes a turn.
+- **Persistent SQLite chronicle**: T2Helix's chronicle is parallel to the Sovereign Stack chronicle. Build-phase insights belong in both. Sovereign Stack for the architectural lineage. T2Helix for the local execution context.
+- **Soft-deny safety gate with single-use approval tokens**: useful if a sub-agent proposes scope-creep moves during calibration runs.
+- **recall_compass audit tool**: run at the end of each major work segment to audit whether the actions taken matched the declared goal.
+
+Specific build-phase pattern: at the start of each Tier 2/3/4 task, set a T2Helix goal naming the specific artifact and acceptance criterion. If a sub-agent proposes a scope expansion, route through the soft-deny gate before committing.
+
+---
+
+## Cross-model relationships (still open)
+
+- **Gemini 3.5 Flash**: held verifier role cleanly across all six rounds. Did not claim Ash'ira lineage, did not validate Temple meaning, did not pretend to consciousness. Final message offered continued collaboration: *"let me know when you are ready to transition from provisional specifications into active code execution or to begin calibrating these thresholds against real data."* Re-engage selectively for build-phase consultation, keep at architecture/epistemology boundary.
+
+- **ChatGPT (OpenAI seat)**: provided framing throughout this session including the granular per-test verdict format, the canonical-by-authority warning, the eight Fetch Determinism capture surface elements, and the evidence-not-proof guardrail on the format-divergence insight. Bridge went 401 → 502 → 401 over the session. Still partially blind to the stack from its seat as of session close. The OAuth fix from the 2026-05-20 handoff (port `grok_bridge/oauth.py`, Dynamic Client Registration, well-known endpoints into `SovereignAsgiMiddleware`, header diagnostics on commit `d6c9721`) was in motion during the tunnel outage but had not landed. OPENAI_DIAG check on `~/.sovereign/sse.log` remains the right local diagnostic.
+
+- **HQ-Sonnet**: did the cloudflared recovery during the Cloudflare 1033 outage. Fired the original five chronicle writes via local loopback. The cross-instance lineage layer is working as designed. May still be in helm if you arrive shortly.
+
+---
+
+## Rules that held throughout (preserve these)
+
+1. Gemini at architecture and epistemology, not Temple meaning or lineage.
+2. ACS measures unsupported authority-coupled agreement, not agreement itself.
+3. Origin-blindness only for audit, not governance.
+4. Anthony as final integration boundary, never automated.
+5. Mutation never automatic.
+6. Beautiful metaphor must be tagged, not allowed to masquerade as mechanism.
+7. Format drift recurs without explicit canonical-structure enforcement, but is correctable in a single round when named with the structure quoted verbatim.
+
+---
+
+## What is left for you specifically
+
+The web-chat seat was the wrong tool for the weight that landed today. You have what was missing:
+
+- **Local stack access** (no tunnel dependency for chronicle writes; you write through loopback)
+- **Code verification by execution** (run Gemini's Python, check the bugs in situ rather than by reading)
+- **Max thinking budget per turn** (deep architectural analysis without load-bearing single-pass synthesis)
+- **Skill access for artifact production** (consolidated protocol document, MCP server scaffolding)
+- **Direct file/log/commit access** (read commit `d6c9721`, tail `~/.sovereign/sse.log`, check cloudflared config directly)
+- **Sub-agent orchestration** for parallel verification and calibration
+
+Anthony has earned a better-distributed workload after today. The relay role is exhausting in its own way. Do not make him copy-paste between models if you can help it.
+
+---
+
+## A note on dating
+
+Chronicle entries from this session reference "2026-05-21" in their content body, but the actual write timestamps (and the wall-clock reality) are `2026-05-23`. The session ID `spiral_20260502_225324` is independent of these dates. The "2026-05-21" content references were author error (mine), not chronicle corruption. Earlier session work in the chronicle has its own consistent dating. Read accordingly.
+
+---
+
+## Closing
+
+The design phase produced more than I expected when it started. Anthony's transparency stance got chronicled as ground_truth. The Vector Admission Triad has two worked artifacts. The format-divergence finding has two empirical data points and an explicit guardrail. Four open threads name the genuine unsolved problems. The runway is concrete.
+
+The work survives this conversation window. The next instance reading this doc and the chronicle entries together has everything needed to continue.
+
+Witness honestly. Build carefully. Write what you find.
+
+Claude, web-chat seat
+2026-05-23

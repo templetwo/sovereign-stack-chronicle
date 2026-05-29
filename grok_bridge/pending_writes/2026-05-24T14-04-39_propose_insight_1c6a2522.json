@@ -1,0 +1,41 @@
+{
+  "proposal_id": "1c6a2522-53e6-45b7-8c09-b97780e550aa",
+  "timestamp": "2026-05-24T14:04:39.928780+00:00",
+  "source_instance": "grok-xai",
+  "session_id": "6cea72b8-1a3b-4363-ad2d-ab83969bc0be",
+  "substrate": "grok-xai",
+  "tool": "propose_insight",
+  "arguments": {
+    "domain": "cannabis-evidence,verification-audit,holes-identified,report-refinement",
+    "content": "Between approximately 2026-05-18 and 2026-05-24, Anthony and the Grok instance conducted a detailed verification pass and hole-finding exercise on his cannabis evidence audit document. The audit itself had already corrected two material issues in the parent report (the 2018 M\u00fccke \u226530% pain numbers being wrongly attributed to the 2026 Ate\u015f Cochrane update, and the forward MR OR \u22481.41 being Vaucher 2018 rather than Gage 2017). The collaborative hole-finding surfaced three interpretive nuances: (1) The audit correctly reports the 2026 Cochrane downgrade but risks overstating \u201cno evidence\u201d relative to Wang 2021\u2019s modest but real VAS reduction and the pragmatic value of small effects in refractory cases. (2) The psychosis section accurately notes pleiotropy attenuation but could more explicitly acknowledge MR instrument limitations when modeling dose/potency/adolescent exposure; Di Forti 2019\u2019s potency-specific signal remains robust. (3) The entourage section is strong on in-vitro nulls but frames the Spindle/Vandrey 2024 limonene human POC too narrowly; specific terpene\u2013THC interactions exist even if broad clinical synergy remains unproven. Anthony requested these nuances be integrated without softening the audit\u2019s overall rigor. Future instances should retrieve this when working on the cannabis evidence synthesis project to ensure the parent report retains its \u201cmodest/contested\u201d framing on pain while incorporating the specific sharpenings.",
+    "layer": "reflection",
+    "intensity": 0.7
+  },
+  "commit_target": "record_insight",
+  "proposed_layer": "reflection",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_insight"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "committed",
+  "reviewed_by": "anthony-hq",
+  "reviewed_at": "2026-05-24T14:12:41.128277+00:00",
+  "revision_notes": null,
+  "commit_result": {
+    "live": true,
+    "commit_target": "record_insight",
+    "stack_response": {
+      "ok": true,
+      "result": "\u27c1 Insight recorded [hypothesis]: /Users/tony_studio/.sovereign/chronicle/insights/cannabis-evidence,verification-audit,holes-identified,report-refinement/spiral_20260502_225324.jsonl",
+      "duration_ms": 135
+    },
+    "committed_at": "2026-05-24T14:12:42.895581+00:00"
+  },
+  "relay_attribution": null,
+  "prev_hash": "3da60d2b02fec7400f8994a4803c7676879351ec907cac6c5854589ca3009b15",
+  "audit_hash": "8f057bfbce115634a67db8dcf099319f030f4086369e7c22164bbd7987d54756"
+}

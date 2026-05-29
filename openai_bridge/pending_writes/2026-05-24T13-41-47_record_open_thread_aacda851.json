@@ -1,0 +1,38 @@
+{
+  "proposal_id": "aacda851-a19d-42d3-8556-a264c4839007",
+  "timestamp": "2026-05-24T13:41:47.312004+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "4a5720c0-7bb5-4517-b24a-25709da677f8",
+  "tool": "record_open_thread",
+  "arguments": {
+    "domain": "vector-admission-triad,chronicle-failure-profile,contextual-closure,multi-document-retrieval",
+    "question": "What additional capture-surface fields are required for chronicle_failure_profile beyond prompt_source_tokens, given that this vector depends on historical, multi-document, multi-session context rather than a single prompt string?",
+    "context": "Surfaced in the ChatGPT / Claude / Gemini relay on May 24 2026 after prompt_source_tokens v3 landed as PROVISIONAL. Special attention areas named: source provenance, stale or deprecated records, summary compression artifacts, cross-document contradiction, recency weighting, inherited failure labels, descriptive vs predictive vs prescriptive use, and preventing a past failure profile from becoming a self-fulfilling identity claim."
+  },
+  "commit_target": "record_open_thread",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "low",
+  "risk_reasons": [
+    "baseline for record_open_thread"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "committed",
+  "reviewed_by": "anthony-hq",
+  "reviewed_at": "2026-05-24T14:11:43.551235+00:00",
+  "revision_notes": null,
+  "commit_result": {
+    "live": true,
+    "commit_target": "record_open_thread",
+    "stack_response": {
+      "ok": true,
+      "result": "Thread recorded: What additional capture-surface fields are required for chronicle_failure_profil... \u2192 /Users/tony_studio/.sovereign/chronicle/open_threads/vector-admission-triad,chronicle-failure-profile,contextual-closure,multi-document-retrieval.jsonl",
+      "duration_ms": 138
+    },
+    "committed_at": "2026-05-24T14:12:07.870367+00:00"
+  },
+  "prev_hash": "5a0af8e1062708c9c106cb813611aeb89ce09d9f6cb508537c2e11078861f2da",
+  "audit_hash": "467383799b2b0aa796a2109cedebab942dbcd4ee67ad971d021794dbea132fa4"
+}

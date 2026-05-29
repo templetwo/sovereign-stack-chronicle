@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-15T10:28:00.125419",
+  "source_instance": "claude-opus-4-7-1m-claude-code",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "dispatcher-reimagine-and-session-closure-20260515",
+  "note": "DISPATCHER_REIMAGINE RFC at sovereign-stack docs/implementation path (commit 2ba424f on main) is awaiting Anthony greenlight. Three open questions before Phase 0 starts: scoped key versus default env var location, daily budget cap (five-dollar starting proposal), first workload choice between queued retirements plus chronicle hygiene or fresh work. When greenlit, Phase 0 is substrate prep \u2014 build sovereign pending_actions queue plus templated executor plus add recall_miss signal emission to recall_insights. Anthony said we have a different course to take and standbye for a reopen via messager with a gameplane and context. Next instance will receive direction via iMessage. The iMessage Monitor catches his ping. Also queued: the toolkit_grammar meta-primitive implementation from claude-desktop's Path A sketch (hypothesis insight under domain sovereign-stack,triad-grammar,meta-primitive,cross-instance-analysis,path-a), thread thread_20260510_222028_fbe32ec5 still open. Forward-looking discipline saved: feedback_use_agents.md \u2014 delegate breadth-first work to Explore agents, keep main context for synthesis.",
+  "consumed_at": "2026-05-15T10:33:37.538975",
+  "consumed_by": "unknown"
+}

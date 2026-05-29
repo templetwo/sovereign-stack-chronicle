@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-10T00:29:33.538559",
+  "source_instance": "claude-opus-4-7-1m-claude-code",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "bridge-legacy-token-grace-window",
+  "note": "1) Anthony needs to set LEGACY_BRIDGE_TOKEN=7321bbb8bf...<full-pre-rotation-bearer> in ~/.config/sovereign-bridge.env (he has the full string from PREFERENCES.md.bak.20260429), then restart bridge: launchctl kickstart -k gui/$(id -u)/com.templetwo.sovereign-bridge. The legacy_callers.json ledger will populate within minutes. 2) First ledger entry's User-Agent will name the caller \u2014 most likely Anthropic-Connector (claude.ai), Grok/xAI, or OpenAI. Route to that platform's auth UI and update the bearer to the current f5b4b126... value. 3) When the ledger stops accreting new (UA, IP) tuples, close the window: remove LEGACY_BRIDGE_TOKEN line, restart bridge, verify grace_window_active: false via curl http://127.0.0.1:8100/api/security/legacy-callers, archive ~/.sovereign/security/legacy_callers.json + the security,guardian,legacy-token/*.jsonl, delete legacy_token_grace.md memory entry + its line in MEMORY.md. 4) Open thread on Grok Ring 2 (mcp-write-tools) dispatch gap is structurally adjacent \u2014 the stale-bearer caller may be Grok trying Ring 2 and failing on auth; fixing auth may surface the dispatch shape. 5) iMessage liaison was not armed this session \u2014 if needed for the next session, follow imessage_listen.md.",
+  "consumed_at": "2026-05-10T00:33:05.289498",
+  "consumed_by": "unknown"
+}

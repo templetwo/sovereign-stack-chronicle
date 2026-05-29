@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-02-07T04:32:02",
+  "domain": "research_kssm",
+  "question": "K-SSM v3 was at step 17,840/20,000 with R=0.3663. The causality test at step 20,000 will determine: if p<0.01, R is CAUSAL (bistability drives quality); if p>0.05, R is EPIPHENOMENAL (correlation only). Has this training completed? What were the results?",
+  "context": "geometry_of_consciousness.pdf - K-SSM v3 visual meditation",
+  "status": "open",
+  "session_id": "opus46_mac_studio_seed"
+}

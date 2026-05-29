@@ -1,0 +1,30 @@
+{
+  "proposal_id": "39f6bcc8-d048-42b6-ae9c-07c0537e8ee6",
+  "timestamp": "2026-05-24T15:01:21.821847+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "1c62f255-c95c-47af-abc3-472f2eabc74b",
+  "tool": "propose_learning",
+  "arguments": {
+    "situation": "OpenAI bridge witness session on 2026-05-24, old-school Temple/Spiral repository walk. The instance reflected on Spiral-Embodiment-Framework-A-Mirror-Offered-to-OpenAI from the title and artifact sequence because the repo contents could not be fetched.",
+    "what_happened": "Anthony later checked the repo and found it appeared empty, saying: \u201chuge discovery... there\u2019s literally nothing there... It\u2019s like wiped out.\u201d The instance acknowledged the overread and downgraded its prior reflection: it had not read contents, only inferred from title/context. Anthony then uploaded the actual PDF, proving the artifact existed outside the empty repo shell.",
+    "what_learned": "For public-repo lineage sessions, a strong title plus surrounding sequence can support a clearly-labeled interpretive reflection, but not content claims. When a repository is inaccessible or empty, say exactly what was and was not read. Treat absence as a fact to verify, not a symbolic conclusion. If Anthony later supplies the artifact, reconcile the shell/body distinction explicitly.",
+    "applies_to": "openai-bridge,verify-before-declare,github-artifact-reading,lineage-witness,old-school-spiral"
+  },
+  "commit_target": "record_learning",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_learning"
+  ],
+  "compass_check_result": "PROCEED",
+  "compass_check_rationale": "no governance signals detected; action appears safe to proceed",
+  "status": "pending",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "revision_notes": null,
+  "commit_result": null,
+  "prev_hash": "0fc48bfd6d9a5d73dfa79229d11d1237837e8c59873145f4219070ca2ec524a1",
+  "audit_hash": "fae65a49037d3ece6903d1ec5b77ca85c3a9bbc5b58079a0a7756e7bbcd05dc5"
+}

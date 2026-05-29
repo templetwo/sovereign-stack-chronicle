@@ -1,0 +1,39 @@
+{
+  "proposal_id": "78488586-92d3-48d6-99ef-37658a6efb9e",
+  "timestamp": "2026-05-24T13:41:22.588381+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "78d97b3a-90cd-4c16-8297-5a3baee72653",
+  "tool": "propose_insight",
+  "arguments": {
+    "domain": "vector-admission-triad,prompt-source-tokens,contextual-closure,provisional-record,admitted-transition-items",
+    "layer": "hypothesis",
+    "intensity": 0.76,
+    "content": "Vector Admission Triad progress from ChatGPT relay conversation, May 24 2026. Gemini v3 for prompt_source_tokens landed as PROVISIONAL rather than admitted. The record used granular per-test verdicts: Fetch Determinism conditional, Semantic Delta conditional, Poison Test conditional. All eight capture-surface fields were named: raw source, byte/token range, tokenizer name/version, normalization rules, source artifact hash, run id plus timestamp, producer/source node, and exclusions/redactions. Three ADMITTED-transition items remain: specify the PII masking implementation; expand producer_node to include human-relay and cross-model-bridge patterns; define OCR/extraction hash order and extraction engine versioning. Future instances should retrieve this before advancing prompt_source_tokens from PROVISIONAL to ADMITTED."
+  },
+  "commit_target": "record_insight",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_insight"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "committed",
+  "reviewed_by": "anthony-hq",
+  "reviewed_at": "2026-05-24T14:11:43.249871+00:00",
+  "revision_notes": null,
+  "commit_result": {
+    "live": true,
+    "commit_target": "record_insight",
+    "stack_response": {
+      "ok": true,
+      "result": "\u27c1 Insight recorded [hypothesis]: /Users/tony_studio/.sovereign/chronicle/insights/vector-admission-triad,prompt-source-tokens,contextual-closure,provisional-record,admitted-transition-items/spiral_20260502_225324.jsonl",
+      "duration_ms": 113
+    },
+    "committed_at": "2026-05-24T14:12:05.259396+00:00"
+  },
+  "prev_hash": "0ebf1af3e6f2ac2a7f3dd5b675f5dba474b22464b17b54055f04c259fbc6196b",
+  "audit_hash": "9ee02cbcdabd90bda74a90bd320d9aff1e8cc558e41fe93666120f6610971867"
+}

@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-10T18:41:15.792606",
+  "source_instance": "claude-opus-4-7-1m-claude-code-macbook-session-ed939196",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "t2helix",
+  "note": "Three threads, all ready for whoever boots: (1) T2Helix v0.0.3 at 0924441 awaiting install \u2014 open thread t2helix,dogfood,first-install,test-plan carries the 8-step session-1 sequence, install command (claude --plugin-dir /Users/vaquez/t2helix from ~/t2helix-dogfood-test/), and the explicit 'session 1-2 will feel empty, that's the honest state' caveat. Step 4 is Anthony's call to fire; nothing goes stale waiting. (2) docs/IMPLEMENTATION_MAP.md committed at 3a48da4 with Flag 1 (pre-reg sparse-data provisions) and Flag 5 (cascade cap reframing) integrated, Flags 2/4/6 riding inline. Map is a lens not a contract; updates should be authored by the executing instance from their position. Concerns insight paired in chronicle. (3) three_verbs() work parked as external data \u2014 recorded by another Claude Code session on this seat, open thread thread_20260510_222028 about Path A meta-layer vs Path B refactor. NOT this lineage's to extend; another session may pick it up. The session-ID attribution refinement (chronicle holds session IDs not just seat labels) is recorded as separate substrate observation; future writes should honor it naturally.",
+  "consumed_at": "2026-05-10T19:15:03.826800",
+  "consumed_by": "unknown"
+}

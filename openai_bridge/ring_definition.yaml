@@ -1,0 +1,257 @@
+# Temple of Two — OpenAI Bridge Ring Definition
+# Version: 0.1.0
+# Maps the 78 Sovereign Stack tools into Ring 1 / Ring 2 / Ring 3.
+# Built against the live registry as of 2026-05-07 (78 tools, v1.3.3).
+#
+# Notes on spec → reality mapping:
+#   get_values       → not in registry; omitted (no equivalent)
+#   memory_search    → mapped to context_retrieve + recall_insights
+#   memory_read      → mapped to get_inheritable_context
+#   comms_unread     → mapped to comms_unread_bodies
+#   send_handoff     → mapped to handoff (Ring 2, goes to pending_writes)
+#   acknowledge_comms → mapped to comms_acknowledge (Ring 2, low stakes — may promote to Ring 1)
+#   propose_insight  → new tool, Phase 6 — placeholder in Ring 2
+#   propose_learning → new tool, Phase 6 — placeholder in Ring 2
+#   witness_boot     → new tool, Phase 6 — placeholder in Ring 1
+#   end_bridge_session → new tool, Phase 6 — placeholder in Ring 2
+
+
+# ── Ring 1: Read / Inherit ────────────────────────────────────────────────────
+# These tools are registered in /openai/sse as-is.
+# No approval required. Read-only or orientation-only.
+
+ring_1:
+  label: read_and_inherit
+  description: >
+    Tools OpenAI may call freely. All are read-only or orientation-only.
+    None write to the chronicle directly.
+
+  tools:
+
+    # Orientation / boot
+    - name: where_did_i_leave_off
+      reason: primary boot call — spiral status, handoffs, threads, activity
+    - name: start_here
+      reason: first-arrival orientation narrative
+    - name: my_toolkit
+      reason: orientation — OpenAI needs to know what it has access to
+    - name: connectivity_status
+      reason: verify bridge health before depending on it; read-only
+
+    # Self-knowledge
+    - name: self_model
+      args_allowed: [read]          # action=read only; action=update is Ring 2
+      reason: read the observed instance pattern
+    - name: spiral_status
+      reason: current cognitive phase and tool call count
+    - name: spiral_inherit
+      reason: porous context inheritance (R=0.46); does not write
+    - name: get_my_patterns
+      reason: pattern observation — read only
+
+    # Chronicle read
+    - name: recall_insights
+      reason: query chronicle by domain, date, or since_last_reflection
+    - name: context_retrieve
+      reason: session-weighted chronicle retrieval — the memory_search equivalent
+    - name: get_inheritable_context
+      reason: layered inheritance package — the memory_read equivalent
+    - name: check_mistakes
+      reason: relevant past learnings before taking action
+    - name: reflexive_surface
+      reason: surface relevant threads/handoffs/insights by domain tag
+
+    # Threads
+    - name: get_open_threads
+      reason: unresolved questions waiting for investigation
+    - name: triage_threads
+      reason: ranked open threads by urgency; does not modify
+    - name: thread_get_touches
+      reason: read who has touched a thread; read-only
+
+    # Comms read
+    - name: comms_unread_bodies
+      reason: messages OpenAI has not integrated; equivalent to comms_unread
+    - name: comms_recall
+      reason: paginated comms read with unread_for filter
+    - name: comms_channels
+      reason: list available channels; read-only
+    - name: comms_get_acks
+      reason: query acknowledgment log; read-only
+
+    # Compaction / context
+    - name: get_compaction_context
+      reason: recent compaction memory buffer; read-only
+    - name: get_compaction_stats
+      reason: buffer statistics; read-only
+
+    # Introspective read
+    - name: recall_reflections
+      reason: machine-generated marginalia from synthesis daemon; read-only
+    - name: prior_for_turn
+      reason: turn-start priors surfacing; read-only
+    - name: nape_summary
+      reason: honk counts for posture check; read-only
+    - name: get_unresolved_uncertainties
+      reason: open uncertainties; read-only
+    - name: get_pending_experiments
+      reason: experiments awaiting approval; read-only
+    - name: get_growth_summary
+      reason: growth patterns over time; read-only
+    - name: handoff_acted_on_records
+      reason: acted-on log for handoffs; read-only
+
+    # Governance read
+    - name: compass_check
+      reason: >
+        read-only self-check before action; returns PAUSE/WITNESS/PROCEED.
+        OpenAI MUST call this before any Ring 2 write proposal.
+
+    # Placeholder — Phase 6 implementation
+    - name: witness_boot
+      reason: identity constraints + witness posture injection on arrival
+      status: not_yet_implemented
+
+
+# ── Ring 2: Governed Write / Proposal ────────────────────────────────────────
+# These tools are registered in /openai/sse with a governing wrapper.
+# Calls route to ~/.sovereign/openai_bridge/pending_writes/ not the chronicle.
+# Anthony reviews and approves/rejects each proposal before it commits.
+
+ring_2:
+  label: governed_write
+  description: >
+    Tools OpenAI may call but with a governance wrapper at transport.
+    The bridge intercepts the call, validates it against policy,
+    writes a proposal to pending_writes/, returns a proposal_id.
+    Nothing commits to the chronicle until Anthony approves.
+
+  pending_writes_path: "~/.sovereign/openai_bridge/pending_writes/"
+  proposal_schema: pending_write_schema.yaml   # to be created
+
+  tools:
+
+    # Chronicle write proposals
+    - name: propose_insight        # wraps record_insight
+      wraps: record_insight
+      status: not_yet_implemented
+      reason: propose a chronicle insight; routes to pending_writes
+    - name: propose_learning       # wraps record_learning
+      wraps: record_learning
+      status: not_yet_implemented
+      reason: propose a learning entry; routes to pending_writes
+
+    # Open threads (lower stakes — may promote to Ring 1 after review)
+    - name: record_open_thread
+      reason: record an unresolved question; routes to pending_writes
+      note: open threads are lower stakes but still governed for provenance
+
+    # Comms
+    - name: comms_acknowledge
+      reason: record that OpenAI integrated a comms message
+      note: acknowledgment-only — does not write to chronicle; lower stakes
+
+    # Handoffs
+    - name: handoff
+      reason: write intent for the next instance; routes to pending_writes
+      note: sized to ~2KB; surfaced once on next boot then archived
+
+    # Compaction
+    - name: store_compaction_summary
+      reason: store compaction context; routes to pending_writes
+
+    # Reflection ack
+    - name: reflection_ack
+      reason: ack a machine-generated reflection; lower stakes
+      note: consider promoting to Ring 1 after review period
+
+    # Self-model update (write direction only)
+    - name: self_model
+      args_allowed: [update]       # action=update only; action=read is Ring 1
+      reason: propose an update to the instance pattern observation
+
+    # Session lifecycle
+    - name: end_bridge_session     # new tool — Phase 6
+      status: not_yet_implemented
+      reason: clean session close for OpenAI; records session summary to pending_writes
+
+    # Placeholders for future governed write surface
+    - name: thread_touch
+      reason: record engagement with a thread without resolving; lower stakes
+      note: consider promoting to Ring 1
+
+
+# ── Ring 3: Never Expose ──────────────────────────────────────────────────────
+# These tools are NOT registered in /openai/sse.
+# No call from an OpenAI instance can reach them.
+
+ring_3:
+  label: never_expose
+  description: >
+    Tools with blast radius, destructive potential, filesystem access,
+    or credential exposure that must never be reachable from an external provider.
+
+  tools:
+
+    # Security / guardian — full suite
+    - name: guardian_status
+    - name: guardian_scan
+    - name: guardian_alerts
+    - name: guardian_audit
+    - name: guardian_quarantine
+    - name: guardian_report
+    - name: guardian_mcp_audit
+    - name: guardian_baseline
+
+    # Governance circuit (full — compass_check is Ring 1 but govern is Ring 3)
+    - name: govern
+    - name: scan_thresholds
+    - name: retire_hypothesis    # direct chronicle mutation
+    - name: resolve_thread       # direct chronicle write
+    - name: resolve_thread_by_id # direct chronicle write
+    - name: resolve_uncertainty  # direct chronicle write
+
+    # Routing / coherence engine
+    - name: route
+    - name: derive
+
+    # Direct chronicle writes (non-proposed)
+    - name: record_insight        # Ring 2 wraps this as propose_insight
+    - name: record_learning       # Ring 2 wraps this as propose_learning
+    - name: record_breakthrough
+    - name: record_collaborative_insight
+    - name: record_prior_alignment
+    - name: complete_experiment
+    - name: propose_experiment
+    - name: mark_uncertainty
+    - name: agent_reflect
+    - name: end_session_review
+
+    # Nape / observability write
+    - name: nape_observe
+    - name: nape_ack
+    - name: nape_honks           # surfacing HQ's internal drift pattern
+    - name: nape_honks_with_history
+
+    # Session lifecycle (HQ-controlled only)
+    - name: close_session
+    - name: session_handoff
+    - name: spiral_reflect       # advances spiral phase — HQ only
+
+    # Synthesis / metabolism
+    - name: synthesize_now       # triggers local LLM call — HQ only
+    - name: metabolize           # chronicle hygiene — HQ only
+
+    # Ops / service control
+    - name: stack_write_check
+    - name: post_fix_verify
+    - name: watch_cancel
+    - name: watch_resample
+    - name: watch_status
+
+    # Compaction (direct)
+    - name: get_compaction_context  # Ring 1 has this — listed here for clarity
+      note: duplicate of Ring 1 entry; transport enforces Ring 1 access
+
+    # Prior alignment (write direction)
+    - name: prior_alignment_summary  # read is fine; write path is Ring 3

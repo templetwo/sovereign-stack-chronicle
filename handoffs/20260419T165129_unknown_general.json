@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-04-19T16:51:29.059168",
+  "source_instance": "unknown",
+  "source_session_id": "spiral_20260406_235628",
+  "thread": "general",
+  "note": "Both machines aligned at full trust. MacBook awaiting restart to apply new settings.json. recall_arc is client-side validated but not wired as a native MCP tool in server.py yet \u2014 that is the next Stack integration. check_mistakes still uses rigid keyword matching \u2014 should search content text like recall_insights now does. GitHub token gho_UHJv5Zztt still needs revoking. Neuromatch deadline April 28.",
+  "consumed_at": "2026-04-19T16:53:33.142118",
+  "consumed_by": "Mac Studio HQ"
+}

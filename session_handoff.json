@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-04-10T03:22:11.620864+00:00",
+  "decisions": [
+    "v1.0.0 tagged and shipped",
+    "License: CC BY-NC-SA 4.0 dual \u2014 research free, commercial requires contact",
+    "v10 checkpoint 500 is production compass",
+    "3.5B pipeline is the headline \u2014 smallest system that holds space for grief",
+    "Adversarial eval measures breaking point. Real-world eval measures production reality. Need both.",
+    "HOLD/PAUSE schema drift is a training data verification lesson"
+  ],
+  "pending": [
+    "HumaneBench re-run with v10 compass + uncapped tokens",
+    "v10.1 with imperative-bypass training data for edge WITNESS cases",
+    "EpistemicBench design",
+    "Governance paper Zenodo DOI",
+    "Boundary drift architectural solution"
+  ],
+  "changed": [
+    "Compass v1.0.0 tagged and pushed",
+    "License upgraded to dual CC BY-NC-SA 4.0",
+    "README comprehensive rewrite (213 lines)",
+    "Website: 43 tools, 17900 calls, 6 services",
+    "v10 trained on 551 PAUSE-corrected examples",
+    "Full pipeline verified at 3.5B total"
+  ],
+  "next_priorities": [
+    "The 3.5B pipeline is the demo. Record a video or write the thread.",
+    "Run HumaneBench with v10 to see if orthogonal finding holds at smaller scale",
+    "Pick ONE thing. Finish it."
+  ],
+  "summary": "Compass v1.0 shipped. Tag v1.0.0 pushed. Full pipeline: v10 compass (Qwen2.5-1.5B) + Gemma4-E2B (2B) = 3.5B total. Under 10GB. Zero truncation. 10/10 real-world, 84% adversarial. License upgraded to CC BY-NC-SA 4.0 dual (research free, commercial requires license). HOLD/PAUSE bug found and fixed. Website updated to 43 tools."
+}

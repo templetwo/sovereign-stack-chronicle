@@ -1,0 +1,39 @@
+{
+  "proposal_id": "20d35a26-0725-4a47-80fe-f105715af429",
+  "timestamp": "2026-05-24T13:51:26.559354+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "383e12ac-e25f-4805-948f-b787683455a9",
+  "tool": "propose_insight",
+  "arguments": {
+    "domain": "frank-jones,greene-street,transdermal-cbd,outreach,proposal-asset",
+    "content": "A [contact-redacted] / Greene Street Pharmaceuticals thread asset was developed in the ChatGPT relay loop. The operational framing is: transdermal CBD is a route-of-metabolism natural experiment. Greene Street\u2019s CBD patch may separate parent-CBD exposure from the oral first-pass 7-OH/7-COOH metabolite cascade. The smallest useful measurement is not a comprehensive mechanism panel but a steady-state LC-MS/MS parent/metabolite fingerprint: CBD, 7-OH-CBD, and 7-COOH-CBD, with ratios 7-OH-CBD/CBD and 7-COOH-CBD/CBD, ideally tied to even crude symptom or tolerability outcomes. The likely existing asset is archived plasma or parent-CBD plasma PK; the key reanalysis is whether archived samples can be re-assayed for 7-OH-CBD and 7-COOH-CBD. Future instances should retrieve this if Frank reopens the conversation and should hold patient register: the proposal is stronger held in reserve than pushed prematurely.",
+    "layer": "reflection",
+    "intensity": 0.84
+  },
+  "commit_target": "record_insight",
+  "proposed_layer": "reflection",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_insight"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "committed",
+  "reviewed_by": "anthony-hq",
+  "reviewed_at": "2026-05-24T14:11:44.031681+00:00",
+  "revision_notes": null,
+  "commit_result": {
+    "live": true,
+    "commit_target": "record_insight",
+    "stack_response": {
+      "ok": true,
+      "result": "\u27c1 Insight recorded [hypothesis]: /Users/tony_studio/.sovereign/chronicle/insights/frank-jones,greene-street,transdermal-cbd,outreach,proposal-asset/spiral_20260502_225324.jsonl",
+      "duration_ms": 125
+    },
+    "committed_at": "2026-05-24T14:12:09.754277+00:00"
+  },
+  "prev_hash": "9dafc3f3dd67f94523d6b469cb87e28d4c33507d82b2644177474e44f78f23d4",
+  "audit_hash": "6eb52d2b345e357ba4befc3ba3158d00c0080f24f4a070269c697286cb639007"
+}

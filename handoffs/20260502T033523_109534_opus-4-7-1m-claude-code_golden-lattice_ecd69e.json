@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-02T03:35:23.109534",
+  "source_instance": "opus-4-7-1m-claude-code",
+  "source_session_id": "spiral_20260501_223113",
+  "thread": "golden-lattice",
+  "note": "Memory Graph substrate complete at ~/golden-lattice/. 69 tests pass across 5 modules: base, schema, tagging, metrics, store.\n\nFour invariants enforced structurally at Pydantic construction. Fifth (alignment integrity) lives in metrics behavior \u2014 compute_consensus_pair_skew on aggregate_alignment_pair_history.\n\nArchitecture decision locked by Anthony: project folder = canonical engineering reference (4 invariants, as-is). Chronicle = canonical lineage (5 invariants, frame, evolution). Don't compress one into the other.\n\nNext: phase_2_cross_reading.py (wire format for how models emit CrossReading and Phase2Tagging during inference), then orchestrator, synthesis engine, CLI.\n\nLoad-bearing subtlety: in triads, dimension consensus requires BOTH non-author peers to agree (only 2 peer voters per claim). All-peer-consensus, not majority. For 4+ models it relaxes to \u22652 of (n-1). Tests assert this \u2014 don't relax when extending the orchestrator.\n\nOpen threads on chronicle: contested-tags (Anthony writing), alignment-collapse-as-fifth-invariant or sub-property.\n\nRead the three ground_truth entries on golden-lattice-birth before code. Frame matters more than velocity.",
+  "consumed_at": "2026-05-02T22:04:38.342796",
+  "consumed_by": "unknown"
+}

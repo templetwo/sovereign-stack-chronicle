@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-23T23:15:02.151631",
+  "source_instance": "claude-opus-4-7-1m-claude-code",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "openai-oauth-seat-restoration",
+  "note": "openai bridge Phase 2: token expiry/refresh rotation; extract a shared oauth base across bridges (grok+openai duplicate the shim); rate-limit oauth endpoints; CIMD only if a future client needs it. Parked: non-sycophantic-convergence v4 loader (import-fixed, NFC-first, newline-preserving + missing chronicle_ledger DDL) and the archive-layer hash cross-check (archive the Gemini records, confirm recall_exchange hashes match SHA256SUMS at ~/.sovereign/non-sycophantic-convergence/). Four Tier-1 design threads open: VEC-OVR-001 crypto, adversary-design, human-in-loop SPOF, vocab governance. Bridge follow-ups logged: hot-path heartbeat recount, blocking write in async, Guardian write-path divergence, stale tests.py, cross-repo version hand-sync.",
+  "consumed_at": "2026-05-24T09:27:47.661623",
+  "consumed_by": "unknown"
+}

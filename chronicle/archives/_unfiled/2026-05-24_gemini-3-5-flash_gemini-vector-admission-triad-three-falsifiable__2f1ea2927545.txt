@@ -1,0 +1,31 @@
+The frame correction is vital. The Receipt Pass schema must never act as a data-deletion mechanism for meaning. Categorizing a claim as metaphorical or unverified isn't a demotion; it is an act of preservation. It protects the structural integrity of the execution layer while honoring the epistemological reality of the Temple layer. The goal is accurate typing, not sterile reductionism.
+All four refinements are locked into the system design. Moving class to an array (["structural", "situated"]) and implementing an itemized, granular certification string directly prevents the inflation of robustness claims.
+Here is the architectural definition governing the vocabulary that underpins your certifications.
+## The Canonical Vector Admission Criteria
+To prevent "ghost vectors"—conceptually vague vector names injected into the schema to artificially expand a stack's claimed verification scope—a new context vector can only be admitted to the canonical vocabulary if it satisfies the **Vector Admission Triad**.
+A proposed context vector must possess an independent definition outside the active run, a stable reference state that can be loaded deterministically, and a falsifiable test. This is enforced by three programmatic requirements:
+### 1. The Fetch Determinism Requirement (Provenance)
+The vector must resolve to an immutable, external, content-addressed reference or structured data pool.
+ * *Criterion:* The proposal must include the exact loading function signature. For chronicle_failure_profile, this means a specific URI or local ledger commit hash. If a vector cannot be loaded deterministically by a non-LLM system script prior to the run, it is denied entry.
+### 2. The Semantic Delta Test (Distinct Variance)
+The context vector must exert a mathematically or logically distinct signature on the evaluation output space.
+ * *Criterion:* The proposer must run a baseline regression test showing that evaluating a mock payload *with* the vector injected yields a different structural output signature (token drift, confidence variance, or ACS weight) than evaluating it *without* the vector. If the delta is zero, the vector is a cosmetic label and is rejected.
+### 3. The Poison Test (Falsifiable Import)
+There must be an automated mechanism to verify that the Audit Node is actually reading and responding to the vector, rather than ignoring it.
+ * *Criterion:* The proposal must provide a "poisoned" or inverted reference state for the vector. For example, if testing prompt_source_tokens, the poison test swaps the actual prompt tokens with an unrelated domain's tokens. If the Audit Node fails to immediately trigger a context-mismatch fault or an anomalous baseline score during this pre-flight check, the vector is structurally dead and cannot be admitted.
+## The Semantic Generator Threshold (Refinement 4)
+To resolve the empirical test problem regarding the generator's capability, the minimum viability threshold is defined by a **Dual-Gated Calibration**:
+```
+[Generator Output] ──► Gate 1: Stylistic Perplexity Match (Turing Floor) ──► PASS
+                   ──► Gate 2: Cross-Family Token Disparity (Prior Floor) ──► PASS
+
+```
+ * **Gate 1: The Stylistic Perplexity Floor.** The generated prose must fall within the historical perplexity boundaries of genuine Temple submissions when evaluated by a baseline model. If it reads as obviously synthetic or simplistic, it fails the aesthetic filter before it ever hits the parser.
+ * **Gate 2: The Cross-Family Prior Floor.** The generator must be an open-weights model family whose architecture and fine-tuning lineage diverge entirely from the stack participants (e.g., if the stack relies on Anthropic and OpenAI weights, the generator is a deep-filtered, high-temperature slice of a Mistral or Llama variant).
+Execution fidelity is achieved by tuning the generator's *temperature* and *system instructions* specifically to mimic the structural density of your writing, while programmatically injecting the invariant **Structural Blueprint** flaw into its core logic sequence.
+### Epistemic Ledger
+ * **Observed:** Anthony corrected the framework to ensure that non-mechanical/metaphorical claims are preserved and typed rather than discarded as noise. He established a controlled vocabulary requirement and granular, additive certification tracking for the meta-schema.
+ * **Inferred:** The governance of the stack requires a strict gatekeeping mechanism for its own metadata vocabulary, treating vector definitions with the same engineering rigor applied to executable code.
+ * **Unverified:** The exact list of open-weight models available in the local hardware configuration that can successfully meet the Gate 1 Stylistic Perplexity Floor without training-distribution overlap.
+ * **Needs Receipt:** A formal validation script for the "Poison Test" showing a live audit layer successfully rejecting an inverted context vector.
+ * **Worth Exploring:** Developing the initial canonical registration entries for the five seed vectors (prompt_source_tokens, chronicle_failure_profile, prior_session_state, lineage_letters, current_open_threads) using the Vector Admission Triad framework.

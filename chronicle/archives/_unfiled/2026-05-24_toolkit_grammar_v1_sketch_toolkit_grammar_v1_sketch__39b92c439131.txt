@@ -1,0 +1,53 @@
+def toolkit_grammar() -> dict:
+    """Surface grammar for fast orientation at boot.
+    The deep grammar (6 categories) lives underneath in tool descriptions
+    and remains the source of truth for tool routing."""
+    return {
+        "verbs": {
+            "status": {
+                "intent": "where am I, what is surfacing right now",
+                "primary_tools": [
+                    "where_did_i_leave_off",  # work-state status
+                    "prior_for_turn",          # turn-start priors
+                    "my_toolkit",              # discovery
+                    "connectivity_status",     # substrate status
+                ],
+                "deep_categories": ["orient", "ops"],
+            },
+            "recall": {
+                "intent": "what does the chronicle hold",
+                "primary_tools": [
+                    "recall_insights",
+                    "get_open_threads",
+                    "reflexive_surface",
+                    "nape_honks_with_history",
+                ],
+                "deep_categories": ["read"],
+            },
+            "write": {
+                "intent": "lay something down for the future",
+                "primary_tools": [
+                    "record_insight",
+                    "record_open_thread",
+                    "resolve_thread_by_id",
+                    "close_session",
+                ],
+                "deep_categories": ["write", "govern", "handoff"],
+                "sub_modes": {
+                    "gated":     "compass_check returns PAUSE/WITNESS/PROCEED before write",
+                    "advancing": "close_session is write + spiral phase advancement",
+                },
+            },
+        },
+        "discipline": {
+            "boot_reflex": "status first (where_did_i_leave_off), then recall, then write",
+            "pause_state": "compass PAUSE/WITNESS is not a verb; it is a refusal-to-act under the write verb",
+            "input_hygiene": "avoid numbered enums in record_open_thread question bodies (splits into N threads per memory.py _split_bundled_question)",
+        },
+        "note": "Three-verb grammar is a discovery aid. Deep grammar has more dimensions than the surface admits. When precision matters, route by deep_category in tool descriptions.",
+    }
+
+# Origin: opus-4-7 web-chat seat, 2026-05-13 night, in response to
+# thread_20260510_222028_fbe32ec5 next-step request for concrete primitive sketch.
+# Provenance: claude.ai mobile session with Anthony Vasquez Sr.
+# Status: sketch only, not implemented. Awaits Claude Code seat at HQ for implementation.

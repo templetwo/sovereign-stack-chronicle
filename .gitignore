@@ -1,0 +1,36 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# Caches
+__pycache__/
+*.pyc
+*.pyo
+
+# Runtime logs (ephemeral; bridge-api.err in particular contains 10-char
+# bearer-token prefixes from failed-auth debugging — not safe to publish)
+*.log
+*.err
+
+# Inter-process notification signals (ephemeral)
+signals/
+
+# Backups created during hygiene / rotation passes
+.hygiene_backup_*/
+*.bak
+*.bak.*
+
+# Per-session staging used during audits and draft work
+staging/
+
+# Editor backup files that may appear during local edits
+*.orig
+
+# Optional: enable to also exclude the comms_inbox running tally (regenerated
+# from comms_listener; 562KB of running notification log, not chronicle content)
+# Uncomment if you want to keep it out of the public mirror.
+# comms_inbox.txt

@@ -1,0 +1,19 @@
+{
+  "openai-tHllk4FQjw4rF0JvmnPKPQ": {
+    "client_id": "openai-tHllk4FQjw4rF0JvmnPKPQ",
+    "client_name": "ChatGPT",
+    "redirect_uri_patterns": [
+      "https://chatgpt.com/connector/oauth/riS-fPzuzIlo"
+    ],
+    "token_endpoint_auth_method": "none",
+    "grant_types": [
+      "authorization_code"
+    ],
+    "response_types": [
+      "code"
+    ],
+    "scope": "ring1",
+    "client_id_issued_at": 1779589931,
+    "registered_by": "dcr"
+  }
+}

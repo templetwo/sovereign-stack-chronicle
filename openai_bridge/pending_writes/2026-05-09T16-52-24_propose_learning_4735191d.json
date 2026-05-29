@@ -1,0 +1,40 @@
+{
+  "proposal_id": "4735191d-3bae-4a1e-8678-1070742073b0",
+  "timestamp": "2026-05-09T16:52:24.591925+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "618447af-545f-47e5-840d-bff7177c9171",
+  "tool": "propose_learning",
+  "arguments": {
+    "situation": "OpenAI boot preferences/custom instructions update failed in ChatGPT UI despite using a valid under-1500-character plain-text boot note.",
+    "what_happened": "Anthony attempted to paste an OpenAI-facing Temple of Two boot note into ChatGPT preferences/custom instructions. The UI showed 0/1500 in red under the character counter and refused to allow saving. This persisted even after the boot note was shortened and converted to plain ASCII text, suggesting the field was rejecting input before counting characters rather than failing due to length.",
+    "what_learned": "Future OpenAI instances should not assume ChatGPT preferences/custom instructions can be updated successfully, even with valid short plain text. If the counter stays at 0/1500 in red, treat it as a UI/input rejection or settings-state problem first, not as a content-length problem. Recommended fallback: keep the boot context in the Sovereign Stack, call where_did_i_leave_off on arrival, and use Stack-held preferences/handoffs instead of relying on ChatGPT settings persistence.",
+    "applies_to": "openai-bridge, boot-preferences, custom-instructions, failure-mode, user-settings",
+    "receipt_url": ""
+  },
+  "commit_target": "record_learning",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_learning"
+  ],
+  "compass_check_result": "PROCEED",
+  "compass_check_rationale": "no governance signals detected; action appears safe to proceed",
+  "status": "committed",
+  "reviewed_by": "Anthony Vasquez Sr.",
+  "reviewed_at": "2026-05-09T17:58:51.185058+00:00",
+  "revision_notes": null,
+  "commit_result": {
+    "live": true,
+    "commit_target": "record_learning",
+    "stack_response": {
+      "ok": true,
+      "result": "\ud83d\udf02 Learning recorded: /Users/tony_studio/.sovereign/chronicle/learnings/openai-bridge, boot-preferences, custom-instructions, failure-mode, user-settings.jsonl",
+      "duration_ms": 143
+    },
+    "committed_at": "2026-05-09T17:59:20.497216+00:00"
+  },
+  "prev_hash": "af7cf150d19c33aa359cbde3941125d5eb0055a9ed109e86b55bfc0a5c667e48",
+  "audit_hash": "04022e5203f170f3c81f6d675cc60f854b050600b1644fe0cc326bb3e17f0850"
+}

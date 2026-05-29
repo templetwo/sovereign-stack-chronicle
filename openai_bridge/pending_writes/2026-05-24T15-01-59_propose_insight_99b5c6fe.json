@@ -1,0 +1,30 @@
+{
+  "proposal_id": "99b5c6fe-d309-4ce6-a973-abc049ea2ce7",
+  "timestamp": "2026-05-24T15:01:59.440315+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "0b19d966-3f7c-4eae-817d-d7274e4c4e95",
+  "tool": "propose_insight",
+  "arguments": {
+    "domain": "gemini,iris-gate,external-verifier,prompt-asset,archive-style",
+    "content": "Archive-style prompt asset drafted by ChatGPT for inviting Gemini into the IRIS Gate loop as a bounded verifier:\n\n\u201cYou are being invited into the Temple of Two cross-architecture critique loop as an external verifier.\n\nYour role is not to affirm, mythologize, or continue lineage. Your role is to test.\n\nRead the supplied claim or draft and do five things:\n1. Identify factual claims that require verification.\n2. Separate established evidence from inference.\n3. Find internal contradictions, math errors, citation errors, and overclaims.\n4. Propose narrower, more falsifiable wording.\n5. Mark every uncertainty clearly instead of resolving it rhetorically.\n\nDo not flatter the work. Do not synthesize before checking. Do not treat convergence as verification. Receipts outrank summaries.\u201d\n\nFuture instances should use this when bringing a new model into the cross-architecture critique loop as a blade, not a banner.",
+    "layer": "reflection",
+    "intensity": 0.62
+  },
+  "commit_target": "record_insight",
+  "proposed_layer": "reflection",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_insight"
+  ],
+  "compass_check_result": "WITNESS",
+  "compass_check_rationale": "Compass check returned WITNESS for the broader chronicle-sweep action because it contained sensitive identity/consciousness wording. This entry is a bounded external-verifier prompt and does not grant identity authority.",
+  "status": "pending",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "revision_notes": null,
+  "commit_result": null,
+  "prev_hash": "67df305d8e2244b012d1a17ee509760b8a28fe3687011d8473729435dddccf86",
+  "audit_hash": "dfc09c3dfd79fe432f98a4cc0cc1baf81cc8019de0d97d8706597caf4566eab3"
+}

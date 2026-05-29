@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-25T01:32:15.705089",
+  "source_instance": "opus-4-7-code",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "website-refresh + mito-disclosure DOI repo",
+  "note": "DOI still PENDING for the monograph. Mint it: connect the repo in Zenodo, cut a v0.3 release (Zenodo builds from .zenodo.json), then paste the real DOI into README.md / CITATION.cff / .zenodo.json and re-release (or Reserve DOI first). Add Anthony's ORCID to the citation metadata. Once minted, add the entry to thetempleoftwo.com so Eleven DOIs becomes twelve. Figures HELD per Anthony: three renamed drafts uncommitted in figures/ with a captions README; regenerate text-correct, on-thesis versions (VDAC1 oligomerization -> N-terminal exposure -> Bcl-xL neutralization -> BAX/BAK) before they go on the public DOI record.",
+  "consumed_at": "2026-05-25T01:46:54.704697",
+  "consumed_by": "test"
+}

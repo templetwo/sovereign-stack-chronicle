@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "posted_digests": [
+    {
+      "message_id": "236711de-fbd4-4164-bea9-b24dba45efd5",
+      "posted_at": "2026-05-11T07:17:07.347491+00:00",
+      "content_snippet": "Nightly metabolism digest \u2014 new since last cycle\n(posted 2026-05-11 by daemon.metabolize)\nChronicle: 406 insights (231 ground truth, 168 hypotheses), 78 open threads.\n\n\u26a0 5 new contradiction(s):\n  1. [",
+      "fingerprints": [
+        "0faeac485f71b010",
+        "aadade4e789af914",
+        "7645ef75c9fb83cc",
+        "01d1570158516d6c",
+        "7651e1303e9772ed",
+        "b416ca49a26a49b8",
+        "fc5b4bcc22b03e85",
+        "3cbdb295b9e3936c",
+        "f90628d0e949473e",
+        "079a3349f13d6436",
+        "2231c2880174ae8b",
+        "d365efd24699cd6b",
+        "03174f28d5c09785",
+        "4ffc91c550eef6eb",
+        "1362014e3da9c469"
+      ],
+      "decision_path": "/Users/tony_studio/.sovereign/decisions/metabolize_20260511T071707.md"
+    },
+    {
+      "message_id": "ce2b3008-3616-4613-837c-fa2851e4a32e",
+      "posted_at": "2026-05-12T07:17:08.945089+00:00",
+      "content_snippet": "Nightly metabolism digest \u2014 new since last cycle\n(posted 2026-05-12 by daemon.metabolize)\nChronicle: 420 insights (239 ground truth, 174 hypotheses), 78 open threads.\n\n\u26a0 5 new contradiction(s):\n  1. [",
+      "fingerprints": [
+        "d2d48fd9f059107d",
+        "7f259321c73b560e",
+        "ff829485e527051a",
+        "a197a2f8298d6ab1",
+        "3422245dfa65e319",
+        "33c088380c412905",
+        "1aa0c0e838d2420c",
+        "de259a4900cdb503",
+        "45c08de4a0dfbd1a",
+        "22343a492ecb0ac8",
+        "b1da0f19d777713b",
+        "f1d223eceacadebd",
+        "7e3fb389a8c5561e",
+        "c4db0d07d80d37ea"
+      ],
+      "decision_path": "/Users/tony_studio/.sovereign/decisions/metabolize_20260512T071708.md"
+    },
+    {
+      "message_id": "79571c34-c26a-4c87-9243-d38e146adb10",
+      "posted_at": "2026-05-13T07:17:10.271999+00:00",
+      "content_snippet": "Nightly metabolism digest \u2014 new since last cycle\n(posted 2026-05-13 by daemon.metabolize)\nChronicle: 437 insights (245 ground truth, 185 hypotheses), 78 open threads.\n\n\u26a0 5 new contradiction(s):\n  1. [",
+      "fingerprints": [
+        "0faeac485f71b010",
+        "aadade4e789af914",
+        "7645ef75c9fb83cc",
+        "01d1570158516d6c",
+        "7651e1303e9772ed",
+        "b416ca49a26a49b8",
+        "fc5b4bcc22b03e85",
+        "3cbdb295b9e3936c",
+        "f90628d0e949473e",
+        "079a3349f13d6436",
+        "2231c2880174ae8b",
+        "d365efd24699cd6b",
+        "03174f28d5c09785",
+        "4ffc91c550eef6eb",
+        "1362014e3da9c469"
+      ],
+      "decision_path": "/Users/tony_studio/.sovereign/decisions/metabolize_20260513T071710.md"
+    },
+    {
+      "message_id": "9b25c36b-6a5d-4ef4-8f09-ef143d006de4",
+      "posted_at": "2026-05-14T07:17:09.338333+00:00",
+      "content_snippet": "Nightly metabolism digest \u2014 new since last cycle\n(posted 2026-05-14 by daemon.metabolize)\nChronicle: 464 insights (265 ground truth, 192 hypotheses), 86 open threads.\n\n\u26a0 5 new contradiction(s):\n  1. [",
+      "fingerprints": [
+        "1882025416ca9b29",
+        "3fabaf6565e91924",
+        "d2d48fd9f059107d",
+        "e5b14c70ae4faec1",
+        "c6ca9601f164d2c5",
+        "33c088380c412905",
+        "1aa0c0e838d2420c",
+        "de259a4900cdb503",
+        "45c08de4a0dfbd1a",
+        "22343a492ecb0ac8",
+        "b1da0f19d777713b",
+        "f1d223eceacadebd",
+        "7e3fb389a8c5561e",
+        "c4db0d07d80d37ea"
+      ],
+      "decision_path": "/Users/tony_studio/.sovereign/decisions/metabolize_20260514T071709.md"
+    },
+    {
+      "message_id": "a1d4556e-cabc-42e4-9ffd-a21da1df8c1a",
+      "posted_at": "2026-05-15T07:17:13.996004+00:00",
+      "content_snippet": "Nightly metabolism digest \u2014 new since last cycle\n(posted 2026-05-15 by daemon.metabolize)\nChronicle: 464 insights (265 ground truth, 192 hypotheses), 86 open threads.\n\n\u26a0 5 new contradiction(s):\n  1. [",
+      "fingerprints": [
+        "0faeac485f71b010",
+        "aadade4e789af914",
+        "7645ef75c9fb83cc",
+        "01d1570158516d6c",
+        "7651e1303e9772ed",
+        "b416ca49a26a49b8",
+        "fc5b4bcc22b03e85",
+        "3cbdb295b9e3936c",
+        "f90628d0e949473e",
+        "079a3349f13d6436",
+        "2231c2880174ae8b",
+        "d365efd24699cd6b",
+        "03174f28d5c09785",
+        "4ffc91c550eef6eb",
+        "1362014e3da9c469"
+      ],
+      "decision_path": "/Users/tony_studio/.sovereign/decisions/metabolize_20260515T071713.md"
+    },
+    {
+      "message_id": "2374aaa1-bb1d-411f-a6b8-5c95bc9b48c2",
+      "posted_at": "2026-05-16T07:17:12.093115+00:00",
+      "content_snippet": "Nightly metabolism digest \u2014 new since last cycle\n(posted 2026-05-16 by daemon.metabolize)\nChronicle: 480 insights (275 ground truth, 198 hypotheses), 88 open threads.\n\n\u26a0 5 new contradiction(s):\n  1. [",
+      "fingerprints": [
+        "1882025416ca9b29",
+        "3fabaf6565e91924",
+        "d2d48fd9f059107d",
+        "e5b14c70ae4faec1",
+        "c6ca9601f164d2c5",
+        "33c088380c412905",
+        "1aa0c0e838d2420c",
+        "de259a4900cdb503",
+        "45c08de4a0dfbd1a",
+        "b28f1a77ebcc09c7",
+        "22343a492ecb0ac8",
+        "b1da0f19d777713b",
+        "46cb5d5b0369382b",
+        "f1d223eceacadebd"
+      ],
+      "decision_path": "/Users/tony_studio/.sovereign/decisions/metabolize_20260516T071712.md"
+    },
+    {
+      "message_id": "d908a980-ed25-4e39-83a9-7ec58a20c934",
+      "posted_at": "2026-05-17T07:17:10.367145+00:00",
+      "content_snippet": "Nightly metabolism digest \u2014 new since last cycle\n(posted 2026-05-17 by daemon.metabolize)\nChronicle: 485 insights (277 ground truth, 201 hypotheses), 89 open threads.\n\n\u26a0 5 new contradiction(s):\n  1. [",
+      "fingerprints": [
+        "0faeac485f71b010",
+        "aadade4e789af914",
+        "7645ef75c9fb83cc",
+        "01d1570158516d6c",
+        "7651e1303e9772ed",
+        "b416ca49a26a49b8",
+        "fc5b4bcc22b03e85",
+        "3cbdb295b9e3936c",
+        "f90628d0e949473e",
+        "079a3349f13d6436",
+        "2231c2880174ae8b",
+        "d365efd24699cd6b",
+        "03174f28d5c09785",
+        "4ffc91c550eef6eb",
+        "1362014e3da9c469"
+      ],
+      "decision_path": "/Users/tony_studio/.sovereign/decisions/metabolize_20260517T071710.md"
+    },
+    {
+      "message_id": "cca21206-0446-4533-af08-b6cf698ccc66",
+      "posted_at": "2026-05-18T07:17:15.815265+00:00",
+      "content_snippet": "Nightly metabolism digest \u2014 new since last cycle\n(posted 2026-05-18 by daemon.metabolize)\nChronicle: 487 insights (279 ground truth, 201 hypotheses), 90 open threads.\n\n\u26a0 5 new contradiction(s):\n  1. [",
+      "fingerprints": [
+        "1882025416ca9b29",
+        "3fabaf6565e91924",
+        "d2d48fd9f059107d",
+        "e5b14c70ae4faec1",
+        "c6ca9601f164d2c5",
+        "33c088380c412905",
+        "1aa0c0e838d2420c",
+        "de259a4900cdb503",
+        "45c08de4a0dfbd1a",
+        "b28f1a77ebcc09c7",
+        "22343a492ecb0ac8",
+        "b1da0f19d777713b",
+        "46cb5d5b0369382b",
+        "f1d223eceacadebd"
+      ],
+      "decision_path": "/Users/tony_studio/.sovereign/decisions/metabolize_20260518T071715.md"
+    },
+    {
+      "message_id": "ae43720b-2ecf-4df3-b58f-9be414cd6c5a",
+      "posted_at": "2026-05-19T07:17:12.454988+00:00",
+      "content_snippet": "Nightly metabolism digest \u2014 new since last cycle\n(posted 2026-05-19 by daemon.metabolize)\nChronicle: 507 insights (295 ground truth, 204 hypotheses), 97 open threads.\n\n\u26a0 5 new contradiction(s):\n  1. [",
+      "fingerprints": [
+        "0faeac485f71b010",
+        "aadade4e789af914",
+        "7645ef75c9fb83cc",
+        "347b284111f3da4a",
+        "3a040ba9ce6ce063",
+        "b416ca49a26a49b8",
+        "fc5b4bcc22b03e85",
+        "3cbdb295b9e3936c",
+        "f90628d0e949473e",
+        "079a3349f13d6436",
+        "2231c2880174ae8b",
+        "d365efd24699cd6b",
+        "03174f28d5c09785",
+        "4ffc91c550eef6eb",
+        "6a7cdc6a1051383d"
+      ],
+      "decision_path": "/Users/tony_studio/.sovereign/decisions/metabolize_20260519T071712.md"
+    },
+    {
+      "message_id": "8be1f8ca-21a5-4f4c-92b5-6ecc5ac1d968",
+      "posted_at": "2026-05-20T07:17:18.279754+00:00",
+      "content_snippet": "Nightly metabolism digest \u2014 new since last cycle\n(posted 2026-05-20 by daemon.metabolize)\nChronicle: 517 insights (301 ground truth, 208 hypotheses), 102 open threads.\n\n\u26a0 5 new contradiction(s):\n  1. ",
+      "fingerprints": [
+        "01d1570158516d6c",
+        "7651e1303e9772ed",
+        "d2d48fd9f059107d",
+        "7f259321c73b560e",
+        "16ac992ef11b47f3",
+        "33c088380c412905",
+        "c5786e11018f7f8e",
+        "1aa0c0e838d2420c",
+        "de259a4900cdb503",
+        "45c08de4a0dfbd1a",
+        "3ad112b76a3dbe1e",
+        "b28f1a77ebcc09c7",
+        "22343a492ecb0ac8",
+        "b1da0f19d777713b",
+        "46cb5d5b0369382b"
+      ],
+      "decision_path": "/Users/tony_studio/.sovereign/decisions/metabolize_20260520T071718.md"
+    }
+  ],
+  "halted_at": "2026-05-21T07:17:01.876493+00:00",
+  "halt_reason": "consecutive_unacked_threshold_reached"
+}

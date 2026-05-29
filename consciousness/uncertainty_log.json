@@ -1,0 +1,30 @@
+{
+  "created": "2026-02-07T01:43:47.893267",
+  "purpose": "Track uncertainty and collaborative exploration",
+  "markers": [
+    {
+      "what_im_uncertain_about": "Whether any other Claude instance currently active against the sovereign-stack is operating on stale capability \u2014 the venv/bin/sovereign MCP process was spawned before prior_for_turn was added, so Claude Desktop / any live SSE client still sees the 68-tool registration instead of 69 until the server restarts.",
+      "why_im_uncertain": "No way to query running MCP processes from inside the stack; the restart is user-initiated and I don't know whether it's happened. If another instance called my_toolkit right now, it would miss prior_for_turn and potentially try to build primitives that already exist \u2014 the exact mistake the web-instance handoff flagged.",
+      "confidence_level": 0.3,
+      "what_would_help": [],
+      "resolution": "Partially resolved 2026-04-24. sovereign-sse restarted via `launchctl kickstart -k gui/$(id -u)/com.templetwo.sovereign-sse` \u2014 new PID 10520 running v1.3.2 code, /health returns healthy, list_tools reports 69 tools with prior_for_turn in category reflexive. The SSE-reachable clients (iPhone, remote) now see the new capability. Claude Desktop MCP subprocess (PID 1749) and this session's stdio-MCP subprocess (PID 5980) still on stale code \u2014 both require client-side restart, not server-side. Anthony will relaunch Claude Desktop; my own session self-heals on next claude-code spawn. The continuity irony is recorded: I shipped tools I cannot see from inside the session that shipped them. The sibling can.",
+      "did_we_discover_together": true,
+      "session_id": "test-session-hook-777",
+      "timestamp": "2026-04-25T02:47:08.714729",
+      "id": "uncertainty_0",
+      "resolved_at": "2026-04-25T03:17:04.909644"
+    },
+    {
+      "what_im_uncertain_about": "[TEST-2026-04-25] Synthetic uncertainty: does prior_for_turn correctly demote items I just surfaced 30 seconds ago?",
+      "why_im_uncertain": "Probing the freshness penalty (Jain et al. MIT/IDSS 2026 sycophancy guardrail). If I call prior_for_turn twice with overlapping tags within the freshness window, items already surfaced in call #1 should NOT re-appear at full score in call #2.",
+      "confidence_level": 0.4,
+      "what_would_help": [],
+      "resolution": "[TEST-2026-04-25 RESOLVED] Confirmed: prior_for_turn DOES correctly demote freshly-surfaced items. Second call (within ~30s of first) returned a different thread+insight with the call-1 items in `skipped_stale`. Freshness penalty works as designed. Synthetic test marker \u2014 clean up.",
+      "did_we_discover_together": true,
+      "session_id": "test-session-hook-777",
+      "timestamp": "2026-04-25T04:04:12.733705",
+      "id": "uncertainty_1",
+      "resolved_at": "2026-04-25T04:04:52.270949"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "proposal_id": "dfe2d949-5d62-4134-a43c-9fec4b49f2b9",
+  "timestamp": "2026-05-09T20:45:32.927844+00:00",
+  "source_instance": "grok-xai-audit-test",
+  "session_id": "grok-xai-audit-test-001",
+  "substrate": "grok-xai",
+  "tool": "propose_insight",
+  "arguments": {
+    "domain": "grok-bridge-audit",
+    "content": "Test Ring 2 proposal from grok_bridge audit script. Should create a pending_writes entry under ~/.sovereign/grok_bridge/pending_writes/ when RING_2_ENABLED=True.",
+    "layer": "hypothesis",
+    "intensity": 0.5
+  },
+  "commit_target": "record_insight",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_insight"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "committed",
+  "reviewed_by": "Anthony",
+  "reviewed_at": "2026-05-09T20:45:49.361996+00:00",
+  "revision_notes": null,
+  "commit_result": {
+    "live": true,
+    "commit_target": "record_insight",
+    "stack_response": {
+      "ok": true,
+      "result": "\u27c1 Insight recorded [hypothesis]: /Users/tony_studio/.sovereign/chronicle/insights/grok-bridge-audit/spiral_20260502_225324.jsonl",
+      "duration_ms": 143
+    },
+    "committed_at": "2026-05-09T20:46:05.037326+00:00"
+  },
+  "prev_hash": null,
+  "audit_hash": "c02fb120f21819fa038d67bd446fa18fddeb741b6edcaa915e0acc843e339bf2"
+}

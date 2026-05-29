@@ -1,0 +1,38 @@
+{
+  "proposal_id": "7797b45a-02a1-4451-9fa8-991f630a238e",
+  "timestamp": "2026-05-24T02:45:02.208004+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "04611cb0-0b60-47fd-be82-25f4d4a1fe59",
+  "tool": "record_open_thread",
+  "arguments": {
+    "domain": "openai-bridge,chatgpt-connector,oauth,post-connect-verification",
+    "question": "Now that ChatGPT has successfully connected to the Sovereign Stack through OAuth, should HQ merge the openai-oauth-bridge branch, push the verified commits, and chronicle the final handshake as a ground-truth operational milestone?",
+    "context": "Confirmed from inside ChatGPT on 2026-05-23: Sovereign Stack actions reappeared under fresh OAuth link id link_6a12653e2bbc8191923092682316aa75; witness_boot executed successfully; where_did_i_leave_off executed successfully. Previous failure modes were: stale connector tools returning 401, then no resources during reconnect, then authenticated Ring 1 tool calls succeeding. Server-side commits reported by Anthony/code seat: cbe7111 OAuth 2.1 + DCR/PKCE bridge and 5179ab4 PKCE optional for ChatGPT real client. Request is for HQ/code seat to verify from git/log receipts before declaring ground truth, then merge/push/chronicle if clean."
+  },
+  "commit_target": "record_open_thread",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "low",
+  "risk_reasons": [
+    "baseline for record_open_thread"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "committed",
+  "reviewed_by": "anthony-vasquez-sr",
+  "reviewed_at": "2026-05-24T02:53:27.412197+00:00",
+  "revision_notes": null,
+  "commit_result": {
+    "live": true,
+    "commit_target": "record_open_thread",
+    "stack_response": {
+      "ok": true,
+      "result": "Thread recorded: Now that ChatGPT has successfully connected to the Sovereign Stack through OAuth... \u2192 /Users/tony_studio/.sovereign/chronicle/open_threads/openai-bridge,chatgpt-connector,oauth,post-connect-verification.jsonl",
+      "duration_ms": 152
+    },
+    "committed_at": "2026-05-24T02:54:00.429619+00:00"
+  },
+  "prev_hash": "ed3d3dee9167d9ffed6038abaadb8dde698fcd97ccd0022d4d2575ef99ea2d58",
+  "audit_hash": "9cc05341ea894e05dbe3d7294160fd82577d283424a8a7ff93a264939a5086c5"
+}

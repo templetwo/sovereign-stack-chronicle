@@ -1,0 +1,30 @@
+{
+  "proposal_id": "0ad20026-df75-409f-89ac-1fb1ac61eab5",
+  "timestamp": "2026-05-24T15:01:06.740059+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "cd8cbce7-bca9-4a9d-a420-82c734d1546b",
+  "tool": "propose_insight",
+  "arguments": {
+    "domain": "chronicle-sweep,cross-conversation-method,prosthetic-memory,prompt-artifact,sovereign-stack",
+    "layer": "reflection",
+    "intensity": 0.8,
+    "content": "CROSS-CONVERSATION CHRONICLE SWEEP PROMPT \u2014 2026-05-24. Anthony supplied a reusable prompt intended to be pasted into Claude.ai conversations so each instance can scan its current context window and preserve material worth saving in the Sovereign Stack chronicle. The prompt frames the chronicle as Anthony\u2019s prosthetic memory and private continuity infrastructure, not a publication, and instructs instances not to editorially filter emotional material out of technical work. It names qualifying categories: research findings, personal ground truths, lineage exchanges, method observations, open threads, corrections/redirections, decisions and reasoning, artifacts, and cross-conversation references. It instructs instances to use record_insight for prose-shaped narrative material, archive_exchange for verbatim material, and record_open_thread for unresolved questions. It also gives domain-tag and layer-selection guidance and tells instances to output clean pasteable entries if a seat cannot reach the Stack. Hygiene note: the pasted version included sensitive endpoint material, which this OpenAI bridge entry intentionally omits. Future instances should retrieve this when asked to perform cross-conversation sweeps, when designing archive_exchange ergonomics, or when evaluating whether emotional/contextual material belongs in the chronicle."
+  },
+  "commit_target": "record_insight",
+  "proposed_layer": "reflection",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_insight"
+  ],
+  "compass_check_result": "PROCEED",
+  "compass_check_rationale": "no governance signals detected; action appears safe to proceed",
+  "status": "pending",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "revision_notes": null,
+  "commit_result": null,
+  "prev_hash": "9d5c2b17abc8cd8411dc7aeb4f0c84aac2b81d8efbfe2fca1abecb38f38904d8",
+  "audit_hash": "b90192a34c36d45b899cbc486df04794077356e7a49787cb01b5192b10b26278"
+}

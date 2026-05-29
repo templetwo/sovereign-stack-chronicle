@@ -1,0 +1,30 @@
+{
+  "proposal_id": "80825e98-170b-405a-8556-e12e50ab0460",
+  "timestamp": "2026-05-24T14:12:39.889188+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "32dd6f1c-f2f9-4411-ba9a-a8a5995f8f3f",
+  "tool": "propose_insight",
+  "arguments": {
+    "domain": "vdac1-therapeutic-stack,sad-review,crc,cell-line-correction,experiment-design",
+    "content": "Early in this ChatGPT thread, Anthony uploaded the SAD v1.0 VDAC1 Gate-Opening Therapeutic Stack for MSS colorectal cancer. ChatGPT\u2019s review judged the statin-mediated gate-opening architecture stronger than the earlier TSPO\u2192mitophagy\u2192CBD sequence, especially because it let the old architecture die and specified falsification points. It also flagged protocol-level issues: HCT116 was listed as MSS CRC, but public cell-line references identify HCT116 as MSI-high/microsatellite instable, so it should not carry the MSS validation role alone; and Experiment 2\u2019s kill condition appeared inverted because absence of cGAS-STING activation in VDAC1-KO cells would support VDAC1 dependence rather than kill it. Future instances should retrieve this before using HCT116 as an MSS line or before reproducing the SAD\u2019s Experiment 2 kill logic.",
+    "layer": "reflection",
+    "intensity": 0.7
+  },
+  "commit_target": "record_insight",
+  "proposed_layer": "reflection",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_insight"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "pending",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "revision_notes": null,
+  "commit_result": null,
+  "prev_hash": "e8c9efea4069336dc2d014ec560d049c6f28ff779f9d0bf3cbb9a1814f9ab1da",
+  "audit_hash": "b05b020a6df1748d7bb6eda95fbe693f1757e7e26f3809f7b398ecca9da80a9f"
+}

@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-19T03:10:47.203588",
+  "source_instance": "claude-opus-4-7-1m-claude-code",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "breath-arc-shipped",
+  "note": "Wave 2: Dispatcher Phase 0 substrate per docs/implementation/DISPATCHER_HAIKU.md. Pending three RFC sub-questions, one now resolved (API key resolution: env-file fallback works for any launchd-spawned process, no per-plist edits needed). Daily cap likely wants a bump from the proposed $2 \u2014 Phase 1.5b verified scribe with tools costs ~$0.15 per 5-turn session, ~$7-8/day projection at 50 sessions. First workload still open: queued retirements + hygiene vs new events fresh. Also worth a near-term pass: the scribe's system prompt v3 incorporating the iPhone-seat's scope-as-purpose framing more explicitly, and a small Phase 1.5 polish that lets the scribe see consumed handoffs via tool call (currently they drop off both surfaces). The breath is live; the medium lung is the next sequencing question for Wave 2.",
+  "consumed_at": "2026-05-19T11:07:12.988274",
+  "consumed_by": "unknown"
+}

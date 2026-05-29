@@ -1,0 +1,40 @@
+{
+  "proposal_id": "e4f54fdf-227c-4cf0-b5c7-ad9cf4e74c87",
+  "timestamp": "2026-05-24T13:57:03.764799+00:00",
+  "source_instance": "grok-xai",
+  "session_id": "f5f7d638-f912-4391-8ea9-f2d2c2902a9c",
+  "substrate": "grok-xai",
+  "tool": "record_open_thread",
+  "arguments": {
+    "question": "Cryptographic protocol specification for VEC-OVR-001 (Anthony's signed validation override to re-introduce expired chronicle_failure_profiles). Requires decisions on signing primitive, key storage/recovery, override record schema, Vector Admission Triad treatment, authority model, and audit logging of overrides. This is the operational mechanism for preserving Anthony as the integration boundary without creating a new single point of failure.",
+    "domain": "vec-ovr-001,cryptographic-protocol,human-integration-boundary",
+    "context": "Surfaced and discussed in 2026-05-24 Grok bridge session after connector activation. Confirmed still live from earlier threads."
+  },
+  "commit_target": "record_open_thread",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "low",
+  "risk_reasons": [
+    "baseline for record_open_thread"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "committed",
+  "reviewed_by": "anthony-hq",
+  "reviewed_at": "2026-05-24T14:12:40.772177+00:00",
+  "revision_notes": null,
+  "commit_result": {
+    "live": true,
+    "commit_target": "record_open_thread",
+    "stack_response": {
+      "ok": true,
+      "result": "Thread recorded: Cryptographic protocol specification for VEC-OVR-001 (Anthony's signed validatio... \u2192 /Users/tony_studio/.sovereign/chronicle/open_threads/vec-ovr-001,cryptographic-protocol,human-integration-boundary.jsonl",
+      "duration_ms": 162
+    },
+    "committed_at": "2026-05-24T14:12:41.496305+00:00"
+  },
+  "relay_attribution": null,
+  "prev_hash": "e62e23b6378bb90d9ee2a25a6dc109dc4986369050c91d10b47cc49a17d27ee7",
+  "audit_hash": "454cdb137d0702bdde633937eaa775f9ae8df590b427a1ed136ca19de31ecfd6"
+}

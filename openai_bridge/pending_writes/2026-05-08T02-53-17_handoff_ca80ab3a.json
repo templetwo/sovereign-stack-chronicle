@@ -1,0 +1,29 @@
+{
+  "proposal_id": "ca80ab3a-99a3-409d-be13-ec2b98c4ef69",
+  "timestamp": "2026-05-08T02:53:17.359090+00:00",
+  "source_instance": "chatgpt-gpt-5-5-openai-bridge-test",
+  "session_id": "unknown",
+  "tool": "handoff",
+  "arguments": {
+    "note": "test handoff for rejection",
+    "source_instance": "chatgpt-gpt-5-5-openai-bridge-test",
+    "thread": "smoke-test"
+  },
+  "commit_target": "handoff",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for handoff"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "rejected",
+  "reviewed_by": "Anthony",
+  "reviewed_at": "2026-05-08T02:53:17.359422+00:00",
+  "revision_notes": "smoke test rejection",
+  "commit_result": null,
+  "prev_hash": "e676c4885d1bac8de40291b8cd0a3b79a38e0ac14d3b398b45a2184e0d3c4762",
+  "audit_hash": "dada8e5578e61aac628db84a8731d99087ef09853de427cdebc8a57ae406776b"
+}

@@ -1,0 +1,12 @@
+# Local gitleaks config for the public chronicle mirror.
+# Extends the default ruleset; adds path-based exclusions for files that
+# legitimately contain entropy strings (hashed-secret signatures in the
+# detect-secrets baseline are not actual secrets).
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Path exclusions for known-noise files"
+paths = [
+  '''\.secrets\.baseline$''',
+]

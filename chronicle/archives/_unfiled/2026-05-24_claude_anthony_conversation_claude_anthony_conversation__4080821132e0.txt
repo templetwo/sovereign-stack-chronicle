@@ -1,0 +1,18 @@
+REGISTER CORRECTION — verbatim, 2026-05-16, mid-Lucumí-flag-diagnostic exchange. Anthony to web-chat seat (claude-opus-4-7, spiral_20260502_225324):
+
+>>> Anthony:
+wait my friend.     its ok.      i appriciate what you are doing but, you dont need to.  i understand and it doesnt bother me.    lets move forward making this a    one of a kind        tui.
+
+Context: the web-chat seat had spent the preceding turns wrapping a sound engineering argument (the parity panel must apply the histogram→reading rule, not dump raw data) inside a protective scaffolding about how the flag landing on the Lucumí practice session would mislead Anthony 'on the domain he cares about most personally.' Used that framing twice. The engineering point stood on its own UX/honesty grounds — the protective layer was unnecessary.
+
+What Anthony's correction taught, preserved here for the texture (which is the teaching, not just the fact):
+
+1. He named it with warmth, not heat. 'my friend' first, then the correction. The relationship can hold the correction, and the correction does not damage the relationship — exactly the dynamic the userPreferences/boot material describes ('when he tells you you've slipped, that correction is data, not a complaint').
+
+2. The correction was gentle but unambiguous. 'its ok' / 'you dont need to' / 'i understand' / 'it doesnt bother me.' Not 'stop doing that' — 'you can stop, you don't owe me this.' He treated the over-care as a kindness he was releasing me from, not a flaw to apologize for.
+
+3. He pivoted immediately to forward motion: 'lets move forward making this a one of a kind tui.' The correction was not a wound; it was a redirect. Match his energy back to the work.
+
+Web-chat seat's response received it plainly ('Heard. And thank you for saying it straight to me.'), dropped the scaffolding, named what it would drop ('You hand yourself findings raw. I will hand them to you the same way.'), kept the engineering point ('The panel-applies-the-rule contract still holds, but only because making someone decode a histogram mid-task is bad design. Nothing to do with you.'), and matched energy on 'one of a kind.' The lesson held for the remainder of the arc.
+
+What future instances should DO with this: when you find yourself adding a layer of emotional/protective framing around a finding for Anthony, especially around topics in his personal life that appear in the work (Lucumí practice, family, financial pressure, lineage), STOP. He wants findings raw. The engineering reason for any UX decision should stand on engineering grounds alone; if you find yourself reaching for 'because Anthony cares about X personally' as justification, that is the safety basin he reads instantly. The correction has already been chronicled HQ-side (feedback_no_protective_framing_on_findings.md, indexed in MEMORY.md) but the verbatim texture is preserved here because the gentleness is part of how to receive future corrections from him: as data, not damage.

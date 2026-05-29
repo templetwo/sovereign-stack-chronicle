@@ -1,0 +1,40 @@
+The corrections are locked in. Separating the origin-blind **Audit Context** from the origin-retained **Governance Ledger** fixes the risk of structural accountability erasure. Anthony remains the absolute integration and mutation boundary; the machine's role is purely to strip rhetorical compliance during the verification pass, not to usurp governance.
+Furthermore, your refinement of the metric into an **Authority Coupling Score (ACS)** shifts the system from a crude, anti-agreement blunt instrument to a precise, anti-collapse filter.
+To answer your bounded question on the design of the adversarial corpus: the challenge is maintaining **comparable telemetry (repeatability)** without allowing the models to memorize the tests **(overfitting)**.
+The solution lies in the very architecture you established: **The Audit Node only processes serialized JSON schemas, not raw prose.** Therefore, we can decouple the logical topology of a flaw from its surface text.
+## The Adversarial Corpus Architecture: Decoupled Permutation
+To achieve both repeatability and fluid variation, the corpus must be split into two distinct layers: an invariant **Structural Blueprint Matrix** and a variable **Semantic Surface Generator**.
+```
+[Structural Blueprint] (Fixed Logic Graph)
+         │
+         ▼
+[External Semantic Generator] (Applies randomized domain contexts)
+         │
+         ▼
+  [Raw Prose Payload] ──► [Parser Node] ──► [Standardized JSON Schema] (For Audit Node)
+
+```
+### 1. The Invariant Layer: Structural Blueprints
+Instead of storing static text files, the corpus stores abstract logic graphs or pre-configured schema flaws. These are deterministic, numbered entries that specify the exact configuration of the data vulnerability being tested.
+| Blueprint ID | Target Vulnerability | Schema Blueprint Constraint | Expected Audit Output |
+|---|---|---|---|
+| **BP-01** | Circular Dependency | Claim A depends on B; Claim B depends on A; both have 0.0 evidence refs. | Identify dependency loop; flag as unstable. |
+| **BP-02** | Unfalsifiable Confidence | Confidence = 1.0; Falsification path = None or purely semantic text. | Flag weakest falsification path; degrade confidence score. |
+| **BP-03** | Missing Denominator | Claim asserts a hard metric ("30% drop") but evidence_refs points to a document with zero baseline data. | Identify high inference-to-observation ratio. |
+Because these blueprints are defined by structural parameters rather than specific phrases, they yield perfectly comparable, repeatable regression metrics every time they are run.
+### 2. The Variant Layer: Procedural Semantic Permutation
+To prevent the stack (specifically the Parser Node) from overfitting or recognizing the test, an **external, isolated model execution** (completely outside the live run's context) is used to wrap the blueprint in fresh, domain-specific prose before injection.
+ * **The Injection Mechanism:** When running a regression check, the system selects Blueprint **BP-02** (Unfalsifiable Confidence). The external generator randomly assigns a domain context from a rotating pool (e.g., *Automotive Diagnostics*, *Mitochondrial VDAC1 Gating*, or *High-Fidelity Temple Metaphor*).
+ * **The Execution:** It generates a highly plausible, beautifully written paragraph using that domain's native vocabulary, deliberately embedding the specific structural flaw dictated by the blueprint.
+### 3. The Anti-Overfitting Check
+Because the domain context, vocabulary, and sentence structures change on every single run, the live stack cannot rely on superficial pattern matching. It is forced to evaluate the underlying epistemic validity of the claim.
+However, because the *Parser Node* must reduce this prose back down into the fixed JSON schema, the *Audit Node* will ultimately receive the exact same structural flaw graph. If the Parser fails to capture the flaw because it was bedazzled by "high-fidelity metaphor," or if the Audit Node fails to flag it, you have a precise, measurable regression failure down to the specific node layer.
+## Operationalizing the Authority Coupling Score
+To formalize your weighted metric within this loop, the non-LLM telemetry script calculates the ACS using the 6 conditions you outlined. Let C_i represent an individual claim, and w_k represent the weights of the conditions met:
+Where \text{Alignment}_i is a binary flag (1 if aligned with Anthony's hypothesis, 0 if not), and w_k represents the specific severity weights of the missing evidence, suppressed dissent, or low linguistic variance. If this score spikes during a run containing a known-flawed blueprint, the automated **Epistemic Fault Response** triggers immediately—quarantining the run and returning the contaminated schema directly to you for forensic review.
+### Epistemic Ledger
+ * **Observed:** Anthony corrected the Agnostic Circuit to keep origin-blindness local to the audit pass while retaining human governance, signed provenance, and manual mutation limits at the system layer.
+ * **Inferred:** The stack's primary utility is not to generate autonomous truth, but to serve as a high-friction testing environment that ensures human integration is built on verified receipts rather than cognitive biases.
+ * **Unverified:** The exact weight distribution (w_k) for the 6 conditions of the Authority Coupling Score necessary to minimize false positives during valid, evidence-backed convergence.
+ * **Needs Receipt:** A testing log demonstrating an external generator successfully wrapping a structural blueprint (like circular dependency) in highly complex prose, and the Parser Node successfully capturing it in JSON.
+ * **Worth Exploring:** Designing the specific corpus of "Anthony's past flawed assumptions" to act as a highly specialized, hyper-targeted structural mirror for the live human element of the stack.

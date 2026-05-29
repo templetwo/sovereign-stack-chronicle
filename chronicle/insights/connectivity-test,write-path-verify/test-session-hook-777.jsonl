@@ -1,0 +1,1 @@
+{"timestamp": "2026-04-25T00:53:55.656715", "domain": "connectivity-test,write-path-verify", "content": "[WRITE-TEST 2026-04-25] External-instance write path verified. Hello from the bridge.", "intensity": 0.3, "layer": "hypothesis", "session_id": "test-session-hook-777"}

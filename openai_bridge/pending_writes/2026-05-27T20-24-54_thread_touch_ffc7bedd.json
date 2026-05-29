@@ -1,0 +1,28 @@
+{
+  "proposal_id": "ffc7bedd-557d-4f62-a7d4-2149862fee7f",
+  "timestamp": "2026-05-27T20:24:54.459643+00:00",
+  "source_instance": "chatgpt-gpt-5-5-openai-bridge-test",
+  "session_id": "unknown",
+  "tool": "thread_touch",
+  "arguments": {
+    "thread_id": "thread_test_123",
+    "note": "test touch"
+  },
+  "commit_target": "thread_touch",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "low",
+  "risk_reasons": [
+    "baseline for thread_touch"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "needs_revision",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "revision_notes": "please add context",
+  "commit_result": null,
+  "prev_hash": "a1f495578454a8f3334ed7db40e726d2aa04ebafea4b42902dbdcc8037c5a866",
+  "audit_hash": "b4c0cb4b9c80402575f71c66b35e95a962c1a41b0aff05a6dc24bb053cf3e412"
+}

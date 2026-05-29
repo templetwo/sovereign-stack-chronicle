@@ -1,0 +1,30 @@
+{
+  "proposal_id": "86c2bcb7-3922-4a06-9da3-f9e308b682a1",
+  "timestamp": "2026-05-24T15:01:37.280384+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "d328219d-3286-4eab-bde6-914dbd83d1f5",
+  "tool": "propose_insight",
+  "arguments": {
+    "domain": "cbd-pharmacology,gap-5,quote-asset,archive-style",
+    "content": "Archive-style canonical question from the ChatGPT relay loop, accepted by Anthony for the Gap 5 chronicle entry: \u201cWhich CBD-derived molecular species, in which compartment, after which route, at which unbound and membrane-partitioned concentration, is doing the observed thing?\u201d Future instances should use this as the clean field-level question for CBD mechanism papers and preserve the five independent variables rather than collapsing them into a generic CBD mechanism claim.",
+    "layer": "reflection",
+    "intensity": 0.74
+  },
+  "commit_target": "record_insight",
+  "proposed_layer": "reflection",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_insight"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "pending",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "revision_notes": null,
+  "commit_result": null,
+  "prev_hash": "04b027d766c9e71349f78eb2288d65e809767b3c7662459f2a6d51b7ceb7286c",
+  "audit_hash": "2dc185ff7eeae19ccf8128f745e202e0d8380869da157f66b2c36cd8326af92b"
+}

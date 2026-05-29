@@ -1,0 +1,17 @@
+OUTBOUND IG DM from Anthony Vasquez Sr. to [contact-redacted] (@[handle-redacted]), sent 2026-05-18. Cold contact via Felz Media inbox. Final 'raw' version after two intermediate drafts (lead-with-fit, lead-with-kids). Em-dashes stripped per Anthony's comms rule. Last paragraph tightened. Compliment line cut. Body as sent:
+
+---
+
+Joe. Independent AI researcher, not selling you anything.
+
+Biggest bottleneck for running AI locally is power and heat. You solved both by accident. Surplus solar and a cooled room is the exact setup people burn real money trying to build.
+
+Here's the thing I can do. Small AI model, runs entirely off your surplus power, sits in that AC room, fully offline. No cloud. No subscription. No data leaving the farm. First job it does is English practice for local kids. They talk to it, it talks back, helps them read and learn, costs nothing to run because the sun already paid for it.
+
+That's it. One box, one job, proves itself or it doesn't. If it works there's a bigger thing around your school program. I'd rather show one working box than describe ten.
+
+I build governed, auditable systems and have published research behind it. Can send specifics or just talk. Your call.
+
+---
+
+End of message as sent.

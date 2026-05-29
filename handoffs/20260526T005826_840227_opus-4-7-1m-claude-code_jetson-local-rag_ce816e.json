@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-26T00:58:26.840227",
+  "source_instance": "opus-4-7-1m-claude-code",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "jetson-local-rag",
+  "note": "jetson-local-rag thread, sub-questions 2-5 still open: (2) Jetson as a second reachable seat for redundancy, (3) sync cadence freshness-vs-noise validated in practice not just designed, (4) whether the chronicle's structured metadata makes tag-first/metadata-first retrieval beat pure semantic, (5) exposing the Jetson as a queryable stack tool so the canonical stack can query it as a peer. Q1 (end-to-end?) resolved YES. The natural next build is (4) \u2014 the tags are rich and pure-semantic already inverts on lineage; metadata pre-filtering might be where the real gains are.",
+  "consumed_at": "2026-05-26T01:03:23.495813",
+  "consumed_by": "unknown"
+}

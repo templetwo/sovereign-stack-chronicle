@@ -1,0 +1,341 @@
+# CBD-Induced Liver Safety, the Transdermal Data Gap, and How Patch-Route Pharmacokinetics Could Fill It
+
+*A reference document for the chronicle archive — synthesizing peer-reviewed evidence on oral CBD hepatotoxicity, mechanistic candidates, and the missing measurement that would distinguish among them. Sources through May 2026.*
+
+---
+
+## Section 1: Background — Oral CBD and liver enzyme elevations
+
+### 1.1 The Epidiolex pivotal-trial signal
+
+Highly purified cannabidiol (CBD), marketed as Epidiolex (US) / Epidyolex (EU), was approved by the FDA in 2018 for Lennox–Gastaut syndrome (LGS) and Dravet syndrome (DS), with later approval for tuberous sclerosis complex (TSC). Across the four pivotal randomized controlled trials in LGS and DS (Devinsky et al., NEJM 2017; Devinsky et al., NEJM 2018; Thiele et al., Lancet 2018) and the TSC trial, a dose-dependent rise in serum alanine aminotransferase (ALT) emerged as the principal laboratory-safety signal. The current FDA label (Epidiolex prescribing information, last revised 2025, accessdata.fda.gov, 210365s023lbl) summarizes:
+
+- ALT elevations >3x the upper limit of normal (ULN) occurred in **13%** of CBD-treated patients at 10–20 mg/kg/day in LGS/DS, and **12%** at 25 mg/kg/day in TSC, versus **1%** on placebo.
+- Less than **1%** of CBD-treated patients had ALT/AST >20x ULN.
+- Transaminase elevations typically appeared within the **first two months** of treatment initiation, though cases occurred up to **18 months** after start, particularly with concomitant valproate.
+- Alkaline phosphatase elevations were uncommon, consistent with a hepatocellular (not cholestatic) injury pattern.
+
+The clearest dose effect comes from the LGS/DS pooled data: transaminase elevations occurred in approximately **4–5%** of patients at 10 mg/kg/day vs higher proportions at 20 mg/kg/day (Watkins et al., Clin Pharmacol Ther 2021, PMC8246741).
+
+### 1.2 The valproate axis
+
+The label documents the largest single-factor amplifier of risk:
+
+- **30%** ALT >3x ULN in LGS/DS patients on both concomitant valproate **and** clobazam
+- **21%** on concomitant valproate alone (no clobazam)
+- **4%** on concomitant clobazam alone (no valproate)
+- In TSC, **25%** ALT >3x ULN on concomitant valproate (with or without clobazam); essentially the entire excess transaminase signal in the pediatric epilepsy trials concentrates in valproate co-users.
+
+Valproate is itself an established hepatotoxin via at least three distinct phenotypes (LiverTox/NCBI Bookshelf NBK548284): hyperammonemic encephalopathy, hepatocellular injury, and Reye-like syndrome. The combined CBD+valproate risk has not been mechanistically dissected in vivo, but Beers et al. (Toxicology In Vitro 2025, PMID 40774642) demonstrated, in a 3-D primary human hepatocyte spheroid model, that the in vitro hepatotoxicity of CBD is amplified in the presence of valproate — the first in vitro recapitulation of the clinical interaction. Their stated conclusion: "Future work is needed to examine mechanisms of CBD-induced hepatotoxicity with VPA."
+
+### 1.3 The 2024–2026 lower-dose FDA randomized trial
+
+Until 2025, liver safety data at consumer-relevant doses (≤300–500 mg/day) had been thin and contradictory. **Florian et al. (JAMA Internal Medicine, July 2025; DOI 10.1001/jamainternmed.2025.2366; PMID 40622698)** addressed this directly:
+
+- Randomized, double-blind, placebo-controlled trial conducted at Spaulding Clinical Research, West Bend, Wisconsin (Jan–Aug 2024)
+- 201 healthy adults (median age 36, 44% women), 50.6–110 kg
+- 2.5 mg/kg CBD twice daily (5 mg/kg/day total; ~253–550 mg/day) vs placebo for 28 days
+- Weekly laboratory assessments through day 35
+
+**Result**: 5.6% of CBD-treated participants had ALT or AST >3x ULN versus 0% on placebo; 7 met criteria for potential drug-induced liver injury (DILI). No participant developed clinical symptoms; enzymes returned to baseline within 1–2 weeks of discontinuation. Eosinophilia was also noted. The accompanying editorial (Stall et al., JAMA Intern Med 2025; DOI 10.1001/jamainternmed.2025.2363) urged clinicians to "screen patients with elevated liver enzyme levels for CBD use."
+
+### 1.4 Pediatric vs adult exposure patterns
+
+A striking observation from the Watkins et al. 2021 Phase I trial (PMC8246741) is that **31% of healthy adults receiving ~20 mg/kg/day developed ALT >5x ULN** — substantially higher than the ~13% rate observed in DS/LGS pediatric trials at the same weight-adjusted dose, despite the absence of valproate. The authors note: "Patients with DS/LGS who had normal baseline LTs and were not treated with valproate experienced a low incidence of treatment-emergent LT abnormalities." In other words, **pediatric exposure may, paradoxically, be more forgiving than adult exposure at equivalent mg/kg dosing in the absence of comedications**, a finding the authors flag as "unexpected." Whether this reflects baseline cytochrome P450 activity, mitochondrial reserve, or some other developmental factor remains open.
+
+### 1.5 Risk factor synthesis (Lo et al. meta-analysis)
+
+Lo et al. (J Intern Med 2023; 293:724–752; PMID 36912195) conducted a systematic review and meta-analysis of 28 trials (n=1,533 on CBD; 1,229 placebo-controlled):
+
+- Odds ratio for liver enzyme elevation on CBD vs placebo: **5.85** (95% CI 3.84–8.92, p<0.001)
+- OR for DILI: **4.82** (95% CI 2.46–9.45, p<0.001)
+- Pooled proportion of LE elevations on CBD: **7.4%** (95% CI 4.5–12.1%)
+- Pooled proportion of DILI: **3.0%** (95% CI 1.4–6.3%)
+- Risk concentrated at higher doses; "at doses <300 mg/day, the risk of DILI is likely low"
+
+Risk factors identified across the literature: high dose, concomitant valproate, concomitant clobazam, baseline LFT abnormalities, longer duration of exposure, and (per Florian 2025) plausibly also factors as low-grade as moderate-dose oral exposure in healthy adults.
+
+---
+
+## Section 2: Mechanistic candidates — established vs hypothesized
+
+CBD's hepatotoxic mechanism is **not** definitively established. Several candidate pathways are supported by in vitro or partial in vivo evidence; none has been proven decisive in humans.
+
+### 2.1 Pharmacokinetics of 7-COOH-CBD: the candidate "toxic metabolite"
+
+CBD is extensively metabolized by hepatic CYP2C19 and CYP3A4 (with minor contributions from CYP1A1, CYP1A2, CYP2C9, CYP2D6) and by UGT1A7, UGT1A9, UGT2B7 (FDA Clinical Pharmacology Review, NDA 210365, 2018). The dominant metabolic cascade is:
+
+**CBD → 7-OH-CBD (active, equipotent for antiseizure effect) → 7-COOH-CBD (inactive in epilepsy models)**
+
+7-COOH-CBD is formed via aldehyde dehydrogenase (ALDH)-mediated oxidation of the 7-OH-CBD intermediate (Beers et al., Chem Res Toxicol 2023; PMC10184666; ALDH inhibitor WIN18,446 IC50 for 7-COOH-CBD formation = 285 ± 17 nM).
+
+Key kinetics from Taylor et al. (CNS Drugs 2018; PMC6223703; Phase I, healthy adults, 750 and 1500 mg twice daily for 7 days, sponsored by GW Research — industry-sponsored):
+
+- Parent CBD terminal half-life: **56–61 h** after twice-daily dosing
+- CBD steady state reached at ~2 days; 7-COOH-CBD steady state at ~4 days
+- CBD accumulation ratio (Rac) day 7 vs day 1: **1.8-fold (750 mg)** and **2.6-fold (1500 mg)**
+- **7-COOH-CBD accumulation ratio: 4.5-fold (750 mg) and 9.6-fold (1500 mg)** — substantially greater accumulation than parent
+- At steady state, 7-COOH-CBD is the **major circulating analyte**, with AUC approximately **40-fold higher than parent CBD** (FDA label) and Cmax ~1,717 ng/mL after 750 mg BID (Zhang, Melchert, Markowitz, Med Cannabis Cannabinoids 2024; PMC10824522)
+- Approximately **97% of total drug material** in plasma at steady state is 7-COOH-CBD (Taylor et al. 2018)
+- Sex effect: 7-COOH-CBD Cmax ~2.25x higher in females (p=0.0155); AUC ~1.97x higher (p=0.0285) when normalized for body weight (Zhang 2024)
+
+### 2.2 BSEP inhibition by 7-COOH-CBD
+
+The bile salt export pump (BSEP; encoded by *ABCB11*) is the canalicular transporter that pumps bile acids out of hepatocytes into bile. Drug-induced BSEP inhibition is a recognized mechanism of cholestatic and hepatocellular DILI (Kenna et al., Clin Pharmacol Ther 2018; PMID 30137645; International Transporter Consortium perspective).
+
+The Epidiolex label history shows an interesting reversal:
+
+- **Original 2018 FDA Clinical Pharmacology Review** (accessdata.fda.gov, NDA 210365, Reference ID 4263427): explicitly states that "the CBD metabolite, 7-COOH-CBD was not a substrate of BCRP, OATP1B1, OATP1B3 or OCT or an inhibitor of transport mediated via BCRP, OATP1B1, MATE1, OATP1B3, OAT1, OAT3, OCT2, OCT1, MATE2-K and BSEP. However, 7-COOH-CBD was a substrate of P-gp."
+- **Post-2020 Epidiolex label revisions** (e.g., 210365s015lbl, 2022; current 2025 label): reverses position, stating **"7-COOH-CBD is an inhibitor of transport mediated via BCRP and BSEP at clinically relevant concentrations."**
+
+The current label reflects supplemental in vitro data submitted post-approval, but the **specific IC50 or Ki values are not publicly disclosed** in either the FDA review or the label — only the qualitative claim of inhibition "at clinically relevant concentrations" appears. This is an important epistemic caveat: the BSEP-inhibition mechanism is the most-cited mechanistic candidate in current literature, but its quantitative rigor is opaque, and one should not present BSEP inhibition as a settled mechanism for the in vivo hepatocellular ALT signal — which is, after all, not predominantly cholestatic in phenotype (alkaline phosphatase elevations are uncommon).
+
+Parent CBD itself, per the current label, is "not anticipated to interact with BCRP, BSEP, MDR1/P-gp, OAT1, OAT3, OCT1, OCT2, MATE1, MATE2-K, OATP1B1, or OATP1B3," with the caveat that intestinal P-gp inhibition cannot be excluded.
+
+### 2.3 BCRP and P-glycoprotein
+
+Per the same label:
+- **7-COOH-CBD is a substrate of P-gp** (consistent across all FDA documents)
+- **7-COOH-CBD inhibits BCRP at clinically relevant concentrations**
+- Parent CBD's intestinal P-gp effects are documented in vivo
+
+The clinical significance of BCRP inhibition for hepatotoxicity is less direct than BSEP — BCRP exports drugs/conjugates from hepatocytes, and inhibition could in principle promote intracellular accumulation of toxic conjugates or alter bile composition indirectly.
+
+### 2.4 CYP-mediated hepatocyte stress: the paracetamol analogy
+
+Paul Watkins and colleagues, who designed the Phase I trial in healthy adults (Clin Pharmacol Ther 2021), explicitly draw the comparison to acetaminophen (paracetamol). Watkins PB, Kaplowitz N, Slattery JT, et al. (JAMA 2006; 296(1):87–93; doi:10.1001/jama.296.1.87; PMID 16820551) showed that 38% of healthy adults receiving 4 g/day paracetamol for 2 weeks developed ALT elevations >3x ULN and 8% developed ALT >8x ULN; CBD produces a phenomenologically similar pattern of asymptomatic, dose-dependent, often-reversible hepatocellular transaminase elevations. The mechanism is presumed (but not proven) to involve CYP-generated reactive intermediates and mitochondrial stress, analogous to NAPQI for paracetamol. Notably, the Watkins 2021 paper observed that 3 of 5 participants with ALT >5x ULN had also taken acetaminophen, raising the question of an additive injury; the authors discount this because timing and biochemistry were similar across all affected participants regardless of acetaminophen use.
+
+### 2.5 Mitochondrial / VDAC1 axis
+
+CBD has been shown, in vitro, to bind the voltage-dependent anion channel 1 (VDAC1) on the outer mitochondrial membrane and decrease channel conductance (Rimmerman et al., Cell Death & Disease 2013, PMID 24309936). Subsequent work in cancer cell lines (Olivas-Aguirre et al. 2021; Jeong et al. 2019; Kosgodage / Zhu et al. 2023, PMID 36736415) has reinforced VDAC1 binding as a mitochondrial liability of CBD at supratherapeutic concentrations (typically ≥10 μM in vitro). Free unbound steady-state plasma CBD concentrations at high oral doses are roughly 0.05–0.1 μM, far below the in vitro VDAC1 threshold — but **intrahepatic concentrations during first-pass metabolism may be substantially higher**, providing a plausible local mechanism. Beers/Jackson (Drug Metab Dispos 2024, PMID 38286636) explicitly catalog mitochondrial dysfunction among the candidate DILI pathways for CBD without identifying it as confirmed.
+
+### 2.6 UGT involvement and valproate confounding
+
+CBD undergoes phase II glucuronidation via UGT1A7, UGT1A9, and UGT2B7 (FDA Clin Pharm Review 2018). Valproate is itself a substrate and modulator of UGT enzymes; competitive interference at the conjugation step is one of several proposed mechanisms for the CBD–valproate hepatotoxicity synergy. Other proposed mechanisms include:
+- Shared mitochondrial toxicity (valproate inhibits beta-oxidation, depletes CoA)
+- Shared BSEP inhibition (valproate has documented BSEP-inhibitory activity)
+- Reactive-metabolite synergy
+
+The Beers et al. 2025 spheroid paper recapitulates the in vivo CBD+VPA synergy in vitro but does not yet identify the molecular mechanism.
+
+### 2.7 Honest assessment of mechanism
+
+The mechanistic literature currently supports **at least three concurrent candidate pathways** for CBD-induced hepatocyte stress:
+
+1. **BSEP inhibition by 7-COOH-CBD** (qualitative FDA label claim; no published IC50; pattern in vivo is hepatocellular not cholestatic, which weakens this hypothesis as the *primary* mechanism)
+2. **CYP-mediated reactive metabolite / mitochondrial stress** (Watkins paracetamol analogy; VDAC1 binding in vitro; consistent with hepatocellular ALT-dominant phenotype)
+3. **Confounded valproate interaction** (UGT competition, BSEP, mitochondrial co-toxicity; in vitro recapitulation now exists but mechanism still unknown)
+
+None has been independently validated as the dominant in vivo driver. The 2024 review by Beers and Jackson (Drug Metab Dispos) concludes that "factors contributing to DILI" must still be teased apart by quantitative systems toxicology approaches.
+
+---
+
+## Section 3: First-pass metabolism — why route of administration matters
+
+### 3.1 Oral bioavailability
+
+The absolute oral bioavailability of CBD under fasted conditions is approximately **6%**, increasing fourfold when co-administered with a high-fat meal (Perucca & Bialer, CNS Drugs 2020; 34(8):795–800; doi:10.1007/s40263-020-00741-5). Sublingual administration yields approximately 13–19% bioavailability. Approximately **70–75% of an orally administered CBD dose undergoes hepatic first-pass metabolism before reaching the systemic circulation** (Perucca & Bialer 2020, as quoted by MDPI Pharmaceutics 2025, PMC12166629).
+
+The implication is direct: oral CBD delivers the parent compound to the liver at concentrations far exceeding peripheral plasma, and generates 7-OH-CBD and 7-COOH-CBD predominantly **in the very compartment where DILI is detected**.
+
+### 3.2 Production ratios by route
+
+The 7-COOH-CBD : parent CBD ratio in plasma is a route-of-administration fingerprint:
+
+- **Oral (Epidiolex, 750 mg BID, healthy adults; Zhang et al. 2024)**: Cmax ratio ≈ **4.4** (1,717 / 389 ng/mL); AUC metabolite-to-parent ratio (MPR) = **7.11 ± 3.48**. The 2018 FDA review documents an AUC ratio of approximately **40x** at higher steady-state doses (1500 mg BID).
+- **Inhaled CBD** (Devinsky et al., as cited by Bertin et al. Pharmaceutics 2024, PMC10820640): "the inhaled formulation had an increased AUClast with very little formation of 7-COOH-CBD, in contrast to the oily solution."
+- **Topical / transdermal CBD** (Zamarripa et al., J Anal Toxicol 2024; DOI 10.1093/jat/bkae001): whole-blood 7-COOH-CBD : CBD Cmax ratio ≈ **2** across lotions, creams, and gels — but absolute concentrations ~500–1000x lower than oral (e.g., topical CBD Cmax 0.3–0.7 ng/mL vs oral ~389 ng/mL at 750 mg BID).
+- **Transdermal patch / gel with permeation enhancement** (Sahay et al. 2022, J Cannabis Res, novel transdermal system; Heussler et al. 2019, Fragile X CBD gel up to 250 mg/day): CBD Cmax 576 ± 1,016 pg/mL after 100 mg topical application, t½ ~5.7 h, Tmax ~8 h. Metabolite ratios are not consistently reported in these papers.
+
+### 3.3 Why transdermal bypasses most first-pass conversion
+
+Transdermal CBD enters the systemic circulation via cutaneous capillary beds in the dermis, bypassing the gut and portal circulation entirely. Multiple reviews (Lucas et al., Br J Clin Pharmacol 2018; Sahay et al. 2022; Mahmoudinoodezh et al.) note that "transdermal administration of cannabinoids avoids first-pass metabolism." CBD's extreme lipophilicity — **log P = 6.3** (Franco, Gershkovich, Perucca & Bialer, Clin Pharmacokinet 2021; doi:10.1007/s40262-020-00931-w) — limits passive transdermal flux without permeation enhancement, but where systemic delivery is achieved, metabolite production reflects only **second-pass hepatic exposure to systemic CBD**, which is delivered at much lower steady-state plasma concentrations than oral dosing.
+
+### 3.4 Steady-state vs pulsatile concentration profiles
+
+- **Oral CBD** produces a Tmax of ~2.5–5 h with a sharp Cmax spike, then a long terminal half-life (56–61 h on chronic dosing). Twice-daily dosing produces pronounced peaks and troughs and substantial 7-COOH-CBD accumulation over the first week.
+- **Transdermal patches** (where measured; Zamarripa 2024; Heussler 2019) produce flatter, lower-amplitude plasma curves with Tmax ~8 h or longer; theoretically these approach zero-order delivery once the patch reaches steady state, minimizing peak-related stress signals and dramatically lowering the cumulative dose presented to the liver per unit of clinical effect.
+
+These pharmacokinetic differences are mechanistically relevant to **every** candidate hepatotoxicity pathway: lower portal-vein CBD, lower 7-COOH-CBD AUC, less pulsatile mitochondrial loading, and proportionally less UGT/CYP induction.
+
+---
+
+## Section 4: The gap in mainstream data
+
+### 4.1 What transdermal CBD trials exist (May 2026)
+
+The transdermal/topical CBD literature is small. Notable items:
+
+1. **Heussler et al. 2019** — Phase 1/2 open-label trial of transdermal CBD gel for Fragile X Syndrome, n=20, titrated to 250 mg/day for 12 weeks. No serious adverse events; 85% had a treatment-emergent AE, mostly application-site issues. Liver chemistries were not the primary endpoint and not systematically reported as a metabolite-ratio analysis.
+2. **CanPatch trial protocol (Charoenporn et al., Med Cannabis Cannabinoids 2024; PMID 39015605)** — Randomized double-blind placebo-controlled trial of CBD transdermal patches (1.0 ± 0.1 mg CBD per patch in MCT solvent) for mild-to-moderate plaque psoriasis at Chulalongkorn University Hospital, Bangkok, Thailand; n=60. Primary endpoint is local Psoriasis Severity Index; secondary endpoints include adverse events and microbiome. **Liver function tests and metabolite pharmacokinetics are not in the primary endpoint set.**
+3. **Maghfour et al. 2022 (and Palmieri et al. 2019) — topical CBD ointment trials for psoriasis** — Demonstrated improvements in PASI/LPSI scores with no systemic safety endpoints.
+4. **Zamarripa et al. 2024 (J Anal Toxicol)** — Open-label PK characterization of five commercially available topical CBD products in healthy adults; quantified blood CBD and 7-COOH-CBD; not paired with liver function panels in a comparative design.
+5. **Sahay et al. 2022 (J Cannabis Res; novel transdermal delivery system)** — single-arm exploratory PK of 100 mg CBD + 100 mg THC topical formulation in healthy adults; demonstrated systemic absorption (CBD Cmax 576 pg/mL); no comparative metabolite-ratio analysis vs oral.
+6. **FDA external review of topical CBD safety (FDA's Response to External Peer Review, 2020; fda.gov/media/152316)** — Noted that topical CBD evidence base is limited but reports "no adverse effects reported, one study with a transdermal gel well tolerated, one poster" — characterized topical use as substantially safer than oral but acknowledged the evidence is sparse.
+7. **Redmond et al. 2025 (J Cosmet Dermatol; DOI 10.1111/jocd.70527)** — Review of topical CBD in dermatologic disorders; one trial reported "six instances of skin irritation in a split-body, placebo-controlled trial of topical CBD for psoriasis, which resolved without treatment within 1 week."
+
+### 4.2 The "considerably safer profile" claim
+
+The CanPatch protocol publication (Charoenporn et al. 2024) states explicitly: *"Topical application of CBD, such as through skin creams or transdermal patches, have demonstrated a considerably safer profile. Research in this domain typically reports fewer and less severe adverse events. Minor side effects, when they do occur, often include skin-related reactions such as erythema, irritation or pain at the application site, changes in hair or skin color, somnolence, and diarrhea."*
+
+This claim is plausible but **largely uncontrolled for confounding**:
+
+- Topical/transdermal CBD studies use much lower effective systemic doses than Epidiolex (whole-blood Cmax of ng/mL vs hundreds of ng/mL)
+- Durations are typically ≤3 months
+- Liver function tests are rarely the primary safety endpoint
+- Direct head-to-head metabolite-ratio comparisons to oral users are **absent from the published literature**
+
+### 4.3 The specific missing measurement
+
+The following measurement set has not, to the author's knowledge, been published as of May 2026:
+
+**LC-MS/MS plasma fingerprint of CBD, 7-OH-CBD, and 7-COOH-CBD in steady-state transdermal CBD users (n ≥ ~20–40), with paired liver function panels (ALT, AST, GGT, total bilirubin, alkaline phosphatase) and matched to oral CBD users at clinically comparable doses.**
+
+This is the measurement that would discriminate among the candidate explanations for the route-of-administration safety difference:
+
+- **(a) Metabolite-pathway bypass**: if transdermal users show low 7-COOH-CBD:CBD ratios (consistent with Zamarripa's ~2:1 vs oral ~7–40:1) AND normal LFTs, while oral users show high ratios AND occasional LFT abnormalities, the metabolite hypothesis is strengthened.
+- **(b) Lower systemic exposure overall**: if transdermal users simply have lower parent CBD plasma concentrations and proportionally lower 7-COOH-CBD, with no liver signal, the difference may be dose-driven rather than route-driven.
+- **(c) Some other route-specific factor**: if the metabolite ratios are similar between routes (in dose-matched users) but LFT outcomes differ, an alternative mechanism (e.g., portal-vein peak, gut-derived metabolites, mitochondrial pulsatile stress) is implicated.
+
+### 4.4 Why this matters
+
+Without the metabolite fingerprint–LFT pairing, one cannot say which of (a), (b), or (c) explains the apparent transdermal safety advantage. Regulators, clinicians prescribing CBD off-label, and consumers making purchase decisions are all making implicit assumptions about route safety that the published data do not yet justify rigorously.
+
+---
+
+## Section 5: How transdermal patch data could fill the gap
+
+### 5.1 Minimum useful experimental design
+
+A cross-sectional, observational design suffices to break the most important ambiguities:
+
+- **Recruit** ≥20–30 steady-state transdermal CBD users (≥4 weeks of daily use of a labeled, COA-verified patch product) and matched oral CBD users (similar age, sex distribution, BMI, comedication profile, alcohol use, and approximate total daily mg).
+- **Measure** in plasma by validated LC-MS/MS: CBD, 7-OH-CBD, 7-COOH-CBD, with sampling at a defined time post-application/dose (e.g., 4–6 h post-dose for oral; mid-patch-cycle for transdermal).
+- **Pair** with the same-visit liver panel: ALT, AST, ALP, GGT, total and direct bilirubin, and ideally also markers of mitochondrial/cholestatic stress (CK-18 fragments where available; bile acid panel).
+- **Stratify** by CYP2C9 and CYP2C19 genotype if feasible (see Section 6.1).
+
+### 5.2 Discriminating outcomes
+
+The cross-sectional design yields multiple analyzable scenarios, each of which is publishable regardless of direction:
+
+| Outcome | Interpretation | Publication value |
+|---|---|---|
+| Transdermal: low 7-COOH-CBD:CBD ratio + normal LFTs; oral: high ratio + occasional ALT bumps | Supports metabolite-pathway bypass as mechanism of safety advantage | High — directly informs Epidiolex label mechanism debate |
+| Transdermal: similar ratio but lower absolute concentrations + normal LFTs | Safety is exposure-driven, not pathway-specific; argues against 7-COOH-CBD as principal mediator | High — refines mechanistic hypothesis |
+| Transdermal: similar absolute concentrations + normal LFTs | Suggests pulsatile delivery / portal-first-pass is the key risk factor | High — novel and explanatorily interesting |
+| Transdermal: high 7-COOH-CBD relative to expectation | Skin metabolism / sequestration plays a role; constraints on label inference from oral data | Moderate — methodological caveats matter |
+| Liver abnormalities detected in any subgroup | Updates the field's prior on topical CBD safety | High — actionable for regulators |
+
+There are **no wasted branches**: every direction informs either the mechanism or the safety map.
+
+### 5.3 Archived plasma re-assay
+
+A substantial fraction of the cost of such a study is participant recruitment and ethics infrastructure. **Archived plasma samples from prior bioequivalence or PK studies of transdermal/topical CBD products** (e.g., the Zamarripa et al. 2024 cohort; the Heussler 2019 cohort; pilot bioequivalence work conducted by topical-CBD product manufacturers under IRB) could in principle be re-assayed for the metabolite fingerprint without new clinical work — provided consent terms permit re-analysis. This would dramatically lower the threshold for a first-pass answer. The principal risk is sample stability for 7-COOH-CBD, which is generally adequate at –80 °C for several years per cannabinoid LC-MS/MS literature.
+
+### 5.4 Connection to existing two-pathway / mitochondrial stress test framework
+
+An independently published framework (the "two-pathway model" of CBD pharmacology; Olivas-Aguirre et al. 2019/2021; Zhu et al. 2023, PMID 36736415; broader review by Beers/Jackson 2024) proposes that CBD's outcomes are determined by pre-existing mitochondrial reserve, with VDAC1 binding as the dominant target above ~10 μM. Within this framework, **the route of administration determines whether the hepatocyte ever sees concentrations approaching the VDAC1 / mitochondrial stress threshold during first-pass**. Transdermal delivery, by lowering both peak intra-hepatic concentration and 7-COOH-CBD accumulation, predicts a substantially lower probability of crossing the cytotoxic threshold — a prediction that the metabolite fingerprint + LFT pairing directly tests.
+
+---
+
+## Section 6: Things often missed in this discussion
+
+### 6.1 Vulnerable subpopulations
+
+- **CYP2C9 *3 allele carriers** show notably reduced CBD metabolic clearance and elevated plasma concentrations (genotype-specific safety and PK paper, Clin Transl Sci 2025; PMC12741916). CYP2C19 polymorphisms similarly affect CBD pharmacokinetics, though less than CYP2C9 in some donor sets. Genotype-stratified analyses are rare in the existing literature.
+- **Hepatic impairment**: the FDA Clinical Pharmacology Review (NDA 210365, study GWEP1539) showed that the geometric mean AUC(0–inf) for total CBD increased **2.45-fold in moderate hepatic impairment** (90% CI 1.50–4.01) and **5.15-fold in severe hepatic impairment** (90% CI 2.94–9.00) compared to healthy controls. Patients with pre-existing liver disease accumulate CBD and presumably its metabolites substantially more than label-naive users.
+- **Polypharmacy**: any drug that inhibits CYP3A4 or CYP2C19 (e.g., fluoxetine, omeprazole, clarithromycin) is expected to elevate CBD and 7-OH-CBD exposure. Drugs that inhibit P-gp (clarithromycin, erythromycin, ritonavir, verapamil) may elevate 7-COOH-CBD systemic exposure further, since 7-COOH-CBD is a P-gp substrate (FDA Clin Pharm Review 2018; current Epidiolex label).
+- **Concomitant valproate**: see Section 1.2. The single largest amplifier of hepatic risk in the existing CBD literature.
+
+### 6.2 Long-term vs acute exposure
+
+- Acute (28-day) trials (Florian 2025; Watkins 2021) capture early-onset ALT elevations, which most often appear in the first 2 months per the Epidiolex label.
+- Long-term cases: the Epidiolex label documents transaminase elevations occurring up to **18 months** after initiation, particularly in valproate co-users.
+- Pediatric extension trials (e.g., Devinsky / Thiele open-label extensions in DS and LGS, Epilepsia 2019–2021) show that ALT elevations remained the principal labeled adverse event over the long term but did not result in deaths from liver disease.
+- Hepatic adaptation: paracetamol's well-documented hepatic-adaptation phenomenon (Watkins 2006 JAMA; subsequent confirmations) — wherein ALT returns to baseline despite continued dosing — has been observed in some CBD users as well, but this remains under-characterized for CBD.
+
+### 6.3 Bile acid composition and FXR signaling beyond BSEP
+
+CBD's effects on bile acid composition, beyond the indirect BSEP-inhibition claim attributed to 7-COOH-CBD, are not well mapped. The FXR (farnesoid X receptor) axis regulates BSEP expression, bile acid synthesis (CYP7A1), and downstream signaling; any drug that perturbs intracellular bile acid pools also perturbs FXR-driven feedback. A direct pharmacologic interaction between CBD or its metabolites and FXR has not been definitively published, though cannabinoids more broadly have been shown to interact with nuclear receptors including PPARgamma. This represents an under-explored mechanistic node.
+
+### 6.4 Contradicting evidence on transdermal safer narrative
+
+The transdermal safety story is not without complications:
+
+- **Local skin reactions**: contact dermatitis, erythema, application-site irritation. Heussler 2019 (Fragile X CBD gel): one patient with mild dryness, one with moderate rash. A split-body psoriasis trial (cited in Redmond et al. 2025) reported 6 instances of skin irritation that resolved within 1 week — though the symmetric design made it impossible to attribute to CBD itself versus excipients.
+- **Excipient contact allergens**: penetration enhancers and adhesives may be the source of dermatitis, not CBD per se (Hashim et al. 2020, J Clin Aesthet Dermatol, PMC8570654).
+- **Variable bioavailability**: skin permeability of CBD varies by site, age, hydration, and concomitant products. Transdermal delivery without permeation enhancement is poor due to CBD's extreme lipophilicity.
+- **Quality control gaps**: the Validcare population (see 6.5) used unregulated products that varied in CBD content; topical product testing has revealed similar variability and occasional cannabinoid mislabeling.
+- **Heat / occlusion**: occlusive patches can increase CBD absorption non-linearly, potentially producing unexpected systemic exposure spikes (a known issue for transdermal fentanyl with comparable lipophilicity, by analogy).
+
+### 6.5 The Validcare observational study and its limitations
+
+Validcare's decentralized observational study (Kaufmann et al., Cannabis and Cannabinoid Research 2023; PMC9940803) enrolled 839 adult self-administering oral CBD users (55.7% full-spectrum, 3.8% broad-spectrum, 40.5% isolate), followed for ≥60 days, with end-of-period liver function tests. Key limitations:
+
+- **Funded and product-supplied by the participating CBD industry** (12 named CBD brands provided funding and product) — clear industry-sponsorship bias.
+- No placebo arm.
+- No standardized dosing; reliance on self-reported product consumption.
+- LFTs measured only at end-of-period, not serially — missed potential transient elevations that returned to baseline.
+- Doses were predominantly low (consumer range, often <100 mg/day) — well below the threshold where the Lo meta-analysis predicts DILI risk.
+- Only **3 of 839 (0.36%)** showed ALT >3x ULN, which the authors interpreted as not different from background. By comparison, the Florian 2025 FDA trial at higher dose (5 mg/kg/day, ~350 mg/day average) found 5.6% above this threshold — an order of magnitude higher.
+
+**Interpretation**: the Validcare result is not inconsistent with the larger Epidiolex/Florian data set, given its low effective doses; it is best read as evidence that **low-dose oral CBD (<100–150 mg/day) is unlikely to produce ALT elevations in healthy users with limited polypharmacy**, not as a general exoneration of oral CBD safety.
+
+### 6.6 Regulatory implications
+
+For the FDA to translate any route-of-administration safety advantage into a labeling claim or regulatory pathway for transdermal CBD (e.g., a monograph, NDA, or food-supplement framework), the following would likely be required, based on existing FDA guidance for cannabinoid clinical research (January 2023) and prior transdermal/topical drug precedent:
+
+1. **Adequate and well-controlled trials** of the specific transdermal formulation, with liver function as a pre-specified safety endpoint, in a population mirroring intended use.
+2. **PK characterization** including metabolite profiles at steady state, with cross-validation across multiple production lots.
+3. **Drug-interaction data** — particularly with CYP3A4/CYP2C19/CYP2C9 inhibitors and inducers, and valproate.
+4. **Population PK in vulnerable subgroups** — hepatic impairment, CYP2C9/CYP2C19 poor metabolizers, elderly.
+5. **Long-term (≥6 month) safety monitoring** with serial LFTs.
+6. **Mechanistic in vitro data** addressing whether transdermal-route concentrations of CBD and 7-COOH-CBD remain below the (still-unpublished but label-asserted) BSEP IC50.
+
+The cross-sectional metabolite-fingerprint study described in Section 5 would not satisfy any of these requirements on its own but would provide the **prior** that justifies a more expensive prospective program.
+
+### 6.7 Other things often missed
+
+- **CBD and acetaminophen co-administration**: Watkins 2021 raised but discounted a possible additive effect; a pre-clinical paper (Ewing et al., Molecules 2019) showed CBD pretreatment increased acetaminophen hepatotoxicity in mice. Patients commonly co-administer over-the-counter acetaminophen with CBD without knowing of this in vitro signal.
+- **Sex differences**: female participants in PK studies show ~2x higher 7-COOH-CBD exposure normalized to body weight (Zhang 2024) — under-characterized in safety analyses.
+- **Pediatric formulation variance**: Epidiolex pediatric dosing is based on the sesame-oil oral solution; adult consumer CBD products vary widely in formulation and bioavailability, complicating dose-equivalence comparisons.
+- **The full-spectrum vs isolate question**: whether minor cannabinoids (CBG, CBDV, CBC) modulate hepatic enzyme stress is essentially uncharacterized in human data.
+
+---
+
+## Section 7: Open questions worth chronicling
+
+### 7.1 Methodological
+
+- Standardized timing of plasma sampling relative to patch-cycle phase: when is steady state most informative — mid-patch, end-of-cycle, or trough?
+- Validation of metabolite assays in low-concentration transdermal samples (sub-ng/mL): are existing LC-MS/MS methods sensitive and specific enough to distinguish 7-COOH-CBD from 7-COOH-CBD-glucuronide and from cannabinoid metabolic noise?
+- The skin metabolism question: do cutaneous CYPs and UGTs contribute meaningfully to local CBD biotransformation before CBD enters the systemic circulation? Most reviews assume no, but published data are thin.
+- Handling polysubstance users (concomitant CBD oral + topical + inhaled): real-world consumers often layer routes, confounding any single-route analysis.
+
+### 7.2 Additional measurements that would strengthen the design
+
+- **Bile acid panel** (cholic, chenodeoxycholic, deoxycholic, glycine and taurine conjugates) — a direct test of the BSEP-inhibition hypothesis at the bedside.
+- **CK-18 fragments** (apoptosis vs necrosis discrimination) — sensitive marker of early hepatocyte injury before transaminases rise.
+- **miR-122** — liver-specific microRNA, leading indicator of hepatocellular stress.
+- **Mitochondrial DNA copy number / circulating mtDNA** — if VDAC1 hypothesis is correct, mitochondrial leakage should precede ALT.
+- **CYP genotyping** (CYP2C9, CYP2C19, UGT1A9 variants) as covariates.
+- **Concomitant comedication panel** including over-the-counter acetaminophen, valproate, and CYP-modulating drugs.
+
+### 7.3 Connections to broader mitochondrial pharmacology
+
+- **VDAC1 binding affinity**: published in vitro IC50 for CBD-induced VDAC1 conductance modulation is in the ~10 μM range (Rimmerman 2013). Intrahepatic free CBD concentrations during oral first-pass may approach this range; transdermal delivery does not. The mitochondrial-stress-test framing implies that **anyone with reduced mitochondrial reserve (alcoholic liver disease, NAFLD/MASLD, mitochondrial myopathy, post-COVID metabolic syndrome) may be at elevated risk** for CBD-related hepatic stress at any route, but the absolute hazard is gated by route-dependent intrahepatic exposure.
+- **Crosstalk with other mitochondrially active drugs**: paracetamol (NAPQI / SDH binding), valproate (beta-oxidation, CoA depletion), and certain antiretrovirals all converge on mitochondrial dysfunction; CBD may join this class as a mitochondrial stressor whose toxicity is gated by reserve capacity rather than dose alone.
+- **Bioenergetic reserve as a clinical biomarker**: no validated clinical assay for hepatic mitochondrial reserve exists; the field would benefit from one, and CBD pharmacology offers a useful test case.
+
+### 7.4 Field-level open questions
+
+- Will the FDA require a head-to-head route-comparison RCT before considering a transdermal CBD framework, or will the agency accept observational/cross-sectional metabolite evidence as a prior?
+- Will the European Medicines Agency adopt a different posture, given the UK Food Standards Agency advisory upper-intake limit, which was lowered from 70 mg/day to **10 mg/day** in October 2023 (per FSA news release, food.gov.uk: "a healthy adult should not consume more than 10mg of CBD per day"), reaffirmed in July 2025 updated guidance?
+- Is there a labeling threshold below which transdermal CBD could be considered essentially zero hepatic risk (analogous to topical nicotine patches relative to oral nicotine)?
+- Does the route-of-administration argument extend to other lipophilic drugs whose hepatic safety is dominated by first-pass metabolites — or is CBD's case unique due to the unusually high 7-COOH-CBD AUC ratio?
+
+---
+
+## Concluding observation (for the chronicle)
+
+The case for a route-of-administration-dependent CBD hepatic safety profile rests on three logically independent legs: (1) the clinically documented dose-dependent ALT elevation with oral CBD, with a clear amplification by valproate and a tail of cases up to 18 months; (2) the asserted but quantitatively opaque BSEP and BCRP inhibition by 7-COOH-CBD at clinically relevant concentrations, whose IC50 values are not in the public domain; and (3) the dramatic differences in metabolite production by route — oral CBD generates a 7-COOH-CBD:parent AUC ratio of 7–40x while transdermal yields ~2x at vastly lower absolute concentrations, with inhaled CBD producing almost no 7-COOH-CBD. The metabolite-fingerprint + LFT measurement in steady-state transdermal users versus oral users is the most efficient single experiment that could distinguish among the mechanistic candidates — and it has not, as of May 2026, been published. The literature contains all the pieces to identify this gap; what is missing is the measurement itself.

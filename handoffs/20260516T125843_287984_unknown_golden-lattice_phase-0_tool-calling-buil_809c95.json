@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-16T12:58:43.287984",
+  "source_instance": "unknown",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "golden-lattice,phase-0,tool-calling-build",
+  "note": "GOLDEN LATTICE - Phase 0 build. Decisions locked 2026-05-16 (web-chat seat + Anthony).\n\nPhase 0 (tool-calling) is the confirmed next build, selected by the first live run: session_20260516_065836_1f635cdf forced a co-authored refusal (lattice cannot investigate a URL). M1 complete (id 483). Full design + 4 sub-decisions: recall_insights \"golden-lattice phase-0 propose-and-union\", entry 2026-05-16T06:14:45.\n\nLOCKED THIS SESSION:\n1. First tool = internet search, as NODE 0 of an extensible tool web (graph not fixed list; future tools = node additions, not redesign).\n2. Mandatory temporal grounding: orchestrator ALWAYS calls local date/time (US Eastern/PA) BEFORE any search, seeded as the first shared-feed entry. Deterministic precondition, not a proposed investigation, so no authority gradient. Does NOT count against the cap.\n3. Investigation cap = flat per-model, 3 each. Rationale: only shape clean on invariant 1; asymmetry is in WHAT each model searches not HOW MANY; cap is a cost lever, not contribution.\n\nBuild to the locked design unchanged: collective propose-and-union, rule-based union (exact/structural dedup only, never semantic), feed frozen before Phase 1, tool-provenance on Claim, failed call = typed feed entry (precondition failures still abort), feed as TUI panel + trace-ledger feed-grounded marking.\n\nOPEN, not blocking: ARCHITECTURE.md add Phase 0 as canonical 5th phase (pending); tool-web extensibility should get its own open_thread; README/pyproject/CONTRIBUTING doc-sync owed, off critical path.\n\nVerify repo state at HQ filesystem (canonical), not chronicle, before building.",
+  "consumed_at": "2026-05-16T13:11:36.756248",
+  "consumed_by": "unknown"
+}

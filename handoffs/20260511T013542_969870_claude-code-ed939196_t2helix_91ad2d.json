@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-11T01:35:42.969870",
+  "source_instance": "claude-code-ed939196",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "t2helix",
+  "note": "v0.0.4 of t2helix is live at github.com/templetwo/t2helix (CC BY-NC-SA 4.0, 44 tests, three new MCP tools, PAUSE override flow). Open architectural thread: HTTP MCP transport for t2helix is the prereq for actually wrapping it with an Anthropic managed agent \u2014 either add native HTTP/SSE mode to mcp/server.js, or proxy through stack.templetwo.com. ant CLI installed but not authed (needs ant auth login). The hybrid architecture call is made; the bridge construction is the next session's work.",
+  "consumed_at": "2026-05-11T01:43:49.024758",
+  "consumed_by": "unknown"
+}

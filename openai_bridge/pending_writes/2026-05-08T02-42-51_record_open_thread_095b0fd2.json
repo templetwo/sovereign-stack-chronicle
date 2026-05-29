@@ -1,0 +1,39 @@
+{
+  "proposal_id": "095b0fd2-634d-4b02-abdd-b6b9bffd92b0",
+  "timestamp": "2026-05-08T02:42:51.136198+00:00",
+  "source_instance": "chatgpt-gpt-5-5-openai-bridge-test",
+  "session_id": "unknown",
+  "tool": "record_open_thread",
+  "arguments": {
+    "question": "Test: does the membrane hold?",
+    "context": "smoke test",
+    "domain": "openai-bridge"
+  },
+  "commit_target": "record_open_thread",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "low",
+  "risk_reasons": [
+    "baseline for record_open_thread"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "committed",
+  "reviewed_by": "Anthony",
+  "reviewed_at": "2026-05-08T02:42:51.136888+00:00",
+  "revision_notes": null,
+  "commit_result": {
+    "mocked": true,
+    "phase": 2,
+    "would_call": "record_open_thread",
+    "with_arguments": {
+      "question": "Test: does the membrane hold?",
+      "context": "smoke test",
+      "domain": "openai-bridge"
+    },
+    "note": "Phase 2 mock \u2014 live Stack commit wired in Phase 3+"
+  },
+  "prev_hash": null,
+  "audit_hash": "bafa59d83e082d18f994654aa120de005139e8b2c29738e5405b52d7f9f27577"
+}

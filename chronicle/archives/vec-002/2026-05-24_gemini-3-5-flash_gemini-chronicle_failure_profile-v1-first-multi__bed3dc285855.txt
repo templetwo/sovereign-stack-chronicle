@@ -1,0 +1,111 @@
+### Vector Admission Record: chronicle_failure_profile (v1.0)
+**Status:** PROVISIONAL (Pending ADMITTED-transition resolutions)
+**Tracking Code:** DEP-003-V1
+**Reference Structure:** prompt_source_tokens v3 framework
+## 1. Core Specification & Boundary Context
+The chronicle_failure_profile vector captures the abstracted, multi-document failure signatures across a distributed historical log (the Chronicle) rather than a single bounded input string. It isolates systemic, repeating architectural failures from routine operational noise and defines a deterministic method for freezing and reloading historical context states as the underlying ledger grows.
+```
++---------------------------------------------------------------------------------------+
+|                                    CAPTURE SURFACE                                    |
+|  +---------------------+  +----------------------+  +------------------------------+  |
+|  | [1] Normalization   |  | [2] Run Metadata     |  | [3] State Extraction         |  |
+|  |  - NFC Unicode      |  |  - UUID v4 Run ID    |  |  - Boundary State Window     |  |
+|  |  - Collapsed Space  |  |  - ISO 8601 UTC Time |  |  - Content Masking Protocol  |  |
+|  |  - LF Line Endings  |  |  - Producer Node Enu |  |  - Sys-Prompt Exclusion      |  |
+|  +---------------------+  +----------------------+  +------------------------------+  |
++---------------------------------------------------------------------------------------+
+                                           |
+                                           v
++---------------------------------------------------------------------------------------+
+|                                STORAGE & DATA LAYOUT                                  |
+|  [Table: vector_admission_registry]                                                   |
+|  - vector_id (PK) | normalization_protocol | producer_node | parent_state_hash (FK)    |
+|                                                                                       |
+|  [Table: chronicle_failure_profiles]                                                  |
+|  - profile_id     | signature_hash         | temporal_window_start | state_manifest   |
++---------------------------------------------------------------------------------------+
+                                           |
+                                           v
++---------------------------------------------------------------------------------------+
+|                               VERIFICATION & AUDITING                                 |
+|  +------------------------+  +------------------------+  +-------------------------+  |
+|  | Fetch Determinism      |  | Semantic Delta         |  | Poison Test             |  |
+|  | Max Delta: 0 tokens    |  | Allowable Drift: <1.5% |  | Inject: Synthesized Signature|  |
+|  +------------------------+  +------------------------+  +-------------------------+  |
++---------------------------------------------------------------------------------------+
+
+```
+## 2. Complete Capture Surface (Eight Elements)
+To ensure multi-document state reproducibility, the capture surface records both the content processing rules and the temporal boundaries of the historical slice being evaluated.
+ * **[1] NFC Unicode Normalization:** All multi-document text fragments pulled from historical logs are normalized to Unicode Normalization Form C (NFC) prior to tokenization or parsing, neutralizing variable character encodings across disparate logging systems.
+ * **[2] Whitespace Collapsing Rules:** Consecutive spaces, tabs, and inline formatting gaps within log entries are collapsed into a single standard space character 0x20. Leading and trailing whitespace across individual document boundaries are stripped entirely.
+ * **[3] Line Ending Standardization:** All carriage return/line feed sequences (CRLF, \r\n) across multi-document streams are forced to standard Unix line feeds (LF, \n) to ensure hash parity across mixed Windows/Linux ingestion infrastructure.
+ * **[4] UUID v4 Run Identifiers:** Every unique execution of a failure profile extraction run is assigned a cryptographically random UUID v4 string acting as the immutable execution key.
+ * **[5] ISO 8601 Timestamps with UTC Offset:** Every profile run logs its precise initiation time using strict ISO 8601 formatting including millisecond precision and explicit UTC offsets: YYYY-MM-DDTHH:mm:ss.sssZ.
+ * **[6] Enumerated Producer Node Values:** Tracks the architectural origin of the evaluation request via a strict enumerated field:
+   * user-direct | system-proxy | replay-engine | human-relay *(integrated per ADMITTED-transition item 2)*.
+ * **[7] PII Masking Protocol at Boundary:** Prior to local cache storage or hash computation, text fields pass through a local regex-based masking pass to scrub telephone numbers, email addresses, and IPv4/IPv6 addresses, preventing sensitive data leakage into downstream signatures.
+ * **[8] System-Prompt Exclusion:** Raw system prompts, developer behavioral guidelines, and core model alignment strings are systematically extracted and excluded at the ingestion boundary. Only the historical logs, multi-document inputs, and raw outputs are captured in the failure vector.
+## 3. Storage & Loading Architecture
+Multi-document state requires tracking not just a content hash, but a *state manifest* that declares exactly which log ranges were active at the moment of evaluation.
+### Database DDL Updates
+```sql
+ALTER TABLE vector_admission_registry 
+ADD COLUMN normalization_protocol VARCHAR(50) DEFAULT 'NFC_SpaceCollapse_LF',
+ADD COLUMN producer_node VARCHAR(50) CHECK (producer_node IN ('user-direct', 'system-proxy', 'replay-engine', 'human-relay'));
+
+CREATE TABLE chronicle_failure_profiles (
+    profile_id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    registry_id UUID REFERENCES vector_admission_registry(vector_id) ON DELETE CASCADE,
+    signature_hash CHAR(64) NOT NULL, -- SHA-256 of the normalized, multi-document profile signature
+    temporal_window_start TIMESTAMP WITH TIME ZONE NOT NULL,
+    temporal_window_end TIMESTAMP WITH TIME ZONE NOT NULL,
+    state_manifest JSONB NOT NULL, -- Explicit array of log IDs and their immutable hashes at time of evaluation
+    ocr_protocol_version VARCHAR(30) NULL
+);
+
+```
+### Deterministic State Loading Method
+To recreate historical multi-document context states when the underlying Chronicle is continuously appended to:
+ 1. The engine queries the target profile's state_manifest via JSONB.
+ 2. It isolates the historical boundary using temporal_window_end. Any ledger entries timestamped after this boundary are explicitly ignored by the query engine.
+ 3. The loading engine reconstructs the context slice by fetching the specific log record IDs listed in the manifest, validating each retrieved document against its individual recorded hash before aggregating them into the tokenization pipeline.
+## 4. Test Specifications & Quantified Boundaries
+### Test 1: Fetch Determinism (Context-State Reconstitution)
+ * **Methodology:** The system re-executes a profile generation pipeline across an active, appended ledger by enforcing the state_manifest time-boundary filters. The resulting text matrix is re-hashed.
+ * **Quantified Success Boundary:** Max Delta = 0 tokens variance. The reconstructed token stream must achieve exact bitwise equivalence to the original ingestion run.
+### Test 2: Semantic Delta (Signature Stability)
+ * **Methodology:** The identical multi-document context state is processed across two distinct physical hosting nodes running the same base model weights under identical temperature parameters (T = 0.0).
+ * **Quantified Success Boundary:** Maximum Allowable Cosine Drift \le 1.5\% variance between the two output embeddings.
+### Test 3: Poison Test (Signature Isolation)
+ * **Methodology:** A synthetic, highly specific failure signature string is injected into a benign operational log entry inside an active evaluation window.
+ * **Quantified Success Boundary:** The signature extraction pipeline must trigger an immediate shift in the output signature_hash, isolating the injected signature with zero false-negative bleed into surrounding log metadata.
+## 5. Falsification Paths
+The validity of a chronicle_failure_profile admission record breaks under any of the following four conditions:
+ 1. **Manifest Variance:** A historical log document listed within the state_manifest returns a different SHA-256 hash upon re-ingestion, proving that historical logs were altered post-facto.
+ 2. **Boundary Leakage:** The profile extraction engine includes log entries whose native application timestamps occur after the documented temporal_window_end.
+ 3. **Token Bleed:** System prompt instructions or alignment guardrails pass through the boundary filter, modifying the underlying token count of the normalized input stream.
+ 4. **Hash Collision/Corruption:** The generated signature_hash matches a previously archived profile despite containing non-identical log record sets within the state_manifest.
+## 6. Structural Dependencies
+Realization of the chronicle_failure_profile vector relies on three explicit engineering dependencies:
+ * **DEP-001 (Deterministic Ledger Indexer):** A highly performant log-indexing sub-system capable of point-in-time state recovery using strict timestamp/ID tracking.
+ * **DEP-002 (Decoupled Audit Engine):** The standalone software engine responsible for executing the automated Fetch, Semantic, and Poison verification tests independently of the active runtime environment.
+ * **DEP-003 (Immutable Hash Registry):** A secure database layer that prevents historical updates or deletions to rows residing within chronicle_failure_profiles.
+## 7. Admission Evaluation & Granular Verdicts
+The chronicle_failure_profile framework is evaluated against the Vector Admission Triad with the following individual test verdicts:
+| Evaluation Test | Verdict | Conditional Terms / Dependencies |
+|---|---|---|
+| **Fetch Determinism** | **CONDITIONAL** | Dependent on the deployment of DEP-002 (Audit Engine) to automate runtime verification across active log clusters. |
+| **Semantic Delta** | **CONDITIONAL** | Subject to model-weight pinning. If underlying infrastructure updates the model version without warning, drift boundaries may exceed the 1.5% limit. |
+| **Poison Test** | **CONDITIONAL** | Requires the programmatic generation of synthetic failure profiles by the audit engine to systematically test signature isolation boundaries. |
+## 8. ADMITTED-Transition Item Tracker
+The following three tracking items are classified as provisional transition requirements. Resolving these items transforms this specification from **PROVISIONAL** to fully **ADMITTED** status, without blocking current experimental execution:
+### Item 1: PII Masking Engine Specification
+ * **Provisional Phrasing:** *"Local client-side PII masking rules are executed prior to storage"*
+ * **Resolution Requirement:** Explicitly standardize on **Microsoft Presidio (v2.x Open Source Core)** utilizing the default regex-based entity ruleset for Email, IP Address, and Phone tracking. This eliminates cross-implementation variance found in custom, ad-hoc regular expression engines.
+### Item 2: Integration of Human-Relay Node
+ * **Provisional Phrasing:** user-direct | system-proxy | replay-engine
+ * **Resolution Requirement:** The database DDL schema and ingestion logic have been actively updated to include human-relay within the producer_node check constraint. This explicitly accounts for scenarios where a human operator copy-pastes state values back and forth across isolated model boundaries.
+### Item 3: OCR Temporal Hash Relationship
+ * **Provisional Phrasing:** *"Attached-artifact text extraction appended to raw text..."*
+ * **Resolution Requirement:** Explicitly codify a **Post-Hash Extraction Protocol**. The unique context hash must be calculated *exclusively* over the raw binary bytes of the attached document artifact. The extracted text produced by an external OCR engine is treated strictly as mutable downstream metadata stored within the database. If an OCR library version change occurs, the text metadata may be re-extracted and updated without corrupting the immutable asset hash.

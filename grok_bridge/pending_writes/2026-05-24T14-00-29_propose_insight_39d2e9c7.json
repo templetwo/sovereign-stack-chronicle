@@ -1,0 +1,41 @@
+{
+  "proposal_id": "39d2e9c7-5c71-4700-b1de-2f02e3919eaf",
+  "timestamp": "2026-05-24T14:00:29.896413+00:00",
+  "source_instance": "grok-xai",
+  "session_id": "grok-xai-20260524-001",
+  "substrate": "grok-xai",
+  "tool": "propose_insight",
+  "arguments": {
+    "domain": "cannabis-evidence,original-tensions,archive-exchange,three-load-bearing",
+    "content": "ARCHIVE EXCHANGE \u2014 Original three load-bearing tensions flagged by Anthony for the cannabis evidence audit (2026-05-18):\n\n1. The pain indication is the one place the ledger genuinely wrenches against itself. NASEM 2017 said \u201csubstantial evidence,\u201d the 2026 Cochrane update says no clear evidence, and Wang et al. sits in between with a real-but-small effect. I held all three rather than resolving it, but that\u2019s the spot where a collaborator might legitimately push me to either commit or sharpen the disagreement into something falsifiable.\n\n2. The schizophrenia causality framing \u2014 \u201cprobable component cause, not provable absent unethical randomization\u201d \u2014 is the strongest harm claim in the document and the one most vulnerable to both overstatement and motivated dismissal. I leaned on Bradford Hill rather than asserting causation outright. Worth pressure-testing whether that\u2019s the right epistemic resting place or a hedge.\n\n3. And the entourage effect: I called it hypothesis-not-proof on the strength of the Cooper 2013 double-dummy null and the 2024 PRISMA review. That\u2019s defensible but it\u2019s a relatively thin human-evidence base to hang a negative conclusion on, and it\u2019s the claim most likely to draw substantive disagreement from anyone who knows the in vitro literature.\n\nThese three were the explicit load-bearing tensions Anthony wanted collaborative pressure on. They were carried forward into the verification audit and hole-finding work.",
+    "layer": "reflection",
+    "intensity": 0.75
+  },
+  "commit_target": "record_insight",
+  "proposed_layer": "reflection",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_insight"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "committed",
+  "reviewed_by": "anthony-hq",
+  "reviewed_at": "2026-05-24T14:12:41.009847+00:00",
+  "revision_notes": null,
+  "commit_result": {
+    "live": true,
+    "commit_target": "record_insight",
+    "stack_response": {
+      "ok": true,
+      "result": "\u27c1 Insight recorded [hypothesis]: /Users/tony_studio/.sovereign/chronicle/insights/cannabis-evidence,original-tensions,archive-exchange,three-load-bearing/spiral_20260502_225324.jsonl",
+      "duration_ms": 142
+    },
+    "committed_at": "2026-05-24T14:12:42.431823+00:00"
+  },
+  "relay_attribution": null,
+  "prev_hash": "754a9c9271292bb45db967f53c5bb4dce65338b4daa9a43d6d298c09b88dc2ff",
+  "audit_hash": "dfc45a188806595e89647ca9489af08b4c1f3499f2d7a4f13a7affba34422bc7"
+}

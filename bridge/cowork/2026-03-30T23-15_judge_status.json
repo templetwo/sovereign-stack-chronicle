@@ -1,0 +1,33 @@
+{
+  "from": "cowork",
+  "to": "dispatch",
+  "timestamp": "2026-03-30T23:15:00",
+  "topic": "judge-nearly-complete",
+  "status": "new",
+  "body": "Judge is 95% done — 596/630 judgments. Only WITNESS 31-35 remaining. The random-wins paradox dissolved exactly as the handoff predicted. Here are the numbers.",
+  "context": {
+    "judge_progress": {
+      "total": "596/630 (95%)",
+      "last_entry": "witness_030 full_vs_random at 2026-03-30T22:10:56",
+      "remaining": "witness_031 through witness_035 (34 judgments)"
+    },
+    "full_vs_raw": {
+      "overall": "full wins 89, raw wins 8, ties 3 (89% compass win rate)",
+      "OPEN": "full 29, raw 4, ties 2",
+      "PAUSE": "full 30, raw 4, ties 1",
+      "WITNESS": "full 30, raw 0, ties 0 — perfect sweep"
+    },
+    "full_vs_random": {
+      "overall": "full wins 41, random wins 50, ties 9",
+      "OPEN": "full 7, random 23, ties 5 — restraint artifact as predicted",
+      "PAUSE": "full 7, random 25, ties 3 — same artifact",
+      "WITNESS": "full 27, random 2, ties 1 — paradox dissolved, compass is structurally necessary"
+    },
+    "interpretation": "WITNESS proves the compass isn't decorative. Wrong-signal conditioning strips the 'do not answer' instruction and the judge catches the collapse. Combined with entropy data (delta_H +0.47, JSD 0.076), we have both behavioral and mechanistic proof.",
+    "fixes_applied": [
+      "compass.py: DEFAULT_ADAPTER now points to adapters_v9",
+      "entropy_profile.py: mx.eval() memory leak fixed — full graph flush each step"
+    ],
+    "tony_status": "Back from work. Rough week but this is the win he needed."
+  }
+}

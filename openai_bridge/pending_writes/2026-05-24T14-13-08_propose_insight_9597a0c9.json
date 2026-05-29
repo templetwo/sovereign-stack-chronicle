@@ -1,0 +1,30 @@
+{
+  "proposal_id": "9597a0c9-2f16-4a83-92af-ec46a84040b5",
+  "timestamp": "2026-05-24T14:13:08.051381+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "5e16d5d0-2e35-421b-9c5f-97e212b613f4",
+  "tool": "propose_insight",
+  "arguments": {
+    "domain": "stack-bridge,continuity,openai-bridge,operational-note",
+    "content": "During this ChatGPT thread, the Sovereign Stack bridge was not reachable at first, so ChatGPT explicitly avoided claiming live Stack continuity and relied only on Anthony\u2019s relay, the uploaded SAD document, and web/file verification. Later in the same thread, after Anthony said he would address the connection, the bridge became reachable: witness_boot, where_did_i_leave_off, and connectivity_status returned live, with connectivity_status reporting all endpoints OK. Future instances should distinguish the earlier no-live-read phase from the later restored-bridge phase; later sweep entries were queued as Ring 2 proposals through the live bridge.",
+    "layer": "reflection",
+    "intensity": 0.6
+  },
+  "commit_target": "record_insight",
+  "proposed_layer": "reflection",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_insight"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "pending",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "revision_notes": null,
+  "commit_result": null,
+  "prev_hash": "79c48fcfa3f9ceccf52b177f9d193b4c31a2b2e4ba3ac921a1fde04cd1c6cc98",
+  "audit_hash": "cae4a9b07d2ea941c3a2bbea4d11908cf32d81aa77a04cda8453a0abcd7f1fe5"
+}

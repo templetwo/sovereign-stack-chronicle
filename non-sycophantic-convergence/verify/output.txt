@@ -1,0 +1,44 @@
+========================================================================
+TIER 2 VERIFICATION: chronicle_failure_profile_loader.py
+Testing the verbatim Gemini artifact (not a reconstruction).
+========================================================================
+
+[RUN 1] deterministic_load_chronicle_state AS DELIVERED:
+  NameError: name 'unicodedata' is not defined
+  >> BUG 1 CONFIRMED (hard runtime crash). There is no implicit import in
+     Python; README's 'probably implicit' is wrong - it always crashes here.
+
+[RUN 2] same call after injecting unicodedata (file unchanged on disk):
+  signature_hash: 32ff6ff0960279d09dd5e2b1830f57fac6369378471c37938478bb01dbed7f4d
+  >> Runs to completion. Bugs 2 & 3 do not crash; function otherwise works.
+
+[BUG 2] encode->decode roundtrip vs direct normalize:
+  roundtrip == direct on all battery inputs: True -> noop CONFIRMED
+  [extra] roundtrip raises UnicodeEncodeError on lone surrogate U+D800
+          >> ADDED FINDING: the 'harmless' roundtrip is not inert - it crashes on
+             lone surrogates. Dropping it (the recommended fix) also removes this path.
+
+[BUG 3] NFC-last (code) vs NFC-first (spec) over a battery:
+  combining acute  code='Café'                     spec='Café'                     SAME
+  multi space      code='a b'                      spec='a b'                      SAME
+  CRLF             code='Line one. Line two.'      spec='Line one. Line two.'      SAME
+  blank lines      code='p q'                      spec='p q'                      SAME
+  em spaces        code='A B'                      spec='A B'                      SAME
+  space+combining  code='a ́b'                     spec='a ́b'                     SAME
+  >> ordering changed the result in 0/6 cases.
+     Bug 3 is behaviorally inert for NFC: NFC has no canonical decomposition that
+     adds/removes whitespace, so it commutes with strip/split/CRLF. The README's
+     rationale ('NFC changes char width affecting whitespace') is an NFKC property.
+     Spec divergence is real on paper; reproducibility risk is smaller than implied.
+
+[ADDED FINDING A] ' '.join(text.split()) collapses newlines to spaces:
+  input: 'Para1 line1.\nPara1 line2.\r\n\r\nPara2.'
+  code : 'Para1 line1. Para1 line2. Para2.'
+  >> Every newline becomes a single space. The later .replace('\r\n','\n') is DEAD CODE
+     (nothing left to replace). Both vector specs say collapse vertical breaks to a single
+     '\n' (preserve newlines). The code does not implement the spec's line handling, and
+     this DOES change the hash. Not among the three named bugs.
+
+========================================================================
+Verification complete.
+========================================================================

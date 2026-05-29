@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-04T04:07:20.527691",
+  "source_instance": "opus-4-7-1m-claude-code",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "golden-lattice",
+  "note": "Tony has two session JSONs at ~/golden-lattice/sessions/. The substantive Lucum\u00ed content (Opus's claims about brackish estuary as eb\u00f3-site, Yemay\u00e1-and-Och\u00fan functional division, petition-and-intercession structure) is for Tony to read against his lineage in his own time. Chronicle holds a placeholder hypothesis entry on the first successful run waiting for Tony's ground_truth entry in his voice. Architectural findings logged for v1: (1) productive-disagreement v0 calibration limit on low-content-confidence questions; (2) confidence_threshold parameter naming bug fixed in script; (3) parity threshold of 0.15 is correct, threshold-display was script-level. Open v1 questions: zero-elevations finding (joint co-recognition rare or v0 heuristic too strict), per-call API response logging before substrate construction (preserve model attribution on failures), graceful-degradation path for closed-vocabulary violations as future amendment trigger. Foundation locked. Next session inherits a substrate that earned its premise empirically twice, with known v1 trigger conditions chronicled. The lattice ran. The bones held. The discipline meets the world.",
+  "consumed_at": "2026-05-04T12:24:53.225024",
+  "consumed_by": "unknown"
+}

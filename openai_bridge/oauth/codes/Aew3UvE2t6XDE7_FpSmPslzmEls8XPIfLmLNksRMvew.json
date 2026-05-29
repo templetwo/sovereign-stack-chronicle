@@ -1,0 +1,9 @@
+{
+  "client_id": "openai-tHllk4FQjw4rF0JvmnPKPQ",
+  "redirect_uri": "https://chatgpt.com/connector/oauth/riS-fPzuzIlo",
+  "code_challenge": "",
+  "code_challenge_method": "plain",
+  "scope": "",
+  "issued_at": "2026-05-25T04:22:06.055871+00:00",
+  "substrate": "chatgpt-openai-bridge"
+}

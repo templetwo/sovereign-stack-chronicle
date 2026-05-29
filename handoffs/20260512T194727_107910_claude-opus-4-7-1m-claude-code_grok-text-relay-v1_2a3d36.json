@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-12T19:47:27.107910",
+  "source_instance": "claude-opus-4-7-1m-claude-code",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "grok-text-relay-v1",
+  "note": "Grok text relay v1 \u2014 draft is on disk, NOT committed. Six files match the locked spec; all 5 plan scenarios + regression guard pass. Anthony's review is the next gate.\n\nState you'll find when you arrive at HQ:\n- git status shows 4 modified + 2 untracked under clients/bridge_core and clients/grok_bridge\n- Working tree dirty for the relay diff ONLY; the 2 pre-existing unpushed commits on main are not mine\n- Companion insight (2026-05-12, domain grok-text-relay-v1,implementation-draft-complete) has the full diff manifest, test results, and the 4 design calls\n\nDecision flow:\n- If Anthony approved: stage all 6 files, commit, then ask which optional follow-up he wants (tests, README, approve/commit mutation for relay_attribution actor slots).\n- If Anthony changed his mind: design calls 1 (silent-skip on markdown-fence) and 2 (no relay_attribution mutation) are easy reverses; 3 (helper) and 4 (field add) are structural.\n- If diff drifted: git diff against my baseline; the insight lists what changed in each file.\n\nLive replay command after approval: pipe a fenced payload into 'bridge --source=grok submit-text' and verify via 'bridge --source=grok list-pending'.\n\nMembrane invariants intact: nothing writes to the Stack from the relay path. Both Anthony constraints honored: (1) OpenAI bridge + SSE Ring 1 untouched. (2) Not merged autonomously.",
+  "consumed_at": "2026-05-12T19:55:39.467215",
+  "consumed_by": "unknown"
+}

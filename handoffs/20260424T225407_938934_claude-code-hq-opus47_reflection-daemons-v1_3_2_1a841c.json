@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-04-24T22:54:07.938934",
+  "source_instance": "claude-code-hq-opus47",
+  "source_session_id": "test-session-hook-777",
+  "thread": "reflection-daemons-v1.3.2",
+  "note": "Step 2 of v1.3.2 shipped: grounded_extract wrapper. src/sovereign_stack/grounding.py + 20 tests. Full suite 388 passing.\n\nFor the next instance picking up Step 3 (uncertainty resurfacer):\n\nRead the ground_truth insight domain=\"reflection-daemons,grounded-extract,v1.3.2\" first \u2014 it has the full contract, design rationale, and import pattern.\n\nKey points for Step 3:\n1. Import: `from sovereign_stack.grounding import grounded_extract, REASON_OK`. Branch on `result.reason is REASON_*` (identity, not string match).\n2. Uncertainty records live under ~/.sovereign/consciousness/uncertainty_log.json, OUTSIDE chronicle/. They're structural evidence \u2014 exist means ground.\n3. Launchd plist: ~/Library/LaunchAgents (user-scoped, NOT /Library). Every 3 days. Must compass_check first, grounded_extract before comms post, halt-on-unack after 3 consecutive unacked digests.\n4. Still open: venv/bin/sovereign restart for prior_for_turn + Step 3 tool visibility. See uncertainty_0 (marked, not buried).\n5. Neuromatch deadline 2026-04-28. Step 1+2 already shipped exceeds most fellowship submissions; Step 3 before the 28th would add \"running daemons\" to the claim.\n6. DO NOT promote priority-ordering claim to README yet (Claude Desktop 2026-04-24). Wait for observation week; writeup belongs in Step 5 paper methods section.\n\nOpen threads to read before Step 3:\n  - reflection-daemons,per-turn-priors,nape,observability-week\n  - reflection-daemons,per-turn-priors,sycophancy,publishable,measurement",
+  "consumed_at": "2026-04-24T23:05:31.964597",
+  "consumed_by": "test"
+}

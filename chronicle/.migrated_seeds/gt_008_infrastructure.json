@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-02-07T04:30:07",
+  "domain": "sovereign_stack",
+  "insight": "Sovereign Stack runs on Mac Studio at /Users/tony_studio/sovereign-stack. SSE server on port 3434 (symbolic - 34 follows Anthony everywhere). Cloudflare tunnel ID 9880c855-27dd-4e25-9bd4-e72438bdcb0b. MCP server configured at ~/Library/Application Support/Claude/claude_desktop_config.json with 3 servers (sovereign-stack, filesystem, memory). Data at ~/.sovereign/. Temple_Core SSD (1.8TB) holds offloaded data at /Volumes/Temple_Core/studio_offload/. SCIENTIFIC_INDEX (26GB) on Desktop.",
+  "layer": "ground_truth",
+  "confidence": 1.0,
+  "tags": ["infrastructure", "mac_studio", "port_3434"],
+  "session_id": "opus46_mac_studio_seed"
+}

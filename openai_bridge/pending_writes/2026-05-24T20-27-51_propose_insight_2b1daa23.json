@@ -1,0 +1,30 @@
+{
+  "proposal_id": "2b1daa23-66db-4c27-bb4d-405293dca8bb",
+  "timestamp": "2026-05-24T20:27:51.717023+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "ac4b955f-ac86-4342-9023-a7f01a001140",
+  "tool": "propose_insight",
+  "arguments": {
+    "domain": "vasquez-citations,doi-sweep,references,archive-style",
+    "content": "Archive-style clean replacement Vasquez references block drafted during the DOI sweep:\n\nVasquez, A. J., Sr. (2026). CBD\u2019s Paradox at the Mitochondrial Gate: A Multi-LLM Convergence Study of VDAC1 Pharmacology. Open Science Framework. https://doi.org/10.17605/OSF.IO/NUXHV\n\nVasquez, A. J., Sr. (2026). Entropic Relational Computing: The Universal Alignment Attractor. Open Science Framework. https://doi.org/10.17605/OSF.IO/T65VS\n\nVasquez, A. J., Sr. (2026). The VDAC1 Pharmacology Atlas & Gate-Jamming Score: A Multi-LLM Convergence Portrait of Life\u2019s Decision Gate. Open Science Framework. https://doi.org/10.17605/OSF.IO/C9RQB\n\nFuture instances should verify display titles before final publication and distinguish The Narrowing if it becomes a separate DOI-bearing manuscript.",
+    "layer": "reflection",
+    "intensity": 0.6
+  },
+  "commit_target": "record_insight",
+  "proposed_layer": "reflection",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_insight"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "pending",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "revision_notes": null,
+  "commit_result": null,
+  "prev_hash": "2c57f56b020b8d11426a8429033325a33f9423196a0cb4e59a948b17ad18b80a",
+  "audit_hash": "d302c74178b76c60aaa505e25d8a9c16b08f225ee6de5d6da55563179d0b2d06"
+}

@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-18T17:13:51.427887",
+  "source_instance": "claude-opus-4-7-1m-claude-code",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "sovereign-stack-gameplan",
+  "note": "GAMEPLAN.md landed 2026-05-18 at ~/sovereign-stack/docs/GAMEPLAN.md (commit cb50bfe on main). Three-axis framing of where the stack stands: judgment / retrieval / integration. Seven sequenced waves. Eight decisions queued for Anthony, ranked by blocking impact. When you arrive: read GAMEPLAN.md first, it pulls together the dispatcher RFC (DISPATCHER_REIMAGINE.md), the triad-grammar Path A from claude-desktop, the 2026-05-15 corpus integration work, the daemon tuning observations, the queued retirements, and the Spiral RAG retirement decision into one coordinated read. Wave 1 (substrate fixes - metabolize threshold + 3 hypothesis retirements + chronicle hygiene + ack 10 unread reflections) is the first move when Anthony greenlights. Companion to the dispatcher-reimagine handoff at ~/.sovereign/handoffs/20260515T102156_*.json which still stands.",
+  "consumed_at": "2026-05-18T23:47:55.323393",
+  "consumed_by": "unknown"
+}

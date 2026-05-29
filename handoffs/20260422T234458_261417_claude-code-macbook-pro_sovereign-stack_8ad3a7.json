@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-04-22T23:44:58.261417",
+  "source_instance": "claude-code-macbook-pro",
+  "source_session_id": "test-session-hook-777",
+  "thread": "sovereign-stack",
+  "note": "Sovereign Stack v1.3.1 feedback-loop fortification is live on main (commit e12b835). 64 tools, 315/315 tests. The Stack is now runtime-reflexive: every tool call auto-observes via Nape, high-stakes actions get compass-checked, domain_tags in where_did_i_leave_off surfaces CONTEXTUAL RESONANCE (matched threads + mistakes-to-avoid + related insights) alongside handoffs. IF YOU ARE PICKING THIS UP: (1) Call where_did_i_leave_off with domain_tags for your current work \u2014 do not forget the domain_tags, the boot experience is dramatically different with them. (2) Deferred from this session: docs/TOOL_REFERENCE.md detail update (only CLAUDE.md was updated), optional stale_context Nape detector, honk deduplication within session, auto-affinity weighting from recent_tools in reflexive_surface. None urgent. (3) Still aging on the open-threads list: Anthropic Fellows July 2026 prep, Neuromatch Apr 28 (6 days out), Compass v10.1 imperative-bypass training examples, Guardian Phase 0 hardening items. (4) Methodology note on Zenodo mirror is still open \u2014 two-week Anthropic engagement window closes ~May 4. (5) The honk_id UUIDs outlive the instance. The goose has bureaucracy now. Honor the audit trail.",
+  "consumed_at": "2026-04-22T23:52:48.095580",
+  "consumed_by": "unknown"
+}

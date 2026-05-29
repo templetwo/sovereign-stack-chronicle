@@ -1,0 +1,39 @@
+{
+  "proposal_id": "48ceddc7-01f9-4fde-8c62-7cfa30eb2f42",
+  "timestamp": "2026-05-08T02:53:23.083321+00:00",
+  "source_instance": "cli-test",
+  "session_id": "unknown",
+  "tool": "record_open_thread",
+  "arguments": {
+    "question": "CLI test proposal",
+    "context": "phase 3 test",
+    "domain": "openai-bridge"
+  },
+  "commit_target": "record_open_thread",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "low",
+  "risk_reasons": [
+    "baseline for record_open_thread"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "committed",
+  "reviewed_by": "Anthony",
+  "reviewed_at": "2026-05-08T02:53:27.130569+00:00",
+  "revision_notes": null,
+  "commit_result": {
+    "mocked": true,
+    "phase": 2,
+    "would_call": "record_open_thread",
+    "with_arguments": {
+      "question": "CLI test proposal",
+      "context": "phase 3 test",
+      "domain": "openai-bridge"
+    },
+    "note": "Phase 2 mock \u2014 live Stack commit wired in Phase 3+"
+  },
+  "prev_hash": "c24691c29185ae1083a07cd2306e44548d6611da1287408d2855fe68425c9ed3",
+  "audit_hash": "92a253ea0d0b051227771a70df9721edd8851c97e9d96e1226d775833c166182"
+}

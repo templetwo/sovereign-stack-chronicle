@@ -1,0 +1,49 @@
+# Pending Write Schema — Grok Bridge
+# Every Ring 2 proposal written to pending_writes/ follows this shape.
+# Files are named: {iso_timestamp}_{tool_name}_{short_id}.json
+# Mirrors OpenAI bridge schema with two additions for Grok:
+#   - session_id explicit (Grok-asserted, recorded for audit)
+#   - substrate_extensions optional block (Grok's payload-dialect ask, deferred to Phase 2)
+
+schema:
+  proposal_id: string           # uuid4
+  timestamp: iso8601
+  source_instance: string       # always "grok-xai" at substrate level
+  session_id: string            # Grok-asserted, e.g. "grok-xai-20260509-001"
+
+  tool: string                  # the wrapped tool name (e.g. record_insight)
+  arguments: object             # the arguments as-called
+
+  # Governance
+  compass_check_result: string  # PROCEED / PAUSE / WITNESS — required for CRITICAL
+  compass_check_rationale: string
+
+  # Epistemology enforcement
+  proposed_layer: string        # hypothesis | reflection | ground_truth
+  has_receipt: boolean
+  receipt_url: string | null    # required if proposed_layer = ground_truth
+
+  # Status lifecycle
+  status: string                # pending | approved | rejected | committed | expired
+  reviewed_by: string | null    # anthony
+  reviewed_at: iso8601 | null
+  commit_result: string | null  # tool response after commit
+
+  # Audit
+  audit_hash: string            # sha256 of this object (minus audit_hash field)
+  prev_hash: string | null      # hash of previous entry in chain
+
+  # Substrate extensions (Phase 2 — Grok payload-dialect support, deferred)
+  # When enabled, Grok may attach optional fields like:
+  #   alternative_framings: [string, ...]
+  #   cosmic_context_score: float
+  #   refusal_risk: float
+  # Schema is open; validator allows arbitrary keys under this namespace.
+  substrate_extensions: object | null
+
+
+# Status transitions:
+#   pending  → approved  (Anthony runs: bridge approve <proposal_id> --source=grok)
+#   pending  → rejected  (Anthony runs: bridge reject <proposal_id> [reason])
+#   approved → committed (bridge commits to chronicle, records commit_result)
+#   pending  → expired   (after 7 days without review)

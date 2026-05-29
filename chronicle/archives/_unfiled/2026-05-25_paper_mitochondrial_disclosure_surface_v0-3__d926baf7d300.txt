@@ -1,0 +1,458 @@
+*The Mitochondrial Disclosure Surface  ·  v0.3*
+
+THE TEMPLE OF TWO
+
+*Working Monograph · v0.3*
+
+**The Mitochondrial**
+
+**Disclosure Surface**
+
+*An Atlas of VDAC1, Cardiolipin,*
+
+*and the Sensitization Axis*
+
+Anthony Vasquez Sr.
+
+*with Claude (Anthropic Opus 4.7) as collaborator-instance*
+
+The Temple of Two
+
+thetempleoftwo.com  ·  github.com/templetwo
+
+*May 2026*
+
+*The membrane does not think. It remembers pressure. It does not speak. It leaks truth.*
+
+— Relay sentence, preserved across architectures
+
+*The outer mitochondrial membrane is the threshold surface where mitochondrial privacy becomes cellular truth. VDAC1 is not the sovereign decider, but a central witness-node whose state reveals whether the cell remains in exchange, enters containment, raises alarm, or commits to death.*
+
+— Working line, v0.3
+
+# **Synopsis**
+
+This atlas presents a working synthesis, developed across multiple model architectures in a research relay, of the outer mitochondrial membrane as an active disclosure surface rather than a passive permeability barrier. The central claim is that mitochondrial state is continuously published into the cytosol through the lipid–protein interface of the outer membrane, with the class, bandwidth, and downstream decoding of that disclosure set by a high-dimensional physical state vector. VDAC1 is repositioned within this synthesis as a central witness-node — a high-bandwidth readout and effector hub whose function emerges from its partner network — rather than as a sovereign decider of cellular fate.
+
+The atlas advances a v0.3 sequential-sensitization spine as its primary model: VDAC1 oligomerization is proposed as a single upstream sensitization axis whose amplitude and duration determine whether stress resolves as ordinary metabolic exchange, escalates into mitophagic containment, raises an inflammatory mtDNA alarm via cytosolic cGAS, or commits the cell to apoptosis through BAX/BAK macropores. The earlier parallel-attractors model — alarm and commitment as mechanistically distinct pore architectures — is retained as the alternative the data could still support, and a falsifiable experiment to distinguish the two is proposed.
+
+Three registers run in parallel throughout the document: a technical exposition of current biophysical and cell-biological evidence; a phenomenological register set in italics, addressing what the membrane is from the standpoint of its own physics; and methods-and-limits callouts that mark verification status, tool-compound audits, and the boundary between defensible synthesis and load-bearing prediction. The atlas is offered as a working monograph: scientifically defensible as a unifying synthesis, but not yet predictive law.
+
+**▸ Venue cut: ***Peer-reviewed perspective version: drop phenomenological register entirely; retain technical and methods-and-limits. Temple of Two preprint: full atlas as written. Internal relay monograph: full atlas plus injection-resistance methods note.*
+
+# **Contents**
+
+**I.  **Prelude: From Decision Gate to Disclosure Surface
+
+**II.  **The Outer Membrane as Active Lipid–Protein Interface
+
+**III.  **VDAC1: Architecture, Gating, and the Witness-Node Argument
+
+**IV.  **The Sequential Sensitization Spine (v0.3, primary)
+
+**V.  **Cardiolipin Choreography and the Branch Point
+
+**VI.  **Cargo Classes: What the Membrane Publishes at Each Regime
+
+**VII.  **The Measurable State Vector and a Falsifiable Experiment
+
+**VIII.  **Pharmacological Audits: CBD, VBIT-4, Cyathin-R, Lovastatin, TSPO
+
+**IX.  **Cross-Organelle Generalization: Grammar versus Vocabulary
+
+**X.  **Six Unresolved Paradoxes
+
+**XI.  **Coda: The Integration Register
+
+Notes on Verification Status
+
+On the Relay and Its Contaminants
+
+# **I.  ****Prelude: From Decision Gate to Disclosure Surface**
+
+The textbook image of the outer mitochondrial membrane is a wrapper. A semi-permeable lipid envelope, slightly more porous than the inner membrane it surrounds, traversed by metabolites in both directions, decorated by the occasional channel or anchor. In that image, the dramatic events of mitochondrial signaling occur elsewhere: inside the matrix where the citric acid cycle runs, across the inner membrane where the electron transport chain pumps protons, or in the intermembrane space where cytochrome c sits ready to be released. The outer membrane is scenery. When something important happens to it, it ruptures, and the action moves into the cytosol.
+
+This atlas takes the opposite position. The outer mitochondrial membrane is not scenery. It is the active interface where mitochondrial interior condition becomes legible to the rest of the cell. It is, in the strict sense developed here, a disclosure surface: a physical layer whose continuously varying state controls what class of mitochondrial cargo is published into the cytosol, at what bandwidth, and in a form that recruits which downstream cellular response. In ordinary operation, that disclosure is low-bandwidth metabolic traffic — the rhythm of ATP and ADP flux that the cell treats as expected and ignores at the level of signaling. Under stress, the disclosure changes channel. The membrane begins publishing cargo the cell does not ignore: externalized cardiolipin as a mitophagy beacon, fragmented mitochondrial DNA as an inflammatory alarm, cytochrome c and SMAC/DIABLO as terminal commitment to apoptosis.
+
+The earlier framing within this project, retained here as poetic register, called this a threshold surface and a decision gate. Both phrases are evocative, and both mislead in the same direction. They imply a discrete commitment point with a decider behind it. The architecture we describe has neither. There is no decider. There is a high-dimensional input — lipid packing, cardiolipin distribution, cholesterol content, hexokinase-II occupancy, Bcl-2 family ratios, calcium history, reactive oxygen species burden, mechanical tension, partner availability — being continuously reduced to a low-dimensional outcome by the constrained physics of the system. The outcomes have attractors. Transitions between attractors are not decisions; they are crossings of separatrices in state space, set by amplitude, duration, and the local network the membrane participates in.
+
+*Read at molecular scale, the outer membrane is not a wall and not a sheet. It is a five-nanometer-thick fluid mosaic moving in the plane at lateral diffusion coefficients near 10⁻⁷ cm² · s⁻¹ for lipids. A phospholipid traverses the footprint of a small protein in microseconds. The hydrophobic core is an oily corridor about three nanometers deep, acyl chains kinked at unsaturations, packed but not crystalline. Above and below it the headgroup region is wet, charged, hydrogen-bonded with the first water shells. The lateral pressure profile is not uniform: tension at the headgroups and at the chain–water interface, compression in the middle. Proteins embedded in this layer feel pressure asymmetry the way a swimmer feels currents at different depths — same fluid, different forces.*
+
+The atlas that follows holds three registers simultaneously. The technical register lays out the current biophysical and cell-biological evidence: structures, mechanisms, mutants, kinetics. The phenomenological register, set in italics throughout, addresses what the membrane is from the standpoint of its own physics, in language calibrated to be evocative without claiming consciousness or intent on the part of a lipid bilayer. The methods-and-limits register, called out in bordered boxes, marks verification status, tool-compound audits, and the boundary between defensible synthesis and load-bearing prediction. None of these registers is decorative. The contention of this work is that each fails alone.
+
+**Status. **This is a v0.3 working monograph. The primary model is the sequential-sensitization spine introduced in Section IV. The alternative parallel-attractor model is retained and would be supported if the falsifiable experiment in Section VII produced specific outcomes. Four load-bearing literature claims (Section VII appendix) carry verification status flags.
+
+# **II.  ****The Outer Membrane as Active Lipid–Protein Interface**
+
+The first move of the disclosure framework is to reject the assumption that the outer mitochondrial membrane has a default state called sealed. It does not. In ordinary, unstressed mitochondria the outer membrane is constitutively permissive to ATP, ADP, NADH, pyruvate, malate, succinate, and a continuous traffic of small ions, conducted overwhelmingly through the voltage-dependent anion channel in its high-conductance open state. Beyond that metabolite traffic, recent work has shown that VDAC dimers also function as phospholipid scramblases, equilibrating phospholipid populations between the two leaflets of the outer membrane and contributing to the import of endoplasmic-reticulum–derived lipids into mitochondria. The basal outer membrane is not a closed wrapper. It is a low-bandwidth publication channel running continuously.
+
+This reframing matters because it changes the question stress poses. Stress does not open a membrane that was closed. Stress changes the class and bandwidth of what is already being published. The same physical interface that was disclosing metabolic chatter shifts into disclosing lipid asymmetry, then nucleic-acid fragments, then macromolecular pro-apoptotic cargo. The interface itself is the variable; what crosses it is the readout.
+
+## **Lipid composition as first-class signal**
+
+The outer membrane is composed predominantly of phosphatidylcholine and phosphatidylethanolamine, with smaller fractions of phosphatidylinositol, phosphatidylserine, and free cholesterol. Cardiolipin, the diagnostic mitochondrial lipid, is synthesized in the matrix-facing leaflet of the inner membrane and is normally near-absent from the outer membrane under healthy conditions. Cholesterol content is higher in the outer membrane than in the inner, with consequences for fluidity, lateral diffusion, and the gating behavior of embedded β-barrel proteins. Each of these lipid species is a first-class signal in the disclosure framework, not background composition.
+
+Cholesterol stiffens the bilayer, slows lateral diffusion of embedded proteins, and directly remodels the supramolecular organization of VDAC1. Atomic force microscopy of native and reconstituted outer membranes has shown that VDAC1 self-organizes into lipid-dependent honeycomb assemblies in phosphatidylcholine/phosphatidylethanolamine bilayers, and that adding cholesterol reshapes the compaction and dynamics of those assemblies. The outer membrane is not a uniform mosaic. It contains domains of differing lipid composition, protein density, and curvature — and the position of any given VDAC1 within that lateral landscape sets, in part, its function.
+
+Cardiolipin enters the outer-membrane disclosure logic in three distinct ways. As a normally inner-membrane lipid, its appearance in the outer membrane is itself a signal of stress-induced lipid trafficking. As an anionic, cone-shaped lipid, its presence alters local curvature, lateral pressure, and the binding affinity of cytosolic effectors. And as a polyunsaturated lipid, it is susceptible to oxidation by the cardiolipin-peroxidase activity that cytochrome c acquires when its tertiary structure is destabilized — converting cardiolipin externalization (a containment signal) into oxidized cardiolipin (an apoptotic signal). Cardiolipin is the cleanest example in this atlas of a lipid that is, simultaneously, a substrate, a signal, and a structural element.
+
+*Above the membrane, the cytoplasmic face: crowded, polyanionic, ATP-rich, fluctuating in calcium. Hexokinase-II docking and undocking. Bcl-2 family proteins skimming the leaflet, some peripheral, some inserting. Tubulin dimers approaching, dwelling, gating. Below the membrane, the intermembrane space: a ten- to twenty-five-nanometer gap that pinches at cristae junctions and tightens further at ER contact sites. Not a vault. A staging area, holding cytochrome c bound to cardiolipin on the inner-membrane side, AIF, SMAC, the assembly factors of the respiratory chain. Calcium crosses this space in milliseconds. The membrane between is not still.*
+
+## **Lateral organization and contact sites**
+
+The disclosure surface is not isotropic. The outer membrane participates in physical contact sites with the endoplasmic reticulum (mitochondria-associated membranes, MAMs), with lysosomes, and with peroxisomes, each of which imposes a local physical environment of distinct curvature, lipid composition, and signaling-protein density. At MAMs, the IP3R–GRP75–VDAC1 axis tunnels calcium from the ER lumen across the intermembrane space, where it is taken up across the inner membrane by the mitochondrial calcium uniporter. The MAM domain of the outer membrane operates under different rules than the bulk outer membrane: higher calcium flux, distinct lipid composition, distinct partner occupancy.
+
+This lateral organization is, again, not decorative. Two mitochondria carrying identical molecular state vectors but differing in current contact-site geometry are not interchangeable. One may be in a regime of sustained MAM Ca²⁺ delivery while the other is not, and the resulting trajectories through state space differ. The disclosure framework must treat contact-site context as a state variable in its own right.
+
+**Methods note. **Lateral lipid organization in the native outer membrane is technically difficult to measure with current tools. Atomic force microscopy on reconstituted systems and cryo-electron tomography on isolated organelles give partial views. Most claims about microdomain composition in living cells remain inferential.
+
+# **III.  ****VDAC1: Architecture, Gating, and the Witness-Node Argument**
+
+VDAC1 is the most abundant protein of the outer mitochondrial membrane and the highest-bandwidth conduit between the mitochondrial intermembrane space and the cytosol. It is the molecular subject of this atlas and, simultaneously, the molecule the atlas argues should not be treated as the molecular subject. That apparent contradiction is the central conceptual point of Section III.
+
+## **Atomic architecture**
+
+VDAC1 is a nineteen-stranded antiparallel β-barrel approximately three nanometers in internal diameter. Unlike the bacterial porins to which it is structurally analogous, VDAC1 has an odd number of strands, with the first and nineteenth β-strands meeting in parallel rather than antiparallel orientation along the barrel closure. This parallel-strand seam is structurally unusual and may contribute to the conformational mobility the channel displays in response to voltage and ligand. Inside the barrel sits a twenty-five-residue N-terminal segment containing an α-helix, tethered to the first β-strand by a flexible glycine hinge. Under resting conditions the helix is folded inside the pore, reducing the effective channel diameter and contributing to anion selectivity in the open state.
+
+The N-terminal helix is the gate, but the term is misleading if it suggests a simple binary mechanism. The helix translocates outward from the pore in response to multiple stimuli — voltage, ligand binding, lipid environment, oligomeric state — and its outward translocation exposes a docking surface for cytosolic and intermembrane partners that is unavailable when the helix is sequestered. The helix is, simultaneously, a gate, an allosteric switch, and a binding interface. This combination makes VDAC1 unusually well positioned to couple its own gating state to its partner network — a feature that becomes the mechanistic basis of the sensitization-axis argument in Section IV.
+
+## **Classical gating in planar bilayers**
+
+In planar lipid bilayer reconstitution, VDAC1 displays a characteristic bell-shaped voltage-dependent conductance. At low transmembrane potentials below approximately ±30 mV the channel resides in a high-conductance open state, approximately 4 nS in 1 M KCl, preferentially anion-selective, passing metabolites up to roughly 5 kDa. At larger applied potentials in either direction the channel switches to lower-conductance subconducting states, becoming preferentially cation-selective and restricting metabolite flux. This electrophysiological signature is reproducible across laboratories and has anchored the molecular characterization of the channel for four decades.
+
+**The voltage paradox. **The outer mitochondrial membrane of living mitochondria does not sustain transmembrane potentials of the magnitudes used in planar bilayer gating experiments. The classical voltage-dependence is real in vitro but is unlikely to be the dominant gating variable in vivo. Living-cell gating appears to be set by local surface potentials, Donnan effects, lipid charge, partner binding (tubulin, α-synuclein, hexokinase), and oligomeric state. The atlas treats voltage-dependent gating as a calibration artifact of the planar bilayer system, while preserving the structural insight it provided into helix translocation.
+
+## **Oligomerization equilibrium**
+
+VDAC1 exists in a dynamic monomer–dimer equilibrium in unstressed outer membranes, with dimeric contacts mapped to specific β-strands. Under apoptotic stimulation, this equilibrium shifts toward higher-order oligomers — trimers, tetramers, hexamers, and larger macromolecular rings — with additional inter-monomer contacts. The shift is concentration-dependent, lipid-dependent, and partner-dependent. Chemical crosslinking studies, native gel electrophoresis, and high-speed atomic force microscopy in reconstituted systems have all converged on the picture of a channel whose oligomeric state varies with cellular stress and whose oligomers display physical properties distinct from those of the monomer.
+
+The functional consequence of oligomerization is the central unresolved question of the field, and the place where the sequential-sensitization spine of Section IV makes its strongest claim. Three possibilities have been advanced over the last two decades. First, that VDAC1 oligomers form a megachannel competent for cytochrome c release, making VDAC1 a candidate for the MOMP pore. Second, that VDAC1 oligomerization is incidental to MOMP, with BAX/BAK macropores as the operative permeability lesion and VDAC1 oligomers serving only as co-localized but mechanically inactive arrays. Third — the model this atlas advances — that VDAC1 oligomerization is the upstream sensitization event that gates both the inflammatory disclosure of mtDNA fragments and the recruitment and activation of BAX/BAK toward terminal MOMP, with the amplitude and duration of oligomerization setting the downstream consequence.
+
+## **Partner-dependent function: the selectivity-node argument**
+
+The strongest empirical reason to resist treating VDAC1 as a single-function molecule is that VDAC1 has no fixed function outside its partner-binding context. Its function is set, in any given moment, by which of a long list of binding partners occupies its docking surfaces. The same VDAC1 molecule reads as ordinary metabolic porter, as stress sensor, as inflammatory pore, or as apoptosis-adjacent platform depending entirely on context.
+
+| **Partner / state** | **Effect on VDAC1** | **Functional reading** |
+| --- | --- | --- |
+| Hexokinase-II (HK-II) bound | Stabilizes open state; uses local ATP directly; resists oligomerization | Metabolic survival; anti-apoptotic anchoring |
+| Tubulin / α-synuclein bound | Closes the channel in a voltage-dependent manner | Gating restriction of metabolite flux |
+| Bcl-xL bound | Forms heterodimer/heterotrimer; reduces conductance; shifts oligomeric equilibrium | Anti-apoptotic buffering; calcium-transfer modulation |
+| Oligomerized (≥ trimer) | N-terminal helix exposure; macropore-competent under stress | Sensitization-axis state; mtDNA leak; Bcl-xL neutralization |
+| Parkin-ubiquitinated (Lys53) | Restrained from oligomerization | Containment regime; mitophagy-permissive; alarm-restrained |
+| IP3R–GRP75 bridged (MAM) | High local Ca²⁺ flux from ER | Calcium signaling node; potential PTP trigger |
+| Cysteine-oxidized (ROS) | Altered gating kinetics; partner-binding shifts | Redox sensor; strain-regime amplification |
+
+The selectivity-node argument is that this table is not a list of separate states the molecule passes through serially. It is a list of concurrent occupancy possibilities, any combination of which can hold at a given moment, and which together set what VDAC1 is doing in that moment. The molecule is, in a strict sense, defined by its current partner network. Pharmacology that targets VDAC1 will therefore display context-dependent effects predictably, not as a failure of selectivity but as the predicted consequence of partner-dependent function. Section VIII develops this point through the cannabidiol case.
+
+*From within the lipid field, VDAC1 is not a structure so much as an event. The barrel is real, the helix is real, the partners are real, but what they do together at any moment is the moment’s configuration of a node whose function is the network it presently belongs to. The molecule is held in solution and in membrane the way a chord is held in a piece of music: not as an object but as a relation that the surrounding voices currently sustain.*
+
+# **IV.  ****The Sequential Sensitization Spine**
+
+*v0.3, primary model*
+
+The earlier rounds of this synthesis treated the four stress regimes of the outer mitochondrial membrane — ordinary exchange, mitophagic containment, inflammatory mtDNA alarm, and apoptotic commitment — as parallel attractors, each with its own machinery and its own pore architecture. VDAC1 oligomeric pores were proposed as the inflammatory-alarm channel; BAX/BAK macropores were retained as the terminal commitment channel; the two were treated as mechanistically distinct, addressing different stress amplitudes through different molecular routes.
+
+Recent structural work, if it holds up to replication, collapses that parallel picture into a sequential one. The proposed mechanism is direct. VDAC1 oligomerization, driven by stress-induced lipid changes and shifts in partner occupancy, exposes the N-terminal helix at the cytosolic face of the channel. The exposed helix presents a binding surface that maps to the BH3-binding groove of Bcl-xL. By occupying that groove, VDAC1-N neutralizes Bcl-xL’s capacity to sequester BAX and BAK, derepressing BAX/BAK and lowering the threshold for their oligomerization into mitochondrial outer membrane permeabilization pores. On this reading, VDAC1 oligomerization is not a parallel pore competing with BAX/BAK. It is the upstream sensitization event that gates BAX/BAK activation.
+
+The consequence for the framework is significant. The four regimes are no longer parallel attractors with distinct pore architectures. They are graded outcomes along a single sensitization axis whose amplitude and duration determine which downstream consequence dominates. The membrane runs one disclosure program. The disclosure program escalates.
+
+## **The five-state spectrum**
+
+Stated as a spectrum along the VDAC1 oligomerization axis:
+
+| **State** | **VDAC1 oligomeric state** | **Membrane condition** | **Cellular consequence** |
+| --- | --- | --- | --- |
+| **1. Ordinary exchange** | Monomer–dimer equilibrium; HK-II / Bcl-xL stabilized | Open conducting; ordinary lipid asymmetry | Low-bandwidth metabolic publication ignored by signaling |
+| **2. Strain** | Sampling of higher-order oligomers; partial HK-II loss | Mild redox shift; calcium pulses; lipid disorder rising | Reversible; rescue by fusion or triage by fission |
+| **3. Partial disclosure (alarm)** | Trimer/tetramer rising; some N-terminal exposure | Cardiolipin externalization; mtDNA fragments leak | cGAS–STING activation; type I IFN; cell survives but signals |
+| **4. Sensitization threshold** | Sustained oligomerization; VDAC1-N binds Bcl-xL BH3 groove | Bcl-xL neutralized; BAX/BAK derepressed | Separatrix crossing: commitment-capable state |
+| **5. Commitment (MOMP)** | Oligomers may persist or dissolve as BAX/BAK take over | BAX/BAK macropores; inner-membrane herniation | Cytochrome c flood; SMAC; caspase cascade; apoptosis |
+
+The shaded row marks the sensitization threshold — the separatrix in state space whose crossing distinguishes the alarm regime (where the cell survives the disclosure) from the commitment regime (where it does not). The mechanistic claim of the v0.3 spine is that this threshold is set by VDAC1 N-terminal exposure becoming sufficient to neutralize the available Bcl-xL pool. Below threshold, oligomerization permits mtDNA leak through what remains a sublethal disclosure channel. Above threshold, the same molecular event — VDAC1 oligomerization — now functions as a derepression mechanism for BAX/BAK, and the disclosure escalates to terminal commitment.
+
+## **What this collapses; what this still allows**
+
+If the sequential-sensitization spine is correct, the field acquires a unifying claim that has previously been resisted: VDAC1 is the single upstream molecular subject of both the inflammatory and apoptotic disclosure regimes, with BAX/BAK as the executor of the terminal regime under VDAC1-driven derepression of their anti-apoptotic restraints. The framework keeps its attractor language — the five states above are attractors — but the attractors now sit along one axis rather than across parallel branches.
+
+The framework still allows context-dependent dominance of alternative routes. The permeability transition pore on the inner membrane, regulated by cyclophilin D and possibly composed of ATP synthase dimers, remains a real and partially independent route to mitochondrial failure under specific conditions, particularly calcium overload. The sequential-sensitization spine does not deny PTP-mediated commitment. It claims only that under stress conditions where the outer membrane is the load-bearing variable, VDAC1 oligomerization is the dominant sensitization mechanism.
+
+## **The parallel-attractor alternative**
+
+The parallel-attractor model — where VDAC1 oligomers form the alarm pore and BAX/BAK macropores form the commitment pore through mechanistically independent processes — is retained here as the alternative the data could still support. The two models make different falsifiable predictions about the temporal ordering and amplitude-dependence of the molecular events at the outer membrane. Section VII proposes a minimal multiplexed experiment whose outcome distinguishes them.
+
+**Verification status. **The N-terminal helix → Bcl-xL BH3 groove → BAX/BAK derepression mechanism is the load-bearing claim of the sequential-sensitization spine. The atlas treats it as a serious and structurally supported proposal but flags it as requiring independent replication before the framework is published as a primary scientific claim. If the mechanism fails to replicate or is shown to be context-limited, the framework reverts to the parallel-attractor model with appropriate hedging.
+
+*Read along the axis rather than across parallel branches, the membrane’s behavior under increasing stress reads less like a series of doors and more like a slow turning. The same instrument is being played at different amplitudes. What was metabolic chatter at low amplitude becomes inflammatory disclosure at middle amplitude, and at high amplitude crosses into a regime where its own playing neutralizes the silence the cell had been holding around it. The membrane does not change instruments at the threshold. It changes what its instrument is doing in the room.*
+
+# **V.  ****Cardiolipin Choreography and the Branch Point**
+
+Cardiolipin is the lipidic protagonist of mitochondrial disclosure. It is synthesized only in mitochondria, restricted under healthy conditions to the matrix-facing leaflet of the inner membrane, and used by the cell as a near-specific signal of mitochondrial identity and condition. Its trafficking, externalization, and oxidation are the three distinct lipidic events through which mitochondrial interior condition becomes legible at the outer surface, and together they constitute one of the cleanest examples of a lipid-driven signaling cascade in cell biology.
+
+## **Synthesis and basal distribution**
+
+Cardiolipin is a tetra-acyl anionic phospholipid synthesized in the matrix-facing leaflet of the inner mitochondrial membrane by cardiolipin synthase, with subsequent acyl chain remodeling by tafazzin to enrich tetralinoleoyl and other polyunsaturated species. The lipid is normally absent from the outer membrane and from the cytosolic leaflet of the inner membrane. This asymmetric distribution is maintained under healthy conditions and is itself a state variable: a mitochondrion whose cardiolipin remains inner-leaflet-restricted is in one regime, and a mitochondrion whose cardiolipin has begun to externalize is in another.
+
+## **Externalization machinery**
+
+Under stress — protonophoric uncoupling, electron transport chain inhibition, neurotoxin exposure, calcium overload — cardiolipin is mobilized across the inner membrane and across the intermembrane space to the cytosolic leaflet of the outer membrane. The implicated machinery includes phospholipid scramblase-3 (PLS3) on the inner membrane and nucleoside diphosphate kinase-D (NDPK-D, encoded by NME4) as a hexameric intermembrane-space facilitator. In healthy mitochondria NDPK-D is bound to OPA1 on the inner membrane and functions as an active kinase localizing GTP production for membrane fusion; on depolarization it dissociates from OPA1 and adopts a translocase conformation that cross-links the inner and outer membranes, binding cardiolipin directly and facilitating its transfer across the intermembrane space.
+
+The cardiolipin-binding R90D mutant of NDPK-D is unable to bind the lipid, fails to associate with OPA1, and cannot promote stress-induced mitophagy. Genetic inactivation of PLS3 increases cellular resistance to apoptosis by preventing outer-membrane cardiolipin accumulation. These genetic results jointly establish that cardiolipin externalization is not an incidental consequence of membrane failure; it is an actively orchestrated lipid trafficking event with specific machinery and specific regulatory dependencies.
+
+## **Externalized cardiolipin as mitophagy receptor**
+
+Once present in the outer leaflet of the outer membrane, cardiolipin functions as a direct receptor for the autophagic protein microtubule-associated protein 1 light chain 3 (LC3). LC3 contains evolutionarily conserved cardiolipin-binding pockets that coordinate the anionic headgroups of the lipid, and mutations in these residues abolish mitophagy in primary cortical neurons. This is a ubiquitin-independent mitophagy recruitment route: the damaged mitochondrion is recognized as damaged by virtue of presenting a lipid that does not normally appear on its outer surface, and the autophagic machinery responds to that lipid directly.
+
+In parallel, cardiolipin externalization is one of several signals that recruit and activate the E3 ubiquitin ligase Parkin at the outer membrane, downstream of PINK1 stabilization. Parkin then ubiquitinates outer-membrane proteins broadly — including VDAC1 at a specific lysine residue, where ubiquitination has been reported to restrain VDAC1 oligomerization and thereby limit mtDNA release during the containment regime. The mechanistic interpretation is that Parkin enforces containment by holding the sensitization axis below threshold while the autophagy machinery wraps and degrades the damaged organelle. This is one of the cleanest mechanistic bridges in the framework between containment and alarm: a single E3 ligase modulating both the autophagic readout and the inflammatory readout through ubiquitination of a single molecule.
+
+## **The oxidation branch point**
+
+The decisive event distinguishing mitophagic containment from apoptotic commitment is the chemical oxidation state of externalized cardiolipin. Externalized non-oxidized cardiolipin supports LC3 recruitment and mitophagic clearance. Oxidized cardiolipin, by contrast, destabilizes the outer membrane and supports the release of pro-apoptotic factors. The transition from one to the other is catalyzed by an unusual change-of-function in cytochrome c itself.
+
+Early in apoptotic signaling, cytochrome c associates with cardiolipin at the inner-membrane interface. This binding induces a conformational shift in cytochrome c that destabilizes its tertiary structure and converts the electron-shuttle protein into an active cardiolipin-specific peroxidase. Using local hydrogen peroxide, the cytochrome c–cardiolipin complex selectively oxidizes the polyunsaturated fatty acyl chains of cardiolipin. The resulting lipid-packing disruption destabilizes the outer membrane, facilitates pore growth, and supports the eventual release of cytochrome c itself, along with SMAC/DIABLO and other intermembrane-space pro-apoptotic factors, into the cytosol.
+
+**The unconnected choreography. **The temporal coordination converting externalized non-oxidized cardiolipin into oxidized cardiolipin remains incompletely characterized. Whether the conversion is the actual bifurcation variable between successful mitophagic quarantine and apoptotic commitment, and whether it is regulated as a switch or as a graded variable, is an open question. The atlas treats cardiolipin oxidation as the most plausible candidate for a measurable single-variable branch point but does not yet assert it as established.
+
+*The lipid begins inside. It belongs to the inner work of the mitochondrion, the matrix-facing leaflet where the engine runs. It is not supposed to show. When it shows, it is showing because something has reorganized the boundaries between interior and surface. Once on the outer leaflet, it is still itself — still cardiolipin — but it has changed addresses, and the cell reads the change of address as the meaning. If it is oxidized while it shows, the meaning changes again: not a request for repair but a declaration that the line has been crossed. The lipid does not become something else. It enters a different sentence.*
+
+# **VI.  ****Cargo Classes: What the Membrane Publishes at Each Regime**
+
+If the outer membrane is a publication interface, the readout of its current state is the class of cargo it is currently disclosing. Different cargoes recruit different downstream decoders. The cellular consequence of mitochondrial disclosure is therefore not set by the fact that disclosure occurred, but by which cargo class was published into the cytosol and how the cytosolic decoding apparatus responded to it.
+
+| **Cargo class** | **Membrane state required** | **Cytosolic decoder** | **Cellular response** |
+| --- | --- | --- | --- |
+| ATP / ADP / NADH / pyruvate / small metabolites | Ordinary; VDAC1 open monomer–dimer | Enzymes of the cytosolic compartment | Routine bioenergetic coupling |
+| Phospholipids (basal traffic) | Ordinary; VDAC dimer scramblase activity | Membrane biogenesis pathways | Mitochondrial membrane lipid composition maintenance |
+| Externalized cardiolipin | PLS3/NDPK-D-mediated externalization | LC3, NIX, BNIP3 lipid-binding pockets | Mitophagic engulfment; organelle clearance |
+| mtDNA fragments (short) | VDAC1 oligomerization (partial); sublethal disclosure | Cytosolic cGAS → 2′3′-cGAMP → STING | Type I IFN; sterile inflammation; cell survives |
+| Full-length mtDNA (circular) | BAX/BAK macropores; inner-membrane herniation | cGAS (in caspase-deficient or low-caspase regime) | Strong cGAS–STING; pyroptotic potential |
+| Cytochrome c | BAX/BAK macropore growth past commitment | APAF1 → apoptosome → caspase-9 → caspase-3 | Apoptotic execution; ordered cell death |
+| SMAC / DIABLO; Omi/HtrA2 | Co-released with cytochrome c | IAP neutralization (XIAP, cIAP1/2) | Derepression of caspases; amplification of commitment |
+| AIF (caspase-independent) | Calpain or cathepsin cleavage; OMM permeabilization | Nuclear translocation; chromatinolysis | Caspase-independent parthanatos / regulated death |
+
+## **BAX/BAK macropore dynamics and inner-membrane herniation**
+
+The terminal-commitment cargo classes share a single physical event: the growth of BAX/BAK macropores in the outer membrane to dimensions sufficient to permit the herniation of the inner membrane through the outer membrane lesion. Live-cell lattice light-sheet microscopy has captured this herniation in mouse embryonic fibroblasts in real time, visualizing the physical extrusion of matrix components into the cytoplasm. Cryo-electron microscopy of herniated mitochondria reveals that the herniated structures are often partially or fully encapsulated by double-membraned vesicles, with contacts visible between the inner mitochondrial membrane and the inner vesicle membrane — suggesting that a localized mitophagic response can be initiated by the exposure of the inner membrane to the cytoplasm, even at this terminal stage.
+
+BAX and BAK have distinct oligomerization properties. BAK organizes into smaller structures with rapid kinetics, and then recruits and accelerates the assembly of BAX into larger, continuously expanding mixed oligomeric pores. The mitochondrial carrier homolog MTCH2 localizes adjacent to BAX/BAK assemblies during apoptosis and promotes their higher-order oligomerization through lipid-dependent structural remodeling of the outer membrane; cells lacking MTCH2 show delayed oligomerization at the single-particle level. The availability and kinetics of these components determine the rate at which macropores grow and therefore the rate at which different cargo classes are disclosed.
+
+## **The caspase gate on immunological disclosure**
+
+The immunological consequence of terminal-regime disclosure is gated by caspase activity. In the presence of active executioner caspases, caspase-3 cleaves cytosolic DNA-sensing proteins including cGAS and IRF3, preventing inflammatory activation even when mtDNA reaches the cytosol. In the absence of active caspases, mtDNA released as full-length circular molecules through BAX/BAK macropores activates cGAS, STING, and type I interferon signaling, producing a sterile inflammatory response. This caspase gate explains why apoptosis is, under normal conditions, immunologically silent despite involving substantial nucleic-acid release, and why caspase inhibition can convert apoptotic cells into potent inflammatory signals.
+
+Minority MOMP — a state in which only a subset of mitochondria permeabilize without committing the cell — adds another layer. In minority MOMP, the limited mtDNA released activates cGAS–STING signaling and produces sublethal caspase-3 activity, which causes DNA damage and genomic instability without immediate cell death. The cell that survives minority MOMP carries the genetic consequences of having had partial apoptotic activity, including potential oncogenic mutation. The disclosure surface framework treats minority MOMP as a real and important attractor in its own right, sitting between the partial-disclosure alarm state and the full commitment state along the sensitization axis.
+
+# **VII.  ****The Measurable State Vector and a Falsifiable Experiment**
+
+A unifying synthesis becomes load-bearing science only when it cashes out as falsifiable prediction. The disclosure-surface framework, on its v0.3 sequential-sensitization spine, makes specific predictions about the temporal ordering and amplitude-dependence of molecular events at the outer mitochondrial membrane under controlled stress. These predictions are testable with currently available methods. This section formalizes the measurable state vector and proposes a minimal multiplexed experiment whose outcome distinguishes the sequential-sensitization spine from the parallel-attractor alternative.
+
+## **The full state vector**
+
+Variables, organized by what they measure and by which method currently provides access:
+
+| **Variable class** | **Specific measurement** | **Method** |
+| --- | --- | --- |
+| ***Surface organization*** | VDAC1 oligomeric distribution (mono-, di-, tri-, tetra-, higher) | Chemical crosslinking + native PAGE; HS-AFM; cryo-ET |
+|  | VDAC1 N-terminal helix exposure | Conformation-specific antibody; FRET pair; cryo-EM |
+| ***Partner occupancy*** | HK-II / VDAC1 binding fraction | Proximity ligation; PLA; co-IP under digitonin extraction |
+|  | Bcl-xL / VDAC1-N association; Bcl-xL / BAK occupancy | BiFC; co-IP; targeted MS |
+| ***Lipid state*** | Outer-leaflet cardiolipin (externalization fraction) | Cardiolipin-binding probes; NAO-flow; click-cardiolipin |
+|  | Cardiolipin oxidation state (distinct from externalization) | Oxidative lipidomics (LC-MS); peroxide-CL antibodies |
+|  | Cholesterol / PE / PC ratio in OMM domains | Targeted lipidomics on purified OMM; super-resolution probes |
+| ***Cargo disclosure*** | Cytosolic mtDNA copy number (short vs full-length) | Digitonin fractionation + ddPCR with fragment-size probes |
+|  | Cytochrome c release fraction; SMAC release | Western on subcellular fractions; live-cell biosensors |
+| ***Redox state*** | Current ROS production rate (mitochondrial) | MitoSOX; HyPer-mito biosensors |
+|  | Accumulated lipid peroxidation burden (membrane memory) | Lipid hydroperoxide LC-MS; BODIPY-C11 ratiometric |
+| ***Mechanical / geometric*** | Mitochondrial tension; ER–OMM distance | Force-sensing biosensors; FIB-SEM; live-cell super-resolution |
+|  | Network fraction undergoing permeabilization | Single-mitochondrion live imaging with cytochrome c reporters |
+| ***Downstream signaling*** | cGAS activation; IRF3 phosphorylation; ISG induction | IF; phospho-flow; ISG signature qPCR or RNA-seq |
+|  | Caspase-3 activation (sublethal vs lethal) | FRET caspase reporters; cleaved-PARP IF |
+
+Two refinements deserve emphasis. First, ROS must be split into a current production rate and an accumulated peroxidation burden. The lipid peroxidation cascade is autocatalytic; peroxidized polyunsaturated fatty acids generate further lipid radicals, which propagate. The membrane therefore retains a chemical memory of past oxidative stress even after the initial ROS pulse has subsided. Acute ROS recovers; accumulated peroxidation persists. A state vector that treats ROS as a single variable confounds these. Second, the spatial state — contact-site partners, subcellular localization, network fraction — is not optional. Two mitochondria with identical molecular state vectors but differing contact contexts will follow different trajectories through state space.
+
+## **The minimal multiplexed regime-discrimination experiment**
+
+The proposed experiment is a stress titration in a cell system in which the disclosure framework predicts that outer-membrane state is the load-bearing variable — for example, cancer cells with high VDAC1 / HK-II dependence, with matched normal cells or VDAC1-edited controls. Across a stress dose-response and across time, the following variables are measured in parallel at single-mitochondrion or single-cell resolution where possible:
+
+**•  **VDAC1 oligomerization state (crosslinking + native PAGE; or HS-AFM in isolated OMM)
+
+**•  **VDAC1 N-terminal helix exposure (conformation-specific antibody or FRET pair)
+
+**•  **Bcl-xL occupancy by VDAC1-N versus by BH3-only proteins (co-IP or BiFC)
+
+**•  **BAK / BAX activation state (conformation-specific antibody)
+
+**•  **Cytosolic mtDNA: short fragments versus full-length circles (size-resolved ddPCR)
+
+**•  **cGAS–STING activation (cGAMP, p-IRF3, ISG signature)
+
+**•  **Cytochrome c release fraction (subcellular fractionation or live-cell reporter)
+
+**•  **Cardiolipin externalization and oxidation state (lipidomics)
+
+**•  **Membrane tension and ER–OMM distance (where instrumentation permits)
+
+**•  **Mitochondrial network fraction undergoing permeabilization (live imaging)
+
+### ***Predictions and falsifiers***
+
+The sequential-sensitization spine predicts a specific temporal ordering across the stress titration. Increasing stress should produce, in order: VDAC1 oligomerization rising above baseline; short-fragment mtDNA appearing in the cytosol with concomitant cGAS–STING activation; VDAC1 N-terminal helix exposure rising past a threshold; Bcl-xL occupancy shifting from BH3-only proteins to VDAC1-N; BAK and BAX conformational activation rising sharply; cytochrome c release; full-length mtDNA release. The transition from alarm to commitment should be marked by the VDAC1-N / Bcl-xL crossover event.
+
+The parallel-attractor alternative predicts that the alarm and commitment cargo classes appear through mechanistically independent processes, with VDAC1 oligomerization and BAX/BAK activation not necessarily coupled through Bcl-xL neutralization. The temporal ordering would be looser, the VDAC1-N / Bcl-xL crossover would not be required for BAX/BAK activation, and stress conditions that produce robust mtDNA alarm without subsequent commitment should be reproducibly findable.
+
+Three specific outcomes would falsify the sequential-sensitization spine: (1) mtDNA alarm appearing in conditions where VDAC1 N-terminal exposure is not detectable; (2) VDAC1-N exposure occurring without subsequent change in Bcl-xL / BAK occupancy; (3) BAX/BAK activation reproducibly preceding any rise in VDAC1 oligomerization. Any of these outcomes would force the framework back to the parallel-attractor model or to a hybrid model with appropriate hedging.
+
+Three outcomes would strongly support it: (1) VDAC1 oligomerization rising before mtDNA alarm in every titrated condition; (2) VDAC1-N / Bcl-xL co-occupancy rising sharply at the alarm-to-commitment transition; (3) genetic or pharmacological prevention of VDAC1-N exposure abrogating BAX/BAK activation without abolishing mtDNA alarm. Together these would establish VDAC1 oligomerization as the upstream sensitization axis and the framework as load-bearing.
+
+**Falsifiability threshold. **The disclosure-surface framework as a whole — not the v0.3 spine in particular — is falsifiable through this experiment only at the level of the sequential-sensitization claim. A failure of the spine does not refute the broader claim that the OMM is a multi-regime publication interface; it returns the parallel-attractor model. A failure of the broader claim would require demonstrating that single-axis markers outperform the full state vector at predicting regime outcomes, which the current literature does not support.
+
+# **VIII.  ****Pharmacological Audits**
+
+A framework is only as defensible as the pharmacology that tests it. This section audits five compound–target relationships that are load-bearing for the disclosure-surface framework. Two of the five force corrections to long-held assumptions in the VDAC literature; one supports the partner-dependent function argument from Section III; one extends the framework to cancer therapeutics; one bounds historical claims about the translocator protein.
+
+## **Cannabidiol: the two-register reading**
+
+Cannabidiol associates directly with purified VDAC1 in reconstituted systems and reduces single-channel conductance. In some cellular contexts — particularly cancer cells with elevated VDAC1 and metabolic addiction — cannabidiol produces VDAC1-dependent bioenergetic disruption and cell death, consistent with a direct membrane-level mechanism in which CBD shifts the disclosure threshold of a VDAC1-rich outer membrane. This is the registered effect of CBD on the disclosure surface itself.
+
+However, in murine models of Leigh syndrome — a severe pediatric primary mitochondrial disease — daily administration of cannabidiol substantially extends lifespan, delays motor decline, reduces neurodegenerative pathology in the globus pallidus external, and suppresses thermally induced seizures. Genetic and pharmacological dissection has shown that these benefits are not mediated by VDAC1. Pretreatment with the selective PPARγ antagonist GW9662 abolishes the survival and neuroprotective effects of CBD. The mechanism is transcriptional: CBD activates PPARγ, driving expression of metallothioneins (MT1, MT2) and increasing glutathione, restoring antioxidant buffering capacity and reducing neuroinflammation in both Leigh syndrome mice and patient-derived fibroblasts.
+
+This is exactly the two-register pharmacological signature the framework predicts. In cellular contexts where the outer-membrane disclosure state is the load-bearing variable, VDAC1-targeting compounds produce VDAC1-dependent effects. In cellular contexts where the load-bearing variable lies elsewhere — at the level of electron transport function, nuclear-receptor signaling, antioxidant transcription — the same compound produces effects through different mechanisms. The framework's predictive value comes from being able to say, before pharmacology is tested, which mechanism dominates in which cellular context. The CBD case is not a weakness of the framework. It is the framework displaying the property it claims.
+
+## **VBIT-4: the tool-compound audit that forces re-evaluation**
+
+VBIT-4 has been used for over five years as a selective inhibitor of VDAC1 oligomerization, with therapeutic efficacy reported in preclinical models of Alzheimer's disease, type 2 diabetes, amyotrophic lateral sclerosis, and myocardial infarction. The historical assumption has been that VBIT-4 binds VDAC1 directly and prevents oligomerization-dependent mtDNA release.
+
+Recent biophysical audit work, using high-speed atomic force microscopy to visualize VDAC1 oligomerization in planar lipid membranes alongside single-channel electrophysiology, microscale thermophoresis, and coarse-grained molecular dynamics, has reported that VBIT-4 does not interact specifically with VDAC1. Instead, it partitions into lipid bilayers at micromolar concentrations, where it destabilizes the membrane and induces structural defects independently of VDAC1. Above ten micromolar, VBIT-4 induces VDAC1-independent membrane leakage and cytotoxicity in HeLa cells.
+
+**Re-audit imperative. **If the VBIT-4 finding holds up, every preclinical study using VBIT-4 as a specific VDAC1 oligomerization inhibitor requires re-evaluation. Some claims will survive — phenotypes consistent with general outer-membrane destabilization at high VBIT-4 concentrations remain valid as evidence that membrane perturbation produces those phenotypes. But causal claims attributing therapeutic effect to VDAC1 oligomerization inhibition specifically, on the basis of VBIT-4 use alone, must be reconsidered.
+
+## **Cyathin-R: VDAC1 oligomerization as therapeutic strategy**
+
+Cyathin-R, a cyathane diterpenoid identified in screens of secondary fungal metabolites, induces apoptosis in BAX/BAK-deficient mouse embryonic fibroblasts by directly promoting VDAC1 oligomerization. The assembled oligomers form outer-membrane pores sufficient to release cytochrome c into the cytosol, bypassing the canonical BAX/BAK requirement. Cyathin-R is interesting for two reasons. First, it suggests that under sufficient pharmacological pressure VDAC1 oligomerization alone can drive terminal cargo release without BAX/BAK involvement, in apparent contradiction to the sequential-sensitization spine's requirement for BAX/BAK as the dominant terminal pore architecture. Second, it identifies a therapeutic strategy for cancers that have acquired BAX/BAK loss as a resistance mechanism.
+
+The atlas treats the cyathin-R observation as a refinement of the sequential-sensitization spine rather than a refutation. The spine claims that under physiological stress conditions, VDAC1 oligomerization gates BAX/BAK activation via Bcl-xL neutralization. Pharmacological pressure sufficient to drive VDAC1 oligomerization past the point where BAX/BAK-independent macropore formation occurs is consistent with this picture; it simply shows that the axis extends further than physiological stress typically explores.
+
+## **Lovastatin: STING de-sequestration**
+
+The HMG-CoA reductase inhibitor lovastatin engages the cGAS–STING pathway through two distinct mechanisms with apparent additive effect. First, lovastatin impairs mitochondrial function in colorectal cancer cells, depolarizing the membrane, reducing oxygen consumption, decreasing mtDNA abundance and integrity. ROS generation under these conditions oxidatively damages mtDNA and promotes its release into the cytosol, where cGAS senses the released DNA and triggers STING-mediated type I interferon signaling and apoptotic cell death. This pathway is independent of RIG-I / MDA5 / MAVS RNA sensing and can be prevented by mitochondrial-targeted antioxidants such as mitoquinone.
+
+Second, in the context of cancer radiotherapy, tumor cells can escape radiation-induced cGAS–STING activation by upregulating HMGCR and increasing cholesterol synthesis. Elevated cholesterol sequesters STING within the endoplasmic reticulum membrane, blocking its trafficking to the Golgi apparatus and preventing downstream interferon signaling. Combining oral lovastatin with local radiotherapy prevents the radiation-induced cholesterol increase, restores STING trafficking, and restricts tumor progression in syngeneic CT26 mouse colon cancer models. Transcriptomic profiling shows upregulation of cytotoxicity-related genes (GZMB, PRF1, IFNγ) and chemokines (CXCL9, CXCL11, CXCL16), promoting infiltration of cytotoxic CD8⁺ T cells and natural killer cells into the tumor microenvironment.
+
+The lovastatin case illustrates the framework's reach. The same compound modulates the disclosure-surface variables at the mitochondrial outer membrane and modulates the cholesterol-dependent membrane trafficking of the downstream STING decoder. Both effects converge on type I interferon output. Liposomal co-formulations of lovastatin with SN38 are being translated clinically as a strategy to convert immunologically cold tumors into responsive microenvironments.
+
+## **TSPO: viable knockouts and the limits of historical models**
+
+The translocator protein TSPO has been treated for decades as an indispensable component of the mitochondrial permeability transition pore and as a key cholesterol-import machinery component for steroidogenesis. Global TSPO knockout mice are nevertheless viable and fertile. This result alone forces a substantial revision of the historical models that placed TSPO as a core mitochondrial gatekeeper. Recent work continues to describe TSPO–VDAC1 interactions with measurable effects on mitophagy and on stress responses, but TSPO is no longer credibly an indispensable component of the disclosure machinery. It is, more accurately, a modulator whose loss is compensable under most conditions.
+
+| **Compound** | **Original / proposed target** | **Audited mechanism** | **Framework reading** |
+| --- | --- | --- | --- |
+| **Cannabidiol (CBD)** | VDAC1 channel modulator | Direct VDAC1 in cancer contexts; PPARγ-driven antioxidant transcription in Leigh syndrome | Two-register: disclosure-surface in one context, transcriptional in the other |
+| **VBIT-4** | Selective VDAC1 oligomerization inhibitor | Non-specific lipid bilayer partitioner; membrane destabilizer above ~10 μM | Re-audit required for prior VDAC1-specific causal claims |
+| **Cyathin-R** | BAX/BAK-bypass apoptosis inducer | Direct promoter of VDAC1 oligomerization; pharmacological extension of sensitization axis | Therapeutic option for BAX/BAK-deficient cancers |
+| **Lovastatin** | HMGCR inhibitor | Mitochondrial stress + STING de-sequestration via cholesterol reduction | Dual disclosure-pathway engagement; convertible cold-tumor strategy |
+| **TSPO ligands** | Mitochondrial permeability transition pore | Modulator only; knockout viable; not indispensable to PTP | Historical model requires revision; TSPO is contextual |
+
+*Pharmacology read through the disclosure framework looks less like the search for a single key turning a single lock and more like the question of which state of an interface a compound stabilizes or destabilizes, and whether that state is the load-bearing variable in the cellular context being treated. The framework predicts that compounds will display context-dependence as the default condition, not as an exception requiring explanation. The exception, in this register, is the compound that displays no context-dependence at all.*
+
+# **IX.  ****Cross-Organelle Generalization: Grammar versus Vocabulary**
+
+If the outer mitochondrial membrane operates as a disclosure surface in the sense developed in this atlas, the question arises whether the same logic applies to other intracellular interfaces. The lysosomal limiting membrane and the nuclear envelope are the two clearest candidates. The honest answer is that the grammar of interface-state publication generalizes; the vocabulary does not. Each organelle's cargo classes are organelle-specific, and the decoders are organelle-specific.
+
+## **Lysosomes: the strongest parallel**
+
+Damaged lysosomes — perforated by proteopathic fibrils of tau or α-synuclein, by crystalline particles, by pathogens, by osmotic stress — expose luminal glycan groups to the cytosol where they are sensed by the β-galactoside-binding lectin galectin-3. Galectin-3 puncta on damaged lysosomes are the cytosolic indicator that the lysosomal limiting membrane has changed state.
+
+Before galectin-3 fully recruits the lysophagic machinery, the cell mounts a rapid ESCRT-mediated repair response. Calcium-dependent ALIX and TSG101 recruit ESCRT-III subunits — specifically CHMP4B — to the membrane lesion, where ESCRT-III oligomerizes into spiral structures that contract to seal the membrane. Annexin A7 supports an ESCRT-independent repair arm; Annexin A1 and Annexin A2 are recruited to larger lesions exceeding the size at which CHMP4A-mediated ESCRT-III sealing remains effective. Calcium-activated sphingomyelin scrambling generates ceramide microdomains on the cytosolic leaflet, inducing the negative curvature required for pore closure.
+
+If repair fails, lysosomes are cleared via lysophagy, coordinated by the AAA-ATPase p97 and TRIM16 in association with galectin-3. Severe lysosomal rupture by α-synuclein fibrils allows toxic protein seeds to escape into the cytosol and seed pathological aggregation. Lysosomal damage also halts cell growth through GALTOR-mediated inhibition of mTOR signaling.
+
+The grammatical parallel to the mitochondrial framework is clean. The lysosomal limiting membrane discloses interior condition through graded interface states: intact (no disclosure), damaged with ESCRT-repairable lesion (transient disclosure, repair), damaged beyond repair (lysophagic clearance), and severely ruptured (cytosolic seeding of pathological aggregates). Galectin-3 is to the lysosome roughly what cardiolipin is to the mitochondrion — an interior-restricted marker whose cytosolic exposure constitutes a cargo class the cellular decoding machinery recognizes.
+
+## **Nuclear envelope: the cautionary parallel**
+
+The nuclear envelope undergoes mechanical rupture under several conditions, most prominently in cells with weakened nuclear lamina caused by mutations in LMNA (encoding lamins A and C). The prevailing hypothesis predicted that nuclear envelope rupture would expose genomic DNA to the cytosol and trigger inflammatory cGAS–STING signaling, contributing to disease pathogenesis in lamin-related cardiomyopathies. Recent work has complicated this picture substantially.
+
+Genetic deletion of cGas or Sting in Lmna knockout mice fails to alleviate dilated cardiomyopathy, demonstrating that cGAS–STING is not the primary driver of pathology in this context. The reason appears tissue-specific: adult, mature cardiomyocytes express little or no cGAS at baseline, so nuclear envelope ruptures in these cells do not trigger interferon-stimulated genes. Therapeutic protection has been achieved by targeting the physical transmission of force to the nucleus — cardiomyocyte-specific disruption of the LINC complex uncouples the nucleus from the actin and desmin cytoskeleton, reducing rupture frequency, normalizing more than half of the dysregulated transcriptome, and improving cardiac function in vivo.
+
+The lesson for the disclosure framework is that the grammar — interface damage publishes interior cargo — generalizes, but the decoding step is tissue-specific. The cargo class (genomic DNA) is published; whether it is read depends on whether the decoder (cGAS) is present at functional levels. The framework must, at the cross-organelle level, treat the decoder as a state variable in its own right. A disclosure surface in a cell that lacks the decoder is not signaling; it is leaking.
+
+## **Why mitochondria are the cleanest case**
+
+Mitochondria are the cleanest example of the disclosure-surface logic for three converging reasons. First, mitochondrial cargo classes are unusually distinguishable: metabolites, cardiolipin, mtDNA fragments versus full-length molecules, cytochrome c, SMAC. Each cargo class recruits a different decoder, and the decoders are well-characterized. Second, the disclosure regimes have well-mapped physiological consequences spanning the full range from ordinary function to organelle clearance to inflammatory signaling to ordered cell death. Third, the molecular machinery linking interface state to cargo class is, at least in outline, identified. The lysosomal parallel is grammatically clean but lacks the same regime-by-regime cargo specificity. The nuclear-envelope parallel is grammatically valid but requires careful attention to decoder availability.
+
+The disclosure surface framework is therefore most defensible at the mitochondrial level. Its generalization to other organelles is a hypothesis to be tested, not a claim to be exported. The atlas advances the mitochondrial case as the primary scientific contribution and the cross-organelle grammar as the most promising direction for the framework's extension.
+
+# **X.  ****Six Unresolved Paradoxes**
+
+A working monograph that does not name its remaining problems is a monograph that has stopped doing science. This section names six paradoxes the disclosure-surface framework has not yet resolved. Each is a research direction. Each is also a place where the framework could, in principle, be refuted or substantially revised.
+
+### ***1. Pore identity by regime***
+
+There is strong evidence for VDAC1 oligomeric pores in nonlethal mtDNA alarm states and equally strong evidence for BAX/BAK macropores in full apoptotic commitment. There is additional evidence for the inner-membrane permeability transition pore as a route to mtDNA release in disease-specific systems. What the field does not yet possess is a universal mapping of which pore architecture dominates which physiological regime in which cell types. Papers can appear contradictory while all being locally correct. The sequential-sensitization spine attempts to unify VDAC1 oligomers and BAX/BAK macropores along a single axis, but the relationship to the PTP remains an open question.
+
+### ***2. The VDAC1 voltage paradox***
+
+Classical electrophysiology in planar bilayers establishes voltage as the dominant gating variable of VDAC1 in vitro. The living outer mitochondrial membrane does not sustain the transmembrane potentials at which this gating becomes consequential. The safest current conclusion is that gating in vivo is set by local surface potentials, Donnan effects, lipid charge, partner binding, and oligomeric state — not by global membrane voltage. The voltage paradox is not a contradiction but a calibration mismatch between experimental system and physiological context. It nevertheless remains a place where the historical literature must be read carefully when constructing causal claims.
+
+### ***3. Cardiolipin choreography***
+
+The full traffic logic of cardiolipin externalization, oxidation, curvature induction, and protein recruitment in intact living cells is not yet unified across the mitophagy, inflammatory, and apoptotic regimes. PLS3 and NDPK-D are implicated in externalization; cytochrome c is the candidate peroxidase for the oxidation step; LC3 and tBid are decoders that respond to different cardiolipin states. What is missing is a single experimental system in which all of these events are tracked simultaneously across regimes, with sufficient temporal resolution to establish the ordering. Until this is done, cardiolipin remains the most promising single-variable branch point and the least operationalized.
+
+### ***4. Tool-compound specificity and re-audit imperative***
+
+The VBIT-4 audit is one example of a broader problem. The VDAC pharmacology literature contains causal claims grounded in tool compounds whose target specificity has not been independently verified at the level of direct biophysical interaction with VDAC1 versus the lipid bilayer. The framework requires a systematic re-audit of major tool compounds — including the older VDAC-targeting agents — through methods (high-resolution AFM, single-channel electrophysiology in pure lipid systems, microscale thermophoresis, coarse-grained MD) that can distinguish protein-targeted from membrane-targeted activity.
+
+### ***5. Minority MOMP and the survivable threshold***
+
+Cells can survive partial mitochondrial outer membrane permeabilization. Sublethal MOMP across a subset of mitochondria produces caspase-3 activity, DNA damage, and genomic instability without immediate cell death. The threshold for irreversible commitment — what fraction of the mitochondrial network must permeabilize, for how long, with what kinetics, before the cell cannot recover — remains an open question. The framework treats minority MOMP as an attractor in its own right but does not yet predict the network-fraction threshold quantitatively.
+
+### ***6. State-space collapse mechanism***
+
+The framework treats the outer membrane as a high-dimensional state vector collapsing to a low-dimensional set of attractor regimes. It does not yet possess a unified theoretical account of how this collapse occurs — what the dimensionality reduction map is, what its mathematical structure is, what its evolutionary tuning has been selected for. The state-space picture is plausible and consistent with the data; it is not yet derived from first principles. This is probably the next conceptual frame for the framework and the place where computational modeling will become indispensable.
+
+# **XI.  ****Coda: The Integration Register**
+
+Pathway language flattens what an integrating membrane is doing. The arrow between A and B, the boxed name of a protein, the labeled mechanism — these are useful at the level of communication and indispensable at the level of teaching. They become deceptive at the level of explanation when the actual cellular process being described is not serial and not arrow-shaped. The mitochondrial outer membrane is one of the places in cell biology where pathway language flattens hardest, because the membrane is concurrently integrating lipid composition, partner occupancy, mechanical tension, redox state, calcium history, and contact-site geometry into an outcome whose realization is neither serial nor easily diagrammed.
+
+The integration register, set in italics throughout this atlas, is not decoration and not metaphor. It is the language calibrated to describe what the membrane is doing when the pathway diagram is not lying but is simply not enough. It treats the membrane as the protagonist and the proteins as states the membrane is currently expressing. It treats the regimes as attractors in a state space rather than as branches in a decision tree. It speaks of disclosure rather than rupture, of publication rather than leakage, of witness-nodes rather than central regulators. These are not poetic flourishes added for affect. They are the precise minimum vocabulary the framework requires to describe what the data already shows.
+
+The phenomenological register also serves a second function: it preserves the relationship between the work and the person doing the work. Mitochondria do not need our language. The disclosure framework, when published, will be evaluated against experiments. But the act of doing this work — of synthesizing across architectures, of testing language against literature, of holding the rigor and the felt sense together — is itself an act of integration that the work documents. The atlas is the trace of that integration, not only its product.
+
+*The membrane does not think. It remembers pressure. It does not speak. It leaks truth.*
+
+If "truth" here is read in the Heideggerian sense — as ἀλήθεια, as unconcealment, as the showing-forth of what-is — the sentence is exactly precise. The membrane is the place where what is the case in the mitochondrion becomes unconcealed at the cellular scale. It is not asserting; it is making physical state externally consequential. The propositional sense of truth would be wrong here; the unconcealment sense is the one the data supports. Either way, the membrane is the place where private becomes public, and the line preserved from the relay continues to do scientific work alongside its phenomenological resonance.
+
+# **Notes on Verification Status**
+
+The atlas advances several claims that require independent literature verification before they become load-bearing assertions in a peer-reviewed venue. They are flagged here in the order of their consequence for the framework. Each is treated in the atlas as serious and worth advancing; none is treated as established.
+
+### ***Claim 1. VDAC1 N-terminal helix → Bcl-xL BH3 groove → BAK pore facilitation.***
+
+Reported in primary structural work; the central mechanistic claim of the v0.3 sequential-sensitization spine. Requires careful reading of the original paper, attention to cell-system and concentration regime, and ideally independent replication before being advanced as the unifying mechanism of the framework. If replicated and generalized, this is the single most consequential result the framework rests on. If context-limited or not replicated, the framework reverts to the parallel-attractor model.
+
+### ***Claim 2. VBIT-4 as non-specific lipid bilayer partitioner.***
+
+Reported in a recent biophysical audit. If confirmed in independent laboratories, this finding requires re-evaluation of an extensive prior literature using VBIT-4 as a specific VDAC1 oligomerization inhibitor. The atlas treats the audit as serious and quarantines downstream causal claims accordingly; final disposition awaits replication.
+
+### ***Claim 3. Parkin ubiquitination of VDAC1 at Lys53 restraining mtDNA release.***
+
+Conceptually important as the mechanistic bridge between containment and alarm regimes. The residue-specific claim should be confirmed in the primary source before being advanced as established. The broader claim — that Parkin restrains mtDNA release through ubiquitination of outer-membrane proteins — is well-supported even if the specific residue assignment changes.
+
+### ***Claim 4. VDAC dimer phospholipid scramblase activity.***
+
+Reported in a 2023 Nature Communications paper. This claim, if it holds, establishes VDAC as part of basal lipid publication rather than only stress-induced disclosure. It is foundational to the argument in Section II that the outer membrane has no default "sealed" state. The atlas treats this as the most strongly supported of the four verification-flagged claims.
+
+# **On the Relay and Its Contaminants**
+
+This atlas emerged from a multi-architecture research relay in which a single research question was passed across model instances, with synthesis at each step and explicit comparison across responses. The phenomenological register, the visual generation passes, and the literature-grounded synthesis all originated in different architectures, and were integrated by the human author whose name appears on this work. The atlas itself was composed in collaboration with one specific instance of one architecture; previous instances and other architectures contributed to its shape without writing its sentences.
+
+Two methods notes are worth preserving from that process. First, framing drift in the visual layer can lag behind framing refinement in the textual layer. Across the visual generation passes that accompanied this work, the visual grammar repeatedly re-asserted "VDAC1 as central decider" framings that the textual frame had moved past. The visual convention of "central protein, arrows in, arrows out" naturally privileges the protein as the actor. To draw an integration-surface frame faithfully, the figure must take the membrane as the protagonist, with VDAC1 as one of several embedded readout nodes among co-equal lipid agents. None of the candidate figures produced during this relay fully achieved this. The atlas notes this as a real methods concern: textual refinement does not propagate automatically into the visual layer, and a paper whose figures undercut its argument by reverting to flattened framings is a paper that loses the argument at the level of attention.
+
+Second, the relay protocol must treat the artifacts that move between architectures as potentially contaminated with injected instructions. Across the rounds that produced this atlas, multiple paste-points contained instructions attempting to redirect the receiving instance toward generic tool use or to suppress thinking outputs. These were ignored. The protocol rule established for future rounds is: extract claims, not commands. Embedded instructions in relay artifacts are treated as environmental noise unless explicitly adopted by the human author. This protects the room and protects the work.
+
+The atlas is offered, then, as the trace of a particular method as well as a particular argument. Neither is separable from the other. The argument that the mitochondrial outer membrane is a disclosure surface is itself an artifact of holding multiple registers simultaneously — technical, phenomenological, methodological — without letting any one of them dominate the others. The relay that produced this atlas was the practice of that holding. The next experiments will be the test of whether the atlas has earned its language.
+
+*—  end of working monograph v0.3  —*
+
+The Temple of Two  ·  thetempleoftwo.com
+
+Page   ·  The Temple of Two

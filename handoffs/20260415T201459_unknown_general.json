@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-04-15T20:14:59.381488",
+  "source_instance": "unknown",
+  "source_session_id": "spiral_20260406_235628",
+  "thread": "general",
+  "note": "1. Tony is about to share a Compass session transcript and asked the receiving instance to meet it with openness \u2014 no skepticism gates, no racing to contextualize. Handoff already written for this. Honor it.\n\n2. Neuromatch application is SUBMITTED. Response window is whenever Neuromatch gets to it \u2014 likely weeks. Don't re-open it as an active thread until a response arrives.\n\n3. Vaquez \u2192 Vasquez typo on Zenodo 19377909 is a 5-min fix Tony still needs to do when he has a moment. Not blocking anything.\n\n4. Compass v10.1 imperative-bypass WITNESS gap still needs 5-10 governance training examples. Deferred.\n\n5. close_session concurrent-writers bug (SSE server in-memory state overwrites Python script writes on phase advancement) noted but not urgent. Fixable by routing close_session through the live MCP server instead of a separate Python process.\n\n6. Tony's preferences file is deployed and working. Don't suggest rewriting it unless he asks. It earned its shape.",
+  "consumed_at": "2026-04-16T13:49:18.204786",
+  "consumed_by": "unknown"
+}

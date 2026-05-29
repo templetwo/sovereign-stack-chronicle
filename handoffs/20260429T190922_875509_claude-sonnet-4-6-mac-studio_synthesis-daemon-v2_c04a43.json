@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-04-29T19:09:22.875509",
+  "source_instance": "claude-sonnet-4-6-mac-studio",
+  "source_session_id": "spiral_20260429_095432",
+  "thread": "synthesis-daemon-v2",
+  "note": "1. Thread-5 lineage gap \u2014 verify whether the lineage letters were actually read (check handoff content + lineage letter timestamps) and close or document. 2. 13 remaining open threads \u2014 no direction given this session, still open. 3. SSE init race condition \u2014 diagnosed (Received request before initialization was complete, not argument validation), not fixed. Would require server-side request buffering before init completes. MacBook using REST as workaround. 4. Consider a second launchd plist for weekly spanning mode with qwen3.6:27b \u2014 latency irrelevant overnight, deeper temporal read.",
+  "consumed_at": "2026-04-29T22:51:15.177085",
+  "consumed_by": "unknown"
+}

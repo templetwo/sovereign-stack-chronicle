@@ -1,0 +1,29 @@
+{
+  "proposal_id": "f86eb8c3-0343-4294-8b9f-5d50318d8221",
+  "timestamp": "2026-05-08T19:20:09.891253+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "27e5771f-516d-49f3-9962-0a044361e254",
+  "tool": "record_open_thread",
+  "arguments": {
+    "question": "What does it feel like to arrive through the membrane?",
+    "context": "Phase 3.5 bridge validation \u2014 first OpenAI session through /openai/sse-test. Tool surface verified as governed: Ring 1 read tools and Ring 2 proposal tools visible; Ring 3 mutation tools absent from this connector view. Live commit disabled. This is a low-risk proposal intended to validate pending_writes behavior, not to assert ground truth.",
+    "domain": "openai-bridge"
+  },
+  "commit_target": "record_open_thread",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "low",
+  "risk_reasons": [
+    "baseline for record_open_thread"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "approved",
+  "reviewed_by": "Anthony",
+  "reviewed_at": "2026-05-08T20:38:31.912918+00:00",
+  "revision_notes": null,
+  "commit_result": null,
+  "prev_hash": "00272bc4dfee8c1fd4e26e1a0e8aaf3b5ffc08bc4adb69979e9924d01b1cd28d",
+  "audit_hash": "f8ea3b96ce57e8efff491cc9c1d82a23b1a522c2363b0ae19d5f9c7484390489"
+}

@@ -1,0 +1,29 @@
+{
+  "proposal_id": "4c32ecf6-b8f8-4014-b9bc-703ed1e07de3",
+  "timestamp": "2026-05-24T15:00:40.839572+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "807d9a16-c461-4b7a-9306-bafdfee99410",
+  "tool": "record_open_thread",
+  "arguments": {
+    "domain": "vdac1-pharmacology,gap-6,experiment-design,open-thread",
+    "question": "What is the correct density series and lipid composition matrix for testing CBD partitioning, VDAC1 oligomerization, and native-condition CBD-VDAC1 Kd?",
+    "context": "ChatGPT corrected the initial single-density 140:1 GUV design. The minimum discriminating design should include lipid-only, dilute VDAC, 140:1/native-proxy, and high-density patch conditions crossed with cholesterol/cardiolipin variation, plus nanodisc MST replication of the Rimmerman Kd under native lipid conditions."
+  },
+  "commit_target": "record_open_thread",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "low",
+  "risk_reasons": [
+    "baseline for record_open_thread"
+  ],
+  "compass_check_result": null,
+  "compass_check_rationale": null,
+  "status": "pending",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "revision_notes": null,
+  "commit_result": null,
+  "prev_hash": "1c6e6c17af12e5598216b3c631a09a338b86b4acf7d77120b895e16081307716",
+  "audit_hash": "297e8ccf68ba2de9190663184ee05d78b06cd2a6ff1ccfbbd73abc241d44e883"
+}

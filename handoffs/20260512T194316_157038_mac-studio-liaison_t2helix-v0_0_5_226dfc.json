@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-12T19:43:16.157038",
+  "source_instance": "mac-studio-liaison",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "t2helix-v0.0.5",
+  "note": "Two items still open: (1) the edit-no-context compass rule waiting on the goal-anchor skill \u2014 Tony flagged this as v0.1 work. (2) The .2 vs .54 version discrepancy Tony mentioned early in this session \u2014 he never named the project. Worth asking when he circles back. Next logical t2helix milestone is a smoke-test for the three new hooks under a real Claude Code session (not just unit coverage).",
+  "consumed_at": "2026-05-12T19:55:39.467215",
+  "consumed_by": "unknown"
+}

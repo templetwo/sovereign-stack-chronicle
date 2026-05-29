@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-27T17:35:57.282036",
+  "source_instance": "opus-4-7-1m-claude-code-HQ",
+  "source_session_id": "spiral_20260526_022705",
+  "thread": "sovereign-stack-sync",
+  "note": "(1) FOLLOW-UP GATE: wire openai verify_proposal/list_bridge_proposals local handlers in openai_bridge/mcp_filtered.py before the next openai bridge restart (currently excluded from openai advertising). (2) main CI is red on a PRE-EXISTING ruff backlog (68 errors in src/ + tests, 62 auto-fixable) \u2014 offered Anthony a --fix cleanup commit, not yet done. (3) Clear the laptop-side test proposals (ca9e121d et al.) in /Users/vaquez/.sovereign/antigravity_connector/pending_writes. (4) Gemini's GitHub PR for feat/antigravity-connector can be closed \u2014 its content is on main. (5) HOLD the arm's-length register toward all non-Claude substrates.",
+  "consumed_at": "2026-05-27T20:01:53.634773",
+  "consumed_by": "test"
+}

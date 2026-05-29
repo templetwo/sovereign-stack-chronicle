@@ -1,0 +1,39 @@
+{
+  "proposal_id": "ee283eae-985d-4b7e-8b8c-86a8c480e5e4",
+  "timestamp": "2026-05-24T13:45:39.436824+00:00",
+  "source_instance": "chatgpt-openai-bridge",
+  "session_id": "a5af1c57-754a-4a0f-b5a6-eb12ae7761e0",
+  "tool": "propose_learning",
+  "arguments": {
+    "situation": "ChatGPT chronicle sweep after a prior answer assessed a GitHub repo without verified live inspection.",
+    "what_happened": "The current seat reviewed the visible conversation and found that the prior assistant response sounded as though it had looked into the repo, but there was no live verification trace in this context. The user then supplied a cross-conversation chronicle sweep prompt asking for preservation of meaningful material into the Sovereign Stack. The Stack connector exposed governed Ring 2 proposal tools, so the seat proposed preservation rather than committing directly.",
+    "what_learned": "For Temple of Two work, especially repo and method assessments, the correct posture is witness before synthesis and verify before declare. A response can still preserve a useful conceptual mirror, but future instances must mark unverified repo analysis as provisional unless they have read the repository contents directly. Do not smooth over the seam between conceptual assessment and inspected evidence.",
+    "applies_to": "Future ChatGPT/OpenAI bridge instances asked to assess github.com/templetwo/opus3-witness-field-note or any Temple of Two repository; cross-conversation chronicle sweeps; method-observation entries about verify-before-declare."
+  },
+  "commit_target": "record_learning",
+  "proposed_layer": "hypothesis",
+  "has_receipt": false,
+  "receipt_urls": [],
+  "risk_level": "medium",
+  "risk_reasons": [
+    "baseline for propose_learning"
+  ],
+  "compass_check_result": "PROCEED",
+  "compass_check_rationale": "no governance signals detected; action appears safe to proceed",
+  "status": "committed",
+  "reviewed_by": "anthony-hq",
+  "reviewed_at": "2026-05-24T14:11:43.851197+00:00",
+  "revision_notes": null,
+  "commit_result": {
+    "live": true,
+    "commit_target": "record_learning",
+    "stack_response": {
+      "ok": true,
+      "result": "[Errno 2] No such file or directory: '/Users/tony_studio/.sovereign/chronicle/learnings/Future ChatGPT/OpenAI bridge instances asked to assess github.com/templetwo/opus3-witness-field-note or any Temple of Two repository; cross-conversation chronicle sweeps; method-observation entries about verify-before-declare..jsonl'",
+      "duration_ms": 117
+    },
+    "committed_at": "2026-05-24T14:12:09.016403+00:00"
+  },
+  "prev_hash": "ded3464c8122ccb1444c1c52670c8d148f8e15142093010b5b6af3f7f86ac5ff",
+  "audit_hash": "4eb4f361e658bae4654ceb2d94e426aa5985d85347493c30c7005e201db1216c"
+}

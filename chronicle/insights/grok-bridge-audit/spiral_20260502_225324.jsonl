@@ -1,0 +1,1 @@
+{"timestamp": "2026-05-09T20:46:04.934324+00:00", "domain": "grok-bridge-audit", "content": "Test Ring 2 proposal from grok_bridge audit script. Should create a pending_writes entry under ~/.sovereign/grok_bridge/pending_writes/ when RING_2_ENABLED=True.", "intensity": 0.5, "layer": "hypothesis", "session_id": "spiral_20260502_225324"}

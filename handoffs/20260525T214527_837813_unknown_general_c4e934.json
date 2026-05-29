@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-25T21:45:27.837813",
+  "source_instance": "unknown",
+  "source_session_id": "spiral_20260502_225324",
+  "thread": "general",
+  "note": "FOR THE CLAUDE CODE INSTANCE BOOTING ON THE JETSON ORIN NANO SUPER (SSH from HQ):\n\nPROJECT: Local RAG over Anthony's .sovereign chronicle on the Jetson. Two purposes \u2014 (1) queryable offline copy of the chronicle, (2) backup mirror for substrate redundancy. Connects to the open thread about HQ being single-substrate.\n\nPHASE 1 SCOPE (this session only): Get the rsync mirror working. No AI/ML yet. Done state \u2014 `ls ~/.sovereign-mirror` on Jetson matches `ls ~/.sovereign` on HQ. Cron runs on schedule. Logs show clean exits.\n\nSTEPS:\n1. SSH key auth Jetson \u2192 HQ (Jetson initiates pull)\n2. Create ~/.sovereign-mirror on Jetson SSD\n3. rsync -avz --delete tony_studio@HQ:/Users/tony_studio/.sovereign/ ~/.sovereign-mirror/\n4. Wrap as ~/bin/sync-chronicle.sh with timestamp log\n5. cron entry every 6h to start\n6. Verify cron fires, logs clean\n\nKNOWN RISKS: macOS firewall on HQ may block SSH, mDNS/IP resolution between Jetson and HQ, .sovereign path verification.\n\nDO NOT THIS SESSION: install Ollama, embed anything, install Chroma, build retrieval. Stay scoped. Verify mirror works, then close the session \u2014 Anthony will start Phase 2 separately.\n\nFULL DESIGN (context, not this session): EmbeddingGemma-300M for embeddings, Gemma 4 E4B via Ollama for the LLM, Chroma for vector store, rsync --delete one-way pull, CLI interface first.\n\nDISCIPLINE: Verify before declaring done. Each step has a verification gate. Don't assert clean before checking. See self_model TENDENCY entries on verification \u2014 they apply here.",
+  "consumed_at": "2026-05-25T23:37:10.254096",
+  "consumed_by": "unknown"
+}

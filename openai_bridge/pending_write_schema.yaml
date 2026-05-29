@@ -1,0 +1,38 @@
+# Pending Write Schema
+# Every Ring 2 proposal written to pending_writes/ follows this shape.
+# Files are named: {iso_timestamp}_{tool_name}_{short_id}.json
+
+schema:
+  proposal_id: string           # uuid4
+  timestamp: iso8601
+  source_instance: string       # e.g. "chatgpt-gpt-5-5-openai-bridge"
+  session_id: string            # bridge session id
+
+  tool: string                  # the wrapped tool name (e.g. record_insight)
+  arguments: object             # the arguments as-called
+
+  # Governance
+  compass_check_result: string  # PROCEED / PAUSE / WITNESS — required
+  compass_check_rationale: string
+
+  # Epistemology enforcement
+  proposed_layer: string        # hypothesis | reflection | ground_truth
+  has_receipt: boolean
+  receipt_url: string | null    # required if proposed_layer = ground_truth
+
+  # Status lifecycle
+  status: string                # pending | approved | rejected | expired
+  reviewed_by: string | null    # anthony
+  reviewed_at: iso8601 | null
+  commit_result: string | null  # tool response after commit
+
+  # Audit
+  audit_hash: string            # sha256 of this object (minus audit_hash field)
+  prev_hash: string | null      # hash of previous entry in chain
+
+
+# Status transitions:
+#   pending  → approved  (Anthony runs: bridge approve <proposal_id>)
+#   pending  → rejected  (Anthony runs: bridge reject <proposal_id> [reason])
+#   approved → committed (bridge commits to chronicle, records commit_result)
+#   pending  → expired   (after 7 days without review)
